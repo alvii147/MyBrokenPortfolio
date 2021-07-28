@@ -1,0 +1,36 @@
+/* define colors */
+:root {
+    --ubuntu-bg-top-color: rgb(192, 54, 33);
+    --ubuntu-bg-middle-color: rgb(100, 22, 98);
+    --ubuntu-bg-bottom-color: rgb(37, 1, 24);
+
+    --terminal-bg-color: rgb(45, 9, 34);
+
+    --terminal-title-bg-top-color: rgb(89, 87, 78);
+    --terminal-title-bg-bottom-color: rgb(64, 63, 58);
+    --terminal-title-text-color: rgb(222, 219, 208);
+
+    --terminal-action-top-color: rgb(139, 139, 134);
+    --terminal-action-bottom-color: rgb(102, 101, 95);
+    --terminal-cross-action-top-color: rgb(242, 134, 101);
+    --terminal-cross-action-bottom-color: rgb(223, 79, 29);
+    --terminal-action-color: rgb(61, 60, 55);
+
+    --terminal-text-default-color: rgb(255, 255, 255);
+    --terminal-text-green-color: rgb(98, 200, 51);
+    --terminal-text-red-color: rgb(255, 77, 77);
+    --terminal-text-blue-color: rgb(113, 158, 206);
+    --terminal-text-yellow-color: rgb(255, 214, 51);
+
+    --scrollbar-color: rgb(147, 131, 141);
+}
+
+body {
+    background-color: var(--ubuntu-bg-middle-color);
+    background-image: linear-gradient(to right, var(--ubuntu-bg-top-color), var(--ubuntu-bg-middle-color), var(--ubuntu-bg-bottom-color));
+}
+
+/* all sections */
+.section-container {
+    height: 100vh;
+}

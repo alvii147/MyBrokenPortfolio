@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+}
+
+/* ================================================================== */
+
+#ubuntu-main-section-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* ubuntu section container */
+#ubuntu-main-container {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ================================================================== */
+
+/* terminal column within ubuntu section */
+#ubuntu-terminal-column {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* typerwriter title div container */
+#ubuntu-typewriter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* typewriter title styles */
+#ubuntu-typewriter-styles {
+    color: white;
+    font-family: monospace;
+    font-size: 35pt;
+}
+
+/* typewriter font is smaller in small screens */
+@media only screen and (max-width: 767px) {
+    #ubuntu-typewriter-styles {
+        font-size: 23pt;
+    }
+}
+
+/* terminal column within ubuntu section */
+#ubuntu-terminal-container {
+    background-color: var(--terminal-bg-color);
+    border-radius: 5px;
+    width: 80%;
+    height: 40%;
+}
+
+/* terminal title bar */
+#ubuntu-terminal-title {
+    color: var(--terminal-title-text-color);
+    background-image: linear-gradient(var(--terminal-title-bg-top-color), var(--terminal-title-bg-bottom-color));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 25px;
+    font-family: Ubuntu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* terminal title bar text */
+#ubuntu-terminal-title-text {
+    color: var(--terminal-title-text-color);
+    font-family: Ubuntu;
+    font-size: 10pt;
+    flex: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* terminal title bar actions container */
+#ubuntu-terminal-title-actions-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* terminal title bar actions */
+.ubuntu-terminal-title-action {
+    height: 18px;
+    width: 18px;
+    background-image: linear-gradient(var(--terminal-action-top-color), var(--terminal-action-bottom-color));
+    border: 1px solid var(--terminal-action-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* terminal title bar cross action */
+.ubuntu-terminal-title-action.ubuntu-cross {
+    background-image: linear-gradient(var(--terminal-cross-action-top-color), var(--terminal-cross-action-bottom-color));
+    color: var(--terminal-action-color);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 10pt;
+}
+
+/* terminal title bar actions minimize button line */
+#ubuntu-minimize-line {
+    width: 8px;
+    border-bottom: 1px solid var(--terminal-action-color);
+}
+
+/* terminal title bar actions maximize button square */
+#ubuntu-maximize-square {
+    width: 5px;
+    height: 5px;
+    border: 1px solid var(--terminal-action-color);
+}
+
+/* terminal menu bar */
+#ubuntu-terminal-menu {
+    color: var(--terminal-title-text-color);
+    background-color: var(--terminal-title-bg-bottom-color);
+    height: 25px;
+    font-family: Ubuntu;
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+}
+
+/* terminal readonly content */
+#ubuntu-terminal-content {
+    color: var(--terminal-text-default-color);
+    background-color: transparent;
+    width: 100%;
+    height: calc(100% - 75px);
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 12pt;
+}
+#ubuntu-terminal-content:focus {
+    outline: none;
+    border: none;
+}
+
+/* terminal content scrollbar */
+#ubuntu-terminal-content::-webkit-scrollbar {
+    width: 5px;
+}
+#ubuntu-terminal-content::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+    border-radius: 5px;
+}
+
+/* terminal readonly command line */
+#ubuntu-terminal-command-line {
+    background-color: transparent;
+    height: 20px;
+    font-family: monospace;
+    font-size: 12pt;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* terminal editable command line */
+#ubuntu-terminal-command-line-textarea {
+    color: var(--terminal-text-default-color);
+    background-color: transparent;
+    resize: none;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: none;
+}
+#ubuntu-terminal-command-line-textarea:focus {
+    outline: none;
+}
+
+/* terminal text color classes */
+.ubuntu-terminal-text-default {
+    color: var(--terminal-text-default-color);
+}
+.ubuntu-terminal-text-green {
+    color: var(--terminal-text-green-color);
+}
+.ubuntu-terminal-text-red {
+    color: var(--terminal-text-red-color);
+}
+.ubuntu-terminal-text-blue {
+    color: var(--terminal-text-blue-color);
+}
+.ubuntu-terminal-text-yellow {
+    color: var(--terminal-text-yellow-color);
+}
+
+/* ================================================================== */
+
+/* charizard image column within ubuntu section */
+#ubuntu-charizard-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-left: 10px;
+}
+
+/* hide charizard in small screens */
+@media only screen and (max-width: 767px) {
+    #ubuntu-charizard-column {
+        display: none;
+    }
+}
+
+/* charizard image */
+#ubuntu-charizard-img {
+    width: auto;
+    height : auto;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+#ubuntu-next-page-container-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#ubuntu-next-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+#ubuntu-next-page-container:hover {
+    box-shadow: 0 0 10px white;
+}
+
+@keyframes ubuntu-spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

@@ -1,0 +1,217 @@
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* typerwriter title div container */
+#projects-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* typewriter title styles */
+#projects-heading-styles {
+    color: white;
+    font-family: monospace;
+    font-size: 50pt;
+}
+
+/* typewriter font is smaller in small screens */
+@media only screen and (max-width: 767px) {
+    #projects-heading-styles {
+        font-size: 35pt;
+    }
+}
+
+.projects-card-parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-card-container {
+    background-image: linear-gradient(to right, rgb(255, 242, 185), rgb(255, 170, 100));
+    width: 75%;
+}
+
+.projects-card-header {
+    text-align: center;
+}
+
+.projects-card-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .projects-card-content-container {
+        flex-direction: column;
+    }
+}
+
+.projects-card-body {
+    width: 50%;
+}
+
+.projects-card-img {
+    display: flex;
+}
+.projects-card-img-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .projects-card-body {
+        width: 100%;
+    }
+    .projects-card-text-container {
+        display: none;
+    }
+    .projects-card-img {
+        display: none;
+    }
+    .projects-card-img-mobile {
+        display: flex;
+    }
+}
+
+.projects-milestones-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.projects-milestone {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .projects-milestone {
+        flex-wrap: wrap;
+    }
+}
+
+.projects-milestone-badge-left {
+    background-color: rgb(0, 57, 143);
+}
+
+.projects-milestone-badge-right {
+    background-color: rgb(155, 15, 46);
+}
+
+.projects-footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-footer-technologies-container {
+    color: white;
+    background-color: rgb(0, 61, 51);
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 12px;
+    transition: 0.3s;
+}
+.projects-footer-technologies-container:hover {
+    background-color: rgb(0, 102, 85);
+    box-shadow: 0 0 10px white;
+}
+
+@media only screen and (max-width: 767px) {
+    .projects-footer-technologies-container {
+        display: none;
+    }
+}
+
+.projects-footer-technology {
+    padding-left: 12px;
+}
+
+.projects-footer-links-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.projects-footer-links-spacing {
+    padding-right: 5px;
+}
+
+.projects-footer-link {
+    text-decoration: none;
+}
+
+.projects-footer-link-icon {
+    padding-left: 5px;
+}
+
+.projects-github-badge-container {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(24, 23, 23);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.projects-github-badge-container:hover {
+    background-color: rgb(78, 75, 75);
+    box-shadow: 0 0 10px white;
+}
+
+.projects-devpost-badge-container {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 62, 84);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.projects-devpost-badge-container:hover {
+    background-color: rgb(0, 94, 128);
+    box-shadow: 0 0 10px white;
+}
+
+#projects-next-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+#projects-next-page-container:hover {
+    box-shadow: 0 0 10px white;
+}
+
+@keyframes projects-spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
