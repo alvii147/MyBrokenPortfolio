@@ -5,10 +5,10 @@ import { Typewriter } from 'react-simple-typewriter';
 
 import CharizardImage from '../../images/Ubuntu/ubuntu_charizard.png';
 import UbuntuLogo from '../../images/ubuntu_logo.png';
-import DownwardArrows from '../../images/downward_arrows.png'
+import DownwardArrows from '../../images/downward_arrows.png';
 
-function Ubuntu({scrollToAbout, scrollToProjects}) {
-    const sections = ['about', 'projects', 'experience'];
+function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills}) {
+    const sections = ['about', 'projects', 'skills'];
 
     const [terminalContent, setTerminalContent] = useState([]);
 
@@ -36,6 +36,9 @@ function Ubuntu({scrollToAbout, scrollToProjects}) {
             }
             else if (event.target.value === 'cd projects' || event.target.value === 'cd projects/') {
                 scrollToProjects();
+            }
+            else if (event.target.value === 'cd skills' || event.target.value === 'cd skills/') {
+                scrollToSkills();
             }
             else if (event.target.value === 'ls') {
                 sections.forEach((item, index) => {
@@ -75,7 +78,7 @@ function Ubuntu({scrollToAbout, scrollToProjects}) {
                 ...terminalContent,
                 {
                     class: 'ubuntu-terminal-text-green',
-                    text: 'zahin@ubuntu-charizard',
+                    text: 'zahin@ubuntucharizard',
                     newline: false,
                 },
                 {
@@ -126,7 +129,7 @@ function Ubuntu({scrollToAbout, scrollToProjects}) {
                             <div id="ubuntu-terminal-title-text">
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                zahin@ubuntu-charizard: ~
+                                zahin@ubuntucharizard: ~
                             </div>
                             <div id="ubuntu-terminal-title-actions-container">
                                 <div className="ubuntu-terminal-title-action ubuntu-cross">x</div>
@@ -160,7 +163,7 @@ function Ubuntu({scrollToAbout, scrollToProjects}) {
                             })}
                         </div>
                         <div id="ubuntu-terminal-command-line">
-                            <span className="ubuntu-terminal-text-green">zahin@ubuntu-charizard</span>
+                            <span className="ubuntu-terminal-text-green">zahin@ubuntucharizard</span>
                             <span className="ubuntu-terminal-text-default">:</span>
                             <span className="ubuntu-terminal-text-blue">~&nbsp;</span>
                             <span className="ubuntu-terminal-text-default">$&nbsp;</span>

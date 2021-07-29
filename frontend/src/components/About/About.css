@@ -30,15 +30,13 @@
 }
 
 #about-title-bar {
-    flex: 1;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    /* background-color: rgb(44, 44, 44); */
-    /* background-image: linear-gradient(rgb(62, 62, 62), rgb(44, 44, 44)); */
 }
 
 #about-title-text-container {

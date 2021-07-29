@@ -1,0 +1,128 @@
+#skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/* typerwriter title div container */
+#skills-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* typewriter title styles */
+#skills-heading-styles {
+    color: white;
+    font-family: monospace;
+    font-size: 50pt;
+}
+
+#skills-main-block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.skills-card-container {
+    width: 20%;
+}
+
+.skills-card {
+    border-radius: 10px;
+    background-color: rgb(173, 235, 235);
+    background-image: linear-gradient(to right, rgb(254, 219, 255), rgb(181, 204, 255));
+    transition: 0.3s;
+}
+.skills-card:hover {
+    box-shadow: 0 0 15px white;
+}
+
+.skills-card-header {
+    text-align: center;
+}
+
+.skills-card-body {
+    height: 340px;
+    overflow-y: auto;
+}
+.skills-card-body::-webkit-scrollbar {
+    width: 5px;
+}
+.skills-card-body::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+    border-radius: 5px;
+}
+
+.skills-card-label-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.skills-card-label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+
+.skills-list-item {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 767px) {
+    .skills-card-text-container {
+        display: none;
+    }
+}
+
+.progress-bar-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 13px;
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 8px;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 8px;
+}
+
+#skills-next-page-container-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#skills-next-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+#skills-next-page-container:hover {
+    box-shadow: 0 0 10px white;
+}
+
+@keyframes skills-spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

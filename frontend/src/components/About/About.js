@@ -20,12 +20,12 @@ import { Linkedin, Github, Devpost, Gmail } from '@icons-pack/react-simple-icons
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-import data from './data.js';
+import data from './data';
 
 import AvatarRound from '../../images/About/avatar_round.png';
 import Waterloo from '../../images/About/waterloo.png';
 import UbuntuLogo from '../../images/ubuntu_logo.png';
-import DownwardArrows from '../../images/downward_arrows.png'
+import DownwardArrows from '../../images/downward_arrows.png';
 
 function Projects(props, ref) {
     const [showAvatar, setShowAvatar] = useState(false);
