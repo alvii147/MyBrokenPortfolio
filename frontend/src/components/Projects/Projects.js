@@ -80,7 +80,7 @@ function Projects(props, ref) {
                                                             <div className="projects-footer-technology">
                                                                 <Tech></Tech>
                                                             </div>
-                                                        )
+                                                        );
                                                     })}
                                                 </div>
                                                 <div className="projects-footer-links-container">

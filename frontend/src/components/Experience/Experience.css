@@ -1,0 +1,121 @@
+#experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/* typerwriter title div container */
+#experience-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* typewriter title styles */
+#experience-heading-styles {
+    color: white;
+    font-family: monospace;
+    font-size: 50pt;
+}
+
+#experience-main-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: Ubuntu;
+}
+
+#experience-thumbnail-list-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 10pt;
+}
+
+.experience-thumbnail-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.experience-interval-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.experience-thumbnail-ubuntu-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#DD4814, #DD4814);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.experience-thumbnail-ubuntu-logo {
+    width: 20px;
+}
+
+.experience-thumbnail-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-thumbnail-img {
+    width: 50px;
+    border-radius: 15px;
+}
+
+#experience-list-container {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid blue;
+}
+
+#experience-next-page-container-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#experience-next-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+#experience-next-page-container:hover {
+    box-shadow: 0 0 10px white;
+}
+
+@keyframes experience-spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

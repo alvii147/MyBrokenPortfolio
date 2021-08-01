@@ -47,7 +47,7 @@ export {
 
 function JavascriptIcon() {
     return (
-        <Javascript color="#F7DF1E"></Javascript>
+        <Javascript color="#F7DF1E" style={{backgroundColor: '#000000'}}></Javascript>
     );
 }
 
@@ -71,7 +71,7 @@ export {
 
 function FlaskIcon() {
     return (
-        <Flask color="#FFFFFF"></Flask>
+        <Flask color="#000000" style={{backgroundColor: '#FFFFFF', borderRadius: '5px', padding: '2px'}}></Flask>
     );
 }
 
@@ -91,7 +91,7 @@ export {
 
 function ReactJsIcon() {
     return (
-        <ReactJs color="#61DAFB"></ReactJs>
+        <ReactJs color="#61DAFB" style={{backgroundColor: '#555555', borderRadius: '5px', padding: '2px'}}></ReactJs>
     );
 }
 
@@ -205,7 +205,7 @@ export {
 
 function FirebaseIcon() {
     return (
-        <Firebase color="#FFCA28"></Firebase>
+        <Firebase color="#FFCA28" style={{backgroundColor: '#1A73E8', borderRadius: '5px', padding: '2px'}}></Firebase>
     );
 }
 

@@ -132,9 +132,9 @@ function Skills(props, ref) {
                     </div>
                 </div>
                 <div id="skills-next-page-container-container">
-                    <div id="skills-next-page-container">
+                    <div id="skills-next-page-container" onClick={props.scrollToExperience}>
                         <img alt="Skills Section Ubuntu Logo" src={UbuntuLogo} style={{animation: 'skills-spin 3s linear infinite'}} width={30}></img>
-                        &nbsp;&nbsp;Take a look at my experience&nbsp;&nbsp;
+                        &nbsp;&nbsp;Discover my experiences&nbsp;&nbsp;
                         <img alt="Skills Section Downward Arrows" src={DownwardArrows} width={10}></img>
                     </div>
                 </div>
