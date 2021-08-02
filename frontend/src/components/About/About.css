@@ -259,20 +259,6 @@
     }
 }
 
-#avatar-modal {
-    border: 1px solid transparent;
-}
-
 #avatar-modal-header {
-    color: white;
     font-family: monospace;
-    background-color: rgb(62, 62, 62);
-    background-image: linear-gradient(to right, rgb(62, 62, 62), rgb(96, 112, 146));
-    border: none;
-}
-
-#avatar-modal-body {
-    background-color: rgb(62, 62, 62);
-    background-image: linear-gradient(to right, rgb(62, 62, 62), rgb(96, 112, 146));
-    border: none;
 }

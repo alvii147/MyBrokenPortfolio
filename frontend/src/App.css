@@ -23,6 +23,7 @@
     --terminal-text-yellow-color: rgb(255, 214, 51);
 
     --scrollbar-color: rgb(147, 131, 141);
+    --scrollbar-bg-color: rgb(203, 185, 218);
 }
 
 body {
@@ -33,4 +34,16 @@ body {
 /* all sections */
 .section-container {
     height: 100vh;
+}
+
+/* terminal content scrollbar */
+body::-webkit-scrollbar {
+    width: 15px;
+}
+body::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg-color);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+    border-radius: 5px;
 }

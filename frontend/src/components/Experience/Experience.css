@@ -26,8 +26,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
-    font-family: Ubuntu;
 }
 
 #experience-thumbnail-list-container {
@@ -39,51 +37,176 @@
     font-size: 10pt;
 }
 
+#experience-main-stepper {
+    background-color: transparent;
+}
+
+.experience-timeline-ubuntu-img {
+    width: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.experience-timeline-ubuntu-img:hover {
+    box-shadow: 0 0 15px white;
+}
+
 .experience-thumbnail-container {
     display: flex;
     justify-content: center;
-    align-items: stretch;
-    flex-direction: column;
-}
-
-.experience-interval-container {
+    align-items: center;
+    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-.experience-thumbnail-ubuntu-logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(#DD4814, #DD4814);
-    background-size: 100% 1px;
+    background-image: linear-gradient(#FF9999, #FF9999);
+    background-size: 1px 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.experience-thumbnail-ubuntu-logo {
-    width: 20px;
-}
-
-.experience-thumbnail-img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .experience-thumbnail-img {
     width: 50px;
     border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.experience-thumbnail-img:hover {
+    box-shadow: 0 0 15px white;
 }
 
 #experience-list-container {
-    flex: 5;
+    flex: 6;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid blue;
+}
+
+.experience-link {
+    text-decoration: none;
+    color: rgb(221, 180, 45);
+    transition: 0.2s;
+}
+.experience-link:hover {
+    opacity: 0.8;
+    color: rgb(221, 180, 45);
+}
+.experience-strong {
+    font-weight: bold;
+    color: rgb(190, 158, 52);
+}
+
+.experience-card {
+    width: 800px;
+    color: rgb(190, 186, 146);
+    border-color: rgb(136, 122, 45);
+    background-image: linear-gradient(to right, rgb(0, 31, 51), rgb(23, 3, 70));
+    border-radius: 10px;
+    animation: experience-card-glow 2s linear infinite;
+}
+@media only screen and (max-width: 767px) {
+    .experience-card {
+        width: 300px;
+    }
+}
+@keyframes experience-card-glow {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 50px rgb(221, 180, 45);
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+.experience-card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: inherit;
+}
+
+.experience-card-header-text {
+    flex: 2;
+}
+
+.experience-card-header-badge {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media only screen and (max-width: 767px) {
+    .experience-card-header-badge {
+        display: none;
+    }
+}
+
+.experience-badge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-badge-left {
+    font-size: 10pt;
+    color: rgb(190, 158, 52);
+    background-color: rgb(5, 20, 53);
+}
+
+.experience-badge-right {
+    font-size: 10pt;
+    color: rgb(5, 20, 53);
+    background-color: rgb(190, 158, 52);
+}
+
+.experience-card-body {
+    border-color: inherit;
+}
+
+.experience-card-top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: inherit;
+}
+
+.experience-card-title-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 10px;
+    border-color: inherit;
+}
+
+.experience-card-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    border-color: inherit;
+}
+
+.experience-card-img {
+    height: 50px;
+}
+
+.experience-card-text {
+    border-color: inherit;
+}
+@media only screen and (max-width: 767px) {
+    .experience-card-text {
+        display: none;
+    }
+}
+
+.experience-list-group {
+    border-color: inherit;
 }
 
 #experience-next-page-container-container {
