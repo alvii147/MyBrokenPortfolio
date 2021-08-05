@@ -278,7 +278,7 @@ function Projects(props, ref) {
 
             <Modal id="avatar-modal" show={showAvatar} onHide={handleHideAvatar} aria-labelledby="contained-modal-title-vcenter" centered>
                 <Modal.Header id="avatar-modal-header" closeButton>
-                    <Modal.Title>My cousin Muhammad and I.<br />Can you guess who's who?</Modal.Title>
+                    <Modal.Title style={{fontFamily: 'Ubuntu'}}>My cousin Muhammad and I.<br />Can you guess who's who?</Modal.Title>
                 </Modal.Header>
                 <Modal.Body id="avatar-modal-body">
                     <img style={{width: '100%'}} alt="Avatar" src={AvatarRound} />

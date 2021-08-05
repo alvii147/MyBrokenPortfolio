@@ -33,6 +33,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'rest_framework',
+    'rest_framework_api_key',
+    'corsheaders',
+
+    'endorsements.apps.EndorsementsConfig',
+    'contact_messages.apps.ContactMessagesConfig',
 ]
 
 MIDDLEWARE = [
@@ -43,7 +50,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+# Django REST Framework settings
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework_api_key.permissions.HasAPIKey',
+    ],
+}
 
 ROOT_URLCONF = 'backend.urls'
 
@@ -64,7 +79,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'backend.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -119,3 +133,15 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email settings
+EMAIL_SENDER_ADDRESS = os.environ['EMAIL_SENDER_ADDRESS']
+EMAIL_SENDER_PASSWORD = os.environ['EMAIL_SENDER_PASSWORD']
+EMAIL_RECEIVER_ADDRESS = os.environ['EMAIL_RECEIVER_ADDRESS']
+
+# Number of endorsement requests allowed from IP address per day
+ENDORSEMENT_REQUESTS_PER_IP_PER_DAY = 5
+# Number of contact message requests allowed from email address per day
+CONTACT_MESSAGE_REQUESTS_PER_EMAIL_PER_DAY = 3
+# Number of contact message requests allowed from IP address per day
+CONTACT_MESSAGE_REQUESTS_PER_IP_PER_DAY = 5

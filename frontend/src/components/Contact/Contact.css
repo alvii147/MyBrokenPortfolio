@@ -1,0 +1,40 @@
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+/* typerwriter title div container */
+#contact-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* typewriter title styles */
+#contact-heading-styles {
+    color: white;
+    font-family: monospace;
+    font-size: 50pt;
+}
+
+#contact-main-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#contact-main-form-container {
+    width: 40%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(170, 190, 221), rgb(175, 212, 207));
+}

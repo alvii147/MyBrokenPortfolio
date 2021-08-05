@@ -7,8 +7,8 @@ import CharizardImage from '../../images/Ubuntu/ubuntu_charizard.png';
 import UbuntuLogo from '../../images/ubuntu_logo.png';
 import DownwardArrows from '../../images/downward_arrows.png';
 
-function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperience}) {
-    const sections = ['about', 'projects', 'skills', 'experience'];
+function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperience, scrollToEndorsements}) {
+    const sections = ['about', 'projects', 'skills', 'experience', 'endorsements'];
 
     const [terminalContent, setTerminalContent] = useState([]);
 
@@ -42,6 +42,9 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
             }
             else if (event.target.value === 'cd experience' || event.target.value === 'cd experience/') {
                 scrollToExperience();
+            }
+            else if (event.target.value === 'cd endorsements' || event.target.value === 'cd endorsements/') {
+                scrollToEndorsements();
             }
             else if (event.target.value === 'ls') {
                 sections.forEach((item, index) => {

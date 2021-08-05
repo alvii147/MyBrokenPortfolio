@@ -133,7 +133,7 @@ function Experience(props, ref) {
                     </div>
                 </div>
                 <div id="experience-next-page-container-container">
-                    <div id="experience-next-page-container">
+                    <div id="experience-next-page-container" onClick={props.scrollToEndorsements}>
                         <img alt="Experience Section Ubuntu Logo" src={UbuntuLogo} style={{animation: 'experience-spin 3s linear infinite'}} width={30}></img>
                         &nbsp;&nbsp;Endorse me&nbsp;&nbsp;
                         <img alt="Experience Section Downward Arrows" src={DownwardArrows} width={10}></img>
