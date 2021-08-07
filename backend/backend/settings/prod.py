@@ -4,7 +4,7 @@ from .bash import *
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'http://alvii147.pythonanywhere.com',
+    'alvii147.pythonanywhere.com',
 ]
 
 CORS_ORIGIN_WHITELIST = [
