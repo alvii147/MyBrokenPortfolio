@@ -4,9 +4,9 @@ from .bash import *
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'http://alvii147.pythonanywhere.com/',
+    'http://alvii147.pythonanywhere.com',
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'https://alvii147.github.io/MyBrokenPortfolio',
+    'https://zahin-zaman.vercel.app',
 ]
