@@ -10,5 +10,3 @@ ALLOWED_HOSTS = [
 CORS_ORIGIN_WHITELIST = [
     'https://zahin-zaman.vercel.app',
 ]
-
-STATIC_ROOT = '/home/alvii147/MyBrokenPortfolio/backend/static'
