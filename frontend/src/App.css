@@ -37,13 +37,13 @@ body {
 }
 
 /* terminal content scrollbar */
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 15px;
 }
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: var(--scrollbar-bg-color);
 }
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-color);
     border-radius: 5px;
 }

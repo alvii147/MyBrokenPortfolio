@@ -91,7 +91,12 @@ function Endorsements(props, ref) {
     const [showNLPHelp, setShowNLPHelp] = useState(false);
     const handleShowNLPHelp = () => setShowNLPHelp(true);
     const handleHideNLPHelp = () => setShowNLPHelp(false);
-    const nlpCode = 'from textblob import TextBlob\n\nanalysis = TextBlob(my_text)\n# sentiment\nprint(analysis.sentiment)\n# parts of speech tags\nprint(analysis.tags)';
+    const nlpCode = 'from textblob import TextBlob\n\n' +
+        'analysis = TextBlob(my_text)\n' +
+        '# sentiment\n' +
+        'print(analysis.sentiment)\n' +
+        '# parts of speech tags\n' +
+        'print(analysis.tags)';
 
     const [showFormMessage, setShowFormMessage] = useState(false);
     const [formMessage, setFormMessage] = useState(formMessageOptions.none);

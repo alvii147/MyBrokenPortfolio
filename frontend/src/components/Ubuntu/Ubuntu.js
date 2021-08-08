@@ -1,13 +1,55 @@
 import React, { useState } from 'react';
 import './Ubuntu.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Modal from 'react-bootstrap/Modal';
+
 import { Typewriter } from 'react-simple-typewriter';
 
 import CharizardImage from '../../images/Ubuntu/ubuntu_charizard.png';
+import ColoredCharizardImage from '../../images/Ubuntu/charizard.png';
+import EvolvedCharizardImage from '../../images/Ubuntu/evolved_charizard.png';
 import UbuntuLogo from '../../images/ubuntu_logo.png';
 import DownwardArrows from '../../images/downward_arrows.png';
 
+import { CodeBlock, hybrid } from "react-code-blocks";
+
+const opencvCode = "import cv2\n" +
+"import numpy as np\n" +
+"from PIL import Image\n\n" +
+"# read image from path\n" +
+"img = cv2.imread('charizard.png')\n" +
+"# apply canny edge detection algorithm to find edges\n" +
+"img = cv2.Canny(img, 100, 200)\n" +
+"# apply dilation morphological transform to dilate edges\n" +
+"img = cv2.dilate(img, np.ones((2, 2), np.uint8), iterations=1)\n\n" +
+"# construct empty rgba array\n" +
+"img_arr = np.zeros(img.shape + (4,), dtype=np.uint8)\n\n" +
+"# rgba color to apply to edges\n" +
+"edge_color = np.array([173, 53, 104, 255])\n" +
+"# rgba color for a transparent background\n" +
+"bg_color = np.array([0, 0, 0, 0])\n\n" +
+"# iterate through every pixel\n" +
+"for i in range(img_arr.shape[0]):\n" +
+"  for j in range(img_arr.shape[1]):\n" +
+"    # if the pixel is bright\n" +
+"    if img[i][j] > 127:\n" +
+"      # apply edge color\n" +
+"      img_arr[i][j] = edge_color\n" +
+"    # otherwise, if the pixel is dark\n" +
+"    else:\n" +
+"      # apply transparent background\n" +
+"      img_arr[i][j] = bg_color\n\n" +
+"# construct PIL image from array\n" +
+"img = Image.fromarray(img_arr)\n" +
+"# save PIL image to PNG\n" +
+"img.save('evolved_charizard.png')"
+
 function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperience, scrollToEndorsements}) {
+    const [showOpencvModal, setShowOpencvModal] = useState(false);
+    const handleShowOpencvModal = () => setShowOpencvModal(true);
+    const handleHideOpencvModal = () => setShowOpencvModal(false);
+    
     const sections = ['about', 'projects', 'skills', 'experience', 'endorsements'];
 
     const [terminalContent, setTerminalContent] = useState([]);
@@ -177,8 +219,9 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                         </div>
                     </div>
                 </div>
-                <div id="ubuntu-charizard-column">
+                <div id="ubuntu-charizard-column" onClick={handleShowOpencvModal}>
                     <img id="ubuntu-charizard-img" alt="Ubuntu Charizard" src={CharizardImage} />
+                    <div id="ubuntu-charizard-img-text">Learn how I created this image</div>
                 </div>
             </div>
             <div id='ubuntu-next-page-container-container'>
@@ -188,6 +231,27 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                     <img alt="Ubuntu Section Downward Arrows" src={DownwardArrows} width={10}></img>
                 </div>
             </div>
+
+            <Modal id="ubuntu-opencv-modal" size='xl' show={showOpencvModal} onHide={handleHideOpencvModal} aria-labelledby="contained-modal-title-vcenter" centered>
+                <Modal.Header id="ubuntu-opencv-modal-header" closeButton>
+                    <Modal.Title>OpenCV Edge Detection</Modal.Title>
+                </Modal.Header>
+                <Modal.Body id="ubuntu-opencv-modal-body">
+                    <p>This image of charizard was created by applying the <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer"><strong>OpenCV</strong></a> <a href="https://docs.opencv.org/3.4/da/d22/tutorial_py_canny.html" target="_blank" rel="noopener noreferrer"><strong>canny edge detection algorithm</strong></a> to a colored <a href="https://static.wikia.nocookie.net/iso33private/images/9/95/Charizard.png" target="_blank" rel="noopener noreferrer"><strong>Charizard image</strong></a>, followed by a <a href="https://docs.opencv.org/4.5.2/d9/d61/tutorial_py_morphological_ops.html" target="_blank" rel="noopener noreferrer"><strong>morphological transformation.</strong></a></p>
+                    <div style={{height: '250px', overflowY: 'scroll', fontFamily: 'monospace'}}>
+                        <CodeBlock
+                            text={opencvCode}
+                            language='python'
+                            theme={hybrid}
+                            showLineNumbers={true}
+                        />
+                    </div><br />
+                    <div id='ubuntu-charizard-transformation-container'>
+                        <img id="ubuntu-charizard-transformation-img" alt="Ubuntu Charizard Before" src={ColoredCharizardImage} />
+                        <img id="ubuntu-charizard-transformation-img" alt="Ubuntu Charizard After" src={EvolvedCharizardImage} />
+                    </div>
+                </Modal.Body>
+            </Modal>
         </div>
     );
 }

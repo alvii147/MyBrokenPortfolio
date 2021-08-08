@@ -35,7 +35,7 @@ const data = [
         interval: 'Sept 2020 - Present',
         description: [
             'Expanded <span class="experience-strong">Python</span> multiparty-computation library, <span class="experience-strong">MP-SPDZ,</span> to support <span class="experience-strong">Convolutional Neural Networks,</span> including <span class="experience-strong">SqueezeNet</span>, <span class="experience-strong">ResNet</span> and <span class="experience-strong">DenseNet</span> models',
-            'Composed comprehensive tutorial based on Matrix Profile research paper for Python time series analysis library, <span class="experience-strong">STUMPY</span>',
+            'Composed <a href="https://stumpy.readthedocs.io/en/latest/Tutorial_Annotation_Vectors.html" target="_blank" rel="noopener noreferrer" class="experience-link">comprehensive tutorial</a> based on Matrix Profile research paper for Python time series analysis library, <span class="experience-strong">STUMPY</span>',
             'Implemented <span class="experience-strong">k-nearest-neighbors</span> algorithm in STUMPY using <span class="experience-strong">NumPy</span> for time series motifs',
         ],
     },

@@ -206,11 +206,17 @@
 
 /* charizard image column within ubuntu section */
 #ubuntu-charizard-column {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 20pt;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
     margin-left: 10px;
+    border-radius: 500px;
+    cursor: pointer;
 }
 
 /* hide charizard in small screens */
@@ -226,6 +232,38 @@
     height : auto;
     max-height: 90%;
     max-width: 90%;
+    border-radius: 500px;
+    transition: 0.3s;
+}
+
+#ubuntu-charizard-img-text {
+    display: none;
+    position: absolute;
+    top: 45%;
+}
+
+#ubuntu-charizard-column:hover > #ubuntu-charizard-img {
+    box-shadow: 0 0 30px white;
+    webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+#ubuntu-charizard-column:hover > #ubuntu-charizard-img-text {
+    display: block;
+}
+
+#ubuntu-opencv-modal {
+    width: 800px;
+}
+
+#ubuntu-charizard-transformation-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#ubuntu-charizard-transformation-img {
+    width: 200px;
 }
 
 #ubuntu-next-page-container-container {
