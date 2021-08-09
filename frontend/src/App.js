@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import './App.css';
+
 import Ubuntu from './components/Ubuntu/Ubuntu';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
@@ -30,7 +31,8 @@ function App() {
       </Ubuntu>
       <About
         ref={aboutRef}
-        scrollToProjects={() => scroller(projectsRef)}>
+        scrollToProjects={() => scroller(projectsRef)}
+        scrollToContact={() => scroller(contactRef)}>
       </About>
       <Projects
         ref={projectsRef}

@@ -213,7 +213,7 @@ function Projects(props, ref) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={(e) => {e.preventDefault(); window.open('https://google.com', '_blank');}}>
+                                <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={props.scrollToContact}>
                                     <div className="about-sidebar-component">
                                         <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
                                             <Gmail color={UIStyles.gmailIconColor} size={17} />

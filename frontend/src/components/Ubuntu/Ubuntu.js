@@ -45,12 +45,12 @@ const opencvCode = "import cv2\n" +
 "# save PIL image to PNG\n" +
 "img.save('evolved_charizard.png')"
 
-function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperience, scrollToEndorsements}) {
+function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperience, scrollToEndorsements, scrollToContact}) {
     const [showOpencvModal, setShowOpencvModal] = useState(false);
     const handleShowOpencvModal = () => setShowOpencvModal(true);
     const handleHideOpencvModal = () => setShowOpencvModal(false);
     
-    const sections = ['about', 'projects', 'skills', 'experience', 'endorsements'];
+    const sections = ['about', 'projects', 'skills', 'experience', 'endorsements', 'contact'];
 
     const [terminalContent, setTerminalContent] = useState([]);
 
@@ -87,6 +87,9 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
             }
             else if (event.target.value === 'cd endorsements' || event.target.value === 'cd endorsements/') {
                 scrollToEndorsements();
+            }
+            else if (event.target.value === 'cd contact' || event.target.value === 'cd contact/') {
+                scrollToContact();
             }
             else if (event.target.value === 'ls') {
                 sections.forEach((item, index) => {
