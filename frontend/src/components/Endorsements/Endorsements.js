@@ -205,7 +205,7 @@ function Endorsements(props, ref) {
                                     </div>
                                     <div className="endorsements-nlp-container">
                                         <div className="endorsements-nlp-text-container">Polarity:</div>
-                                        <ProgressBar variant="success" animated now={endorsement.polarity * 100} style={{width: '70px', height: '10px'}}/>
+                                        <ProgressBar variant="success" animated now={(endorsement.polarity * 50) + 50} style={{width: '70px', height: '10px'}}/>
                                         <div className="endorsements-nlp-text-container">Subjectivity:</div>
                                         <ProgressBar variant="primary" animated now={endorsement.subjectivity * 100} style={{width: '70px', height: '10px'}}/>
                                         <div className="endorsements-nlp-help-container">
