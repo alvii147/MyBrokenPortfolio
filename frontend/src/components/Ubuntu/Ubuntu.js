@@ -6,7 +6,6 @@ import Modal from 'react-bootstrap/Modal';
 
 import { Typewriter } from 'react-simple-typewriter';
 
-import CharizardImage from '../../images/Ubuntu/ubuntu_charizard.png';
 import ColoredCharizardImage from '../../images/Ubuntu/charizard.png';
 import EvolvedCharizardImage from '../../images/Ubuntu/evolved_charizard.png';
 import UbuntuLogo from '../../images/ubuntu_logo.png';
@@ -284,7 +283,7 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                     </div>
                 </div>
                 <div id="ubuntu-charizard-column" onClick={handleShowOpencvModal}>
-                    <img id="ubuntu-charizard-img" alt="Ubuntu Charizard" src={CharizardImage} />
+                    <img id="ubuntu-charizard-img" alt="Ubuntu Charizard" src={EvolvedCharizardImage} />
                     <div id="ubuntu-charizard-img-text">Learn how I created this image</div>
                 </div>
             </div>
@@ -301,7 +300,7 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                     <Modal.Title>OpenCV Edge Detection</Modal.Title>
                 </Modal.Header>
                 <Modal.Body id="ubuntu-opencv-modal-body">
-                    <p>This image of charizard was created by applying the <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer"><strong>OpenCV</strong></a> <a href="https://docs.opencv.org/3.4/da/d22/tutorial_py_canny.html" target="_blank" rel="noopener noreferrer"><strong>canny edge detection algorithm</strong></a> to a colored <a href="https://static.wikia.nocookie.net/iso33private/images/9/95/Charizard.png" target="_blank" rel="noopener noreferrer"><strong>Charizard image</strong></a>, followed by a <a href="https://docs.opencv.org/4.5.2/d9/d61/tutorial_py_morphological_ops.html" target="_blank" rel="noopener noreferrer"><strong>morphological transformation.</strong></a></p>
+                    <p>This image of Charizard was created using <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer"><strong>OpenCV</strong></a> by applying <a href="https://docs.opencv.org/3.4/da/d22/tutorial_py_canny.html" target="_blank" rel="noopener noreferrer"><strong>canny edge detection algorithm</strong></a> to a colored <a href="https://static.wikia.nocookie.net/iso33private/images/9/95/Charizard.png" target="_blank" rel="noopener noreferrer"><strong>Charizard image</strong></a>, followed by a <a href="https://docs.opencv.org/4.5.2/d9/d61/tutorial_py_morphological_ops.html" target="_blank" rel="noopener noreferrer"><strong>morphological transformation.</strong></a></p>
                     <div style={{height: '250px', overflowY: 'scroll', fontFamily: 'monospace'}}>
                         <CodeBlock
                             text={opencvCode}
