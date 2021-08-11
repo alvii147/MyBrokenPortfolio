@@ -1,6 +1,6 @@
 # My Broken Portfolio
 
-<p align="center"><img src="frontend/src/images/Charizardlogo.png" /></p>
+<p align="center"><img src="frontend/src/images/charizardlogo.png" /></p>
 
 This repository contains my portfolio website, it's design inspired by a Ubuntu theme. It showcases my projects, experiences and skills, as well as accepts endorsements from visitors, and more. Check it out [here!](https://zahin-zaman.vercel.app/)
 
