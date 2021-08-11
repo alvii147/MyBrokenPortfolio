@@ -20,6 +20,13 @@
     font-size: 50pt;
 }
 
+/* typewriter font is smaller in small screens */
+@media only screen and (max-width: 767px) {
+    #experience-heading-styles {
+        font-size: 35pt;
+    }
+}
+
 #experience-main-block {
     flex: 1;
     display: flex;
@@ -64,6 +71,13 @@
     background-position: center center;
 }
 
+/* typewriter font is smaller in small screens */
+@media only screen and (max-width: 767px) {
+    .experience-thumbnail-container {
+        display: none;
+    }
+}
+
 .experience-thumbnail-img {
     width: 50px;
     border-radius: 15px;
@@ -83,13 +97,14 @@
 }
 
 .experience-link {
-    text-decoration: none;
-    color: rgb(221, 180, 45);
+    text-decoration: underline;
+    color: rgb(169, 140, 207);
     transition: 0.2s;
 }
 .experience-link:hover {
+    text-decoration: none;
     opacity: 0.8;
-    color: rgb(221, 180, 45);
+    color: rgb(169, 140, 207);
 }
 .experience-strong {
     font-weight: bold;
@@ -106,7 +121,7 @@
 }
 @media only screen and (max-width: 767px) {
     .experience-card {
-        width: 300px;
+        width: 400px;
     }
 }
 @keyframes experience-card-glow {
@@ -201,7 +216,7 @@
 }
 @media only screen and (max-width: 767px) {
     .experience-card-text {
-        display: none;
+        font-size: 10pt;
     }
 }
 

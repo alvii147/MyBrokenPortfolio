@@ -87,8 +87,8 @@ function Experience(props, ref) {
                                 return (
                                     <Step key={index}>
                                         <StepLabel StepIconComponent={TimelineUbuntuIcon} StepIconProps={{
-                                            setter: () => {setActiveExp(index)}
-                                        }}></StepLabel>
+                                            setter: () => {setActiveExp(index)}}}>
+                                        </StepLabel>
                                         <div className="experience-thumbnail-container">
                                             <img alt="Company Thumbnail" src={exp.thumbnail} className="experience-thumbnail-img" onClick={() => setActiveExp(index)} />
                                         </div>

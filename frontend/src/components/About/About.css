@@ -20,6 +20,13 @@
     font-size: 50pt;
 }
 
+/* typewriter font is smaller in small screens */
+@media only screen and (max-width: 767px) {
+    #about-heading-styles {
+        font-size: 35pt;
+    }
+}
+
 #about-main-block {
     flex: 10;
     display: flex;

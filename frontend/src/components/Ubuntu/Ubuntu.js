@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './Ubuntu.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -49,10 +49,33 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
     const [showOpencvModal, setShowOpencvModal] = useState(false);
     const handleShowOpencvModal = () => setShowOpencvModal(true);
     const handleHideOpencvModal = () => setShowOpencvModal(false);
+
+    const terminalTextArea = useRef(null);
     
     const sections = ['about', 'projects', 'skills', 'experience', 'endorsements', 'contact'];
 
-    const [terminalContent, setTerminalContent] = useState([]);
+    const [terminalContent, setTerminalContent] = useState([
+        {
+            class: 'ubuntu-terminal-text-default',
+            text: 'Try running ',
+            newline: false,
+        },
+        {
+            class: 'ubuntu-terminal-text-blue',
+            text: '"ls" ',
+            newline: false,
+        },
+        {
+            class: 'ubuntu-terminal-text-default',
+            text: 'or ',
+            newline: false
+        },
+        {
+            class: 'ubuntu-terminal-text-blue',
+            text: '"cd projects/"',
+            newline: true,
+        },
+    ]);
 
     const handleTerminalTabs = (event) => {
         if (event.key === 'Tab') {
@@ -107,6 +130,33 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                     newline: true,
                 });
             }
+            else if (event.target.value === 'help') {
+                output.push({
+                    class: 'ubuntu-terminal-text-default',
+                    text: 'Try running ',
+                    newline: false,
+                });
+                output.push({
+                    class: 'ubuntu-terminal-text-blue',
+                    text: '"ls" ',
+                    newline: false,
+                });
+                output.push({
+                    class: 'ubuntu-terminal-text-default',
+                    text: 'or ',
+                    newline: false
+                });
+                output.push({
+                    class: 'ubuntu-terminal-text-blue',
+                    text: '"cd projects/"',
+                    newline: true,
+                });
+            }
+            else if (event.target.value === 'clear') {
+                setTerminalContent([]);
+                event.target.value = '';
+                return;
+            }
             else {
                 output.push({
                     class: 'ubuntu-terminal-text-red',
@@ -120,7 +170,17 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                 });
                 output.push({
                     class: 'ubuntu-terminal-text-blue',
-                    text: '`cd projects`',
+                    text: '"ls" ',
+                    newline: false,
+                });
+                output.push({
+                    class: 'ubuntu-terminal-text-default',
+                    text: 'or ',
+                    newline: false
+                });
+                output.push({
+                    class: 'ubuntu-terminal-text-blue',
+                    text: '"cd projects/"',
                     newline: true,
                 });
             }
@@ -155,6 +215,7 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                 ...output,
             ]);
             event.target.value = '';
+            terminalTextArea.current.scrollTop = terminalTextArea.current.scrollHeight;
         }
     };
 
@@ -162,10 +223,10 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
         <div id="ubuntu-main-section-container" className="section-container">
             <div id="ubuntu-main-container">
                 <div id="ubuntu-terminal-column">
-                    <div id="ubuntu-typerwriter-container">
+                    <div id="ubuntu-typewriter-container">
                         <span id="ubuntu-typewriter-styles">
                             <Typewriter
-                                words={['Greetings, Zahin here!', 'I\'m a software developer', 'Let me show you around...', 'Try running `cd projects/`']}
+                                words={['Greetings, Zahin here!', 'I\'m a software developer', 'Let me show you around...', 'Try running "cd projects/"']}
                                 loop={0}
                                 cursor
                                 cursorStyle='|'
@@ -201,7 +262,7 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                             Terminal&nbsp;&nbsp;
                             Help
                         </div>
-                        <div id="ubuntu-terminal-content">
+                        <div ref={terminalTextArea} id="ubuntu-terminal-content">
                             {terminalContent.map(content => {
                                 if (content.newline) {
                                     return (
@@ -218,7 +279,7 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                             <span className="ubuntu-terminal-text-default">:</span>
                             <span className="ubuntu-terminal-text-blue">~&nbsp;</span>
                             <span className="ubuntu-terminal-text-default">$&nbsp;</span>
-                            <input id="ubuntu-terminal-command-line-textarea" contentEditable="true" onKeyPress={handleTerminalCommand} onKeyDown={handleTerminalTabs}></input>
+                            <input id="ubuntu-terminal-command-line-textarea" spellCheck="false" contentEditable="true" onKeyPress={handleTerminalCommand} onKeyDown={handleTerminalTabs}></input>
                         </div>
                     </div>
                 </div>

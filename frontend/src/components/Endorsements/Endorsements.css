@@ -20,6 +20,13 @@
     font-size: 50pt;
 }
 
+/* typewriter font is smaller in small screens */
+@media only screen and (max-width: 767px) {
+    #endorsements-heading-styles {
+        font-size: 35pt;
+    }
+}
+
 .endorsements-main-card-container {
     display: flex;
     justify-content: center;
@@ -106,10 +113,20 @@
     align-items: center;
     padding-top: 8px;
 }
+@media only screen and (max-width: 767px) {
+    .endorsements-nlp-container {
+        justify-content: space-evenly;
+    }
+}
 
 .endorsements-nlp-text-container {
     padding-left: 15px;
     padding-right: 5px;
+}
+@media only screen and (max-width: 767px) {
+    .endorsements-nlp-text-container {
+        display: none;
+    }
 }
 
 .endorsements-nlp-help-container {

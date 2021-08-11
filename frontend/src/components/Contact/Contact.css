@@ -20,6 +20,13 @@
     font-size: 50pt;
 }
 
+/* typewriter font is smaller in small screens */
+@media only screen and (max-width: 767px) {
+    #contact-heading-styles {
+        font-size: 35pt;
+    }
+}
+
 #contact-main-block {
     flex: 1;
     display: flex;

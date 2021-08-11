@@ -20,6 +20,13 @@
     font-size: 50pt;
 }
 
+/* typewriter font is smaller in small screens */
+@media only screen and (max-width: 767px) {
+    #skills-heading-styles {
+        font-size: 35pt;
+    }
+}
+
 #skills-main-block {
     display: flex;
     justify-content: space-evenly;
@@ -43,6 +50,11 @@
 
 .skills-card-header {
     text-align: center;
+}
+@media only screen and (max-width: 767px) {
+    .skills-card-header {
+        font-size: 12pt;
+    }
 }
 
 .skills-card-body {
@@ -76,7 +88,6 @@
 .skills-list-item {
     background-color: transparent;
 }
-
 @media only screen and (max-width: 767px) {
     .skills-card-text-container {
         display: none;
@@ -90,6 +101,11 @@
     height: 13px;
     border: 1px solid rgb(88, 88, 88);
     border-radius: 8px;
+}
+@media only screen and (max-width: 767px) {
+    .progress-bar-container {
+        display: none;
+    }
 }
 
 .progress-bar {
