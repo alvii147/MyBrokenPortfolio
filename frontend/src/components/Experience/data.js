@@ -21,10 +21,10 @@ const data = [
         thumbnail: NokiaLogoThumbnail,
         interval: 'May 2021 - Present',
         description: [
-            'Developed & managed account authentication security, content management system and lab request automation for <a href="https://network.developer.nokia.com/" target="_blank" rel="noopener noreferrer" class="experience-link">Nokia Network Developer Portal</a> on <span class="experience-strong">Django</span> server</a>',
-            'Secured backend server using <span class="experience-strong">Django REST framework</span> API authentication, cross site scripting protection and honeypot setups',
-            'Installed unit tests in <span class="experience-strong">Python</span> using <span class="experience-strong">unittest</span> module for Django forms, models and REST API enpoints',
-            'Designed responsive frontend in <span class="experience-strong">Jinja2</span> templates using <span class="experience-strong">jQuery</span> and <span class="experience-strong">Bootstrap</span>',
+            'Developed & managed account authentication security, community article forums and voucher redemption system for <a href="https://network.developer.nokia.com/" target="_blank" rel="noopener noreferrer" class="experience-link">Nokia Network Developer Portal</a> on <span class="experience-strong">Django</span> server</a> with a <span class="experience-strong">MySQL</span> database',
+            'Secured backend using <span class="experience-strong">Django REST framework</span> API authentication, cross site scripting protection and honeypot setups',
+            'Improved test coverage by <span class="experience-strong">6%</span> using Python <span class="experience-strong">unittest</span> module and installed <span class="experience-strong">Gitlab CI</span> pipeline for automated testing of forms, models, and REST API endpoints',
+            'Designed responsive frontend in <span class="experience-strong">Jinja2</span> templates by utilizing <span class="experience-strong">jQuery</span> and <span class="experience-strong">Bootstrap</span>',
         ],
     },
     {

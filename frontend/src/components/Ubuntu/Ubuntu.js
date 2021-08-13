@@ -93,6 +93,7 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
     const handleTerminalCommand = (event) => {
         if (event.key === 'Enter') {
             event.preventDefault();
+            terminalTextArea.current.scrollTop = terminalTextArea.current.scrollHeight;
             var output = [];
 
             if (event.target.value === 'cd about' || event.target.value === 'cd about/') {
@@ -120,7 +121,7 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                         text: item + '/ ',
                         newline: index === sections.length - 1,
                     })
-                })
+                });
             }
             else if (event.target.value.startsWith('rm -rf')) {
                 output.push({
@@ -214,7 +215,6 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                 ...output,
             ]);
             event.target.value = '';
-            terminalTextArea.current.scrollTop = terminalTextArea.current.scrollHeight;
         }
     };
 
@@ -283,7 +283,9 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
                     </div>
                 </div>
                 <div id="ubuntu-charizard-column" onClick={handleShowOpencvModal}>
-                    <img id="ubuntu-charizard-img" alt="Ubuntu Charizard" src={EvolvedCharizardImage} />
+                    <div id="ubuntu-charizard-img">
+                        <img id="ubuntu-evolved-charizard-img" alt="Ubuntu Charizard" src={EvolvedCharizardImage} />
+                    </div>
                     <div id="ubuntu-charizard-img-text">Learn how I created this image</div>
                 </div>
             </div>

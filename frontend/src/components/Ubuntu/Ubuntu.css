@@ -231,10 +231,15 @@
 #ubuntu-charizard-img {
     width: auto;
     height : auto;
-    max-height: 90%;
-    max-width: 90%;
     border-radius: 500px;
     transition: 0.3s;
+}
+
+#ubuntu-evolved-charizard-img {
+    width: auto;
+    height : auto;
+    max-height: 90%;
+    max-width: 90%;
 }
 
 #ubuntu-charizard-img-text {
