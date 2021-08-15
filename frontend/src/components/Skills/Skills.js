@@ -7,9 +7,6 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 import { Typewriter } from 'react-simple-typewriter';
 
-import UbuntuLogo from '../../images/ubuntu_logo.png';
-import DownwardArrows from '../../images/downward_arrows.png';
-
 import data from './data';
 
 function Skills(props, ref) {
@@ -129,13 +126,6 @@ function Skills(props, ref) {
                                 </ListGroup>
                             </Card.Body>
                         </Card>
-                    </div>
-                </div>
-                <div id="skills-next-page-container-container">
-                    <div id="skills-next-page-container" onClick={props.scrollToExperience}>
-                        <img alt="Skills Section Ubuntu Logo" src={UbuntuLogo} style={{animation: 'skills-spin 3s linear infinite'}} width={30}></img>
-                        &nbsp;&nbsp;Discover my experiences&nbsp;&nbsp;
-                        <img alt="Skills Section Downward Arrows" src={DownwardArrows} width={10}></img>
                     </div>
                 </div>
             </div>

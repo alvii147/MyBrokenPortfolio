@@ -15,7 +15,6 @@ import StepConnector from '@material-ui/core/StepConnector';
 import { Typewriter } from 'react-simple-typewriter';
 
 import UbuntuLogo from '../../images/ubuntu_logo.png';
-import DownwardArrows from '../../images/downward_arrows.png';
 
 import data from './data';
 
@@ -130,13 +129,6 @@ function Experience(props, ref) {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
-                    </div>
-                </div>
-                <div id="experience-next-page-container-container">
-                    <div id="experience-next-page-container" onClick={props.scrollToEndorsements}>
-                        <img alt="Experience Section Ubuntu Logo" src={UbuntuLogo} style={{animation: 'experience-spin 3s linear infinite'}} width={30}></img>
-                        &nbsp;&nbsp;Endorse me&nbsp;&nbsp;
-                        <img alt="Experience Section Downward Arrows" src={DownwardArrows} width={10}></img>
                     </div>
                 </div>
             </div>

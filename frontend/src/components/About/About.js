@@ -25,8 +25,6 @@ import data from './data';
 
 import AvatarRound from '../../images/About/avatar_round.png';
 import Waterloo from '../../images/About/waterloo.png';
-import UbuntuLogo from '../../images/ubuntu_logo.png';
-import DownwardArrows from '../../images/downward_arrows.png';
 
 function Projects(props, ref) {
     const [showAvatar, setShowAvatar] = useState(false);
@@ -278,13 +276,6 @@ function Projects(props, ref) {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="about-next-page-container-container">
-                    <div id="about-next-page-container" onClick={props.scrollToProjects}>
-                        <img alt="About Section Ubuntu Logo" src={UbuntuLogo} style={{animation: 'about-spin 3s linear infinite'}} width={30}></img>
-                        &nbsp;&nbsp;Check out my projects&nbsp;&nbsp;
-                        <img alt="About Section Downward Arrows" src={DownwardArrows} width={10}></img>
                     </div>
                 </div>
             </div>

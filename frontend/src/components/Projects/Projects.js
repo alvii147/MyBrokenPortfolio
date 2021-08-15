@@ -13,9 +13,6 @@ import Carousel from 'react-material-ui-carousel';
 import LanguageOutlinedIcon from '@material-ui/icons/LanguageOutlined';
 import data from './data';
 
-import UbuntuLogo from '../../images/ubuntu_logo.png';
-import DownwardArrows from '../../images/downward_arrows.png';
-
 function shuffle(arr) {
     var j, x, i;
     for (i = arr.length - 1; i > 0; i--) {
@@ -117,11 +114,6 @@ function Projects(props, ref) {
                         );
                     })}
                 </Carousel>
-                <div id="projects-next-page-container" onClick={props.scrollToSkills}>
-                    <img alt="Projects Section Ubuntu Logo" src={UbuntuLogo} style={{animation: 'projects-spin 3s linear infinite'}} width={30}></img>
-                    &nbsp;&nbsp;Explore my skills&nbsp;&nbsp;
-                    <img alt="Projects Section Downward Arrows" src={DownwardArrows} width={10}></img>
-                </div>
             </div>
         </div>
     );

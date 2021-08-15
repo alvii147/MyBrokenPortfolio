@@ -43,7 +43,7 @@
     padding-right: 20px;
     border: 1px solid rgb(50, 50, 50);
     border-radius: 10px;
-    background-image: linear-gradient(to right, rgb(170, 190, 221), rgb(175, 212, 207));
+    background-image: linear-gradient(to right, rgb(234, 219, 248),rgb(206, 241, 235));
 }
 @media only screen and (max-width: 767px) {
     #contact-main-form-container {

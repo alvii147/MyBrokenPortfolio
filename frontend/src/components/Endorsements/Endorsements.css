@@ -27,14 +27,23 @@
     }
 }
 
-.endorsements-main-card-container {
+#endorsements-main-block {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.endorsements-main-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
 .endorsements-main-card {
-    width: 60%;
+    width: 1000px;
     color: rgb(219, 193, 193);
     background-image: linear-gradient(to right, rgb(2, 6, 24), rgb(32, 13, 4));
     padding: 20px;

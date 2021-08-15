@@ -20,9 +20,6 @@ import Carousel from 'react-material-ui-carousel';
 
 import { Typewriter } from 'react-simple-typewriter';
 
-import UbuntuLogo from '../../images/ubuntu_logo.png';
-import DownwardArrows from '../../images/downward_arrows.png';
-
 const { REACT_APP_API_KEY, REACT_APP_API_BASE, REACT_APP_ENDORSEMENTS_GET, REACT_APP_ENDORSEMENTS_POST } = process.env;
 const axios_config = {
     headers: {
@@ -181,48 +178,43 @@ function Endorsements(props, ref) {
                         />
                     </span>
                 </div>
-                <Carousel animation="fade" interval={8000} timeout={700} navButtonsAlwaysVisible="true">
-                    {endorsementsData.map(endorsement => {
-                        return (
-                            <div className="endorsements-main-card-container">
-                                <div className="endorsements-main-card">
-                                    <div className="endorsements-title-container">
-                                        <div className="endorsements-title">
-                                            <div className="endorsements-avatar-container">
-                                                <img alt="avatar" src={`https://avatars.dicebear.com/api/bottts/${endorsement.id}.svg`} className="endorsements-avatar"/>
+                <div id="endorsements-main-block">
+                    <Carousel animation="fade" interval={8000} timeout={700} navButtonsAlwaysVisible="true">
+                        {endorsementsData.map(endorsement => {
+                            return (
+                                <div className="endorsements-main-card-container">
+                                    <div className="endorsements-main-card">
+                                        <div className="endorsements-title-container">
+                                            <div className="endorsements-title">
+                                                <div className="endorsements-avatar-container">
+                                                    <img alt="avatar" src={`https://avatars.dicebear.com/api/bottts/${endorsement.id}.svg`} className="endorsements-avatar"/>
+                                                </div>
+                                                <div className="endorsements-name-container">
+                                                    <h5>{endorsement.first_name} {endorsement.last_name}</h5>
+                                                    <h6>{endorsement.role} 	&bull; {endorsement.relationship}</h6>
+                                                </div>
                                             </div>
-                                            <div className="endorsements-name-container">
-                                                <h5>{endorsement.first_name} {endorsement.last_name}</h5>
-                                                <h6>{endorsement.role} 	&bull; {endorsement.relationship}</h6>
+                                            <div className="endorsements-button-container">
+                                                <Button variant="outline-warning" onClick={handleShowModalForm}>Endorse Me</Button>
                                             </div>
                                         </div>
-                                        <div className="endorsements-button-container">
-                                            <Button variant="outline-warning" onClick={handleShowModalForm}>Endorse Me</Button>
+                                        <div className="endorsements-msg-container">
+                                            <i><h1 dangerouslySetInnerHTML={{__html: '"' + endorsement.message + '"'}} className="display-6 endorsements-msg"></h1></i>
                                         </div>
-                                    </div>
-                                    <div className="endorsements-msg-container">
-                                        <i><h1 dangerouslySetInnerHTML={{__html: '"' + endorsement.message + '"'}} className="display-6 endorsements-msg"></h1></i>
-                                    </div>
-                                    <div className="endorsements-nlp-container">
-                                        <div className="endorsements-nlp-text-container">Polarity:</div>
-                                        <ProgressBar variant="success" animated now={(endorsement.polarity * 50) + 50} style={{width: '70px', height: '10px'}}/>
-                                        <div className="endorsements-nlp-text-container">Subjectivity:</div>
-                                        <ProgressBar variant="primary" animated now={endorsement.subjectivity * 100} style={{width: '70px', height: '10px'}}/>
-                                        <div className="endorsements-nlp-help-container">
-                                            <HelpIcon className="endorsements-nlp-help" color="secondary" onClick={handleShowNLPHelp} />
+                                        <div className="endorsements-nlp-container">
+                                            <div className="endorsements-nlp-text-container">Polarity:</div>
+                                            <ProgressBar variant="success" animated now={(endorsement.polarity * 50) + 50} style={{width: '70px', height: '10px'}}/>
+                                            <div className="endorsements-nlp-text-container">Subjectivity:</div>
+                                            <ProgressBar variant="primary" animated now={endorsement.subjectivity * 100} style={{width: '70px', height: '10px'}}/>
+                                            <div className="endorsements-nlp-help-container">
+                                                <HelpIcon className="endorsements-nlp-help" color="secondary" onClick={handleShowNLPHelp} />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        );
-                    })}
-                </Carousel>
-                <div id="endorsements-next-page-container-container">
-                    <div id="endorsements-next-page-container" onClick={props.scrollToContact}>
-                        <img alt="Endorsements Section Ubuntu Logo" src={UbuntuLogo} style={{animation: 'endorsements-spin 3s linear infinite'}} width={30}></img>
-                        &nbsp;&nbsp;Contact me&nbsp;&nbsp;
-                        <img alt="Endorsements Section Downward Arrows" src={DownwardArrows} width={10}></img>
-                    </div>
+                            );
+                        })}
+                    </Carousel>
                 </div>
             </div>
 
