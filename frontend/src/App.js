@@ -31,24 +31,19 @@ function App() {
       </Ubuntu>
       <About
         ref={aboutRef}
-        scrollToProjects={() => scroller(projectsRef)}
-        scrollToContact={() => scroller(contactRef)}>
+        scrollToProjects={() => scroller(projectsRef)}>
       </About>
       <Projects
-        ref={projectsRef}
-        scrollToSkills={() => scroller(skillsRef)}>
+        ref={projectsRef}>
       </Projects>
       <Skills
-        ref={skillsRef}
-        scrollToExperience={() => scroller(experienceRef)}>
+        ref={skillsRef}>
       </Skills>
       <Experience
-        ref={experienceRef}
-        scrollToEndorsements={() => scroller(endorsementsRef)}>
+        ref={experienceRef}>
       </Experience>
       <Endorsements
-        ref={endorsementsRef}
-        scrollToContact={() => scroller(contactRef)}>
+        ref={endorsementsRef}>
       </Endorsements>
       <Contact
         ref={contactRef}>
