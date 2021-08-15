@@ -12,6 +12,7 @@ import BarChartOutlinedIcon from '@material-ui/icons/BarChartOutlined';
 import SchoolOutlinedIcon from '@material-ui/icons/SchoolOutlined';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
 
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -61,6 +62,7 @@ function Projects(props, ref) {
         githubIconColor: '#FFFFFF',
         devpostIconColor: '#0083B3',
         gmailIconColor: '#EA4335',
+        resumeIconColor: '#99E6E6',
     }
 
     const lightModeStyles = {
@@ -92,6 +94,7 @@ function Projects(props, ref) {
         githubIconColor: '#000000',
         devpostIconColor: '#003E54',
         gmailIconColor: '#EA4335',
+        resumeIconColor: '#009999',
     }
 
     const [UIStyles, setUIStyles] = useState(darkModeStyles);
@@ -147,7 +150,7 @@ function Projects(props, ref) {
                     <div id="about-contents-container" style={UIStyles.mainContainerStyle}>
                         <div id="about-sidebar" style={UIStyles.sidebarStyle}>
                             <div id="about-sidebar-education">
-                                <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={(e) => {e.preventDefault(); window.open('https://uwaterloo.ca/', '_blank');}}>
+                                <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={(e) => {e.preventDefault();}}>
                                     <div className="about-sidebar-component">
                                         <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
                                             <img alt="Waterloo Icon" src={Waterloo} style={{width: '17px'}} />
@@ -220,6 +223,16 @@ function Projects(props, ref) {
                                         </div>
                                         <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
                                             Email
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={(e) => {e.preventDefault(); window.open('https://github.com/alvii147/Resume/raw/master/ZahinZaman.pdf', '_blank');}}>
+                                    <div className="about-sidebar-component">
+                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
+                                            <AccountBoxIcon style={{color: UIStyles.resumeIconColor, fontSize: 23}} />
+                                        </div>
+                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
+                                            Resume
                                         </div>
                                     </div>
                                 </div>

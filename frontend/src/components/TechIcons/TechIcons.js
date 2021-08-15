@@ -25,6 +25,7 @@ import {
     // Web service platforms
     Googlecloud,
     Googlemaps,
+    Heroku,
     Microsoftazure,
 
     // Other
@@ -71,7 +72,7 @@ export {
 
 function FlaskIcon() {
     return (
-        <Flask color="#000000" style={{backgroundColor: '#FFFFFF', borderRadius: '5px', padding: '2px'}}></Flask>
+        <Flask color="#000000"></Flask>
     );
 }
 
@@ -235,6 +236,16 @@ function GooglemapsIcon() {
 
 export {
     GooglemapsIcon,
+};
+
+function HerokuIcon() {
+    return (
+        <Heroku color="#430098"></Heroku>
+    );
+}
+
+export {
+    HerokuIcon,
 };
 
 function MicrosoftazureIcon() {

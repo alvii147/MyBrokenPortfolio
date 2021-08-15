@@ -147,49 +147,55 @@
     justify-content: flex-end;
 }
 
-.projects-footer-links-spacing {
-    padding-right: 5px;
-}
-
 .projects-footer-link {
     text-decoration: none;
 }
 
-.projects-footer-link-icon {
-    padding-left: 5px;
+.projects-github-footer-link-icon {
+    color: rgb(0, 0, 0);
 }
 
 .projects-github-badge-container {
     display: flex;
     align-items: center;
-    color: white;
-    background-color: rgb(24, 23, 23);
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 15px;
+    background-color: transparent;
+    padding: 4px;
+    border-radius: 50px;
     transition: 0.3s;
 }
 .projects-github-badge-container:hover {
-    background-color: rgb(78, 75, 75);
     box-shadow: 0 0 10px white;
+}
+
+.projects-devpost-footer-link-icon {
+    color: rgb(0, 62, 84);
 }
 
 .projects-devpost-badge-container {
     display: flex;
     align-items: center;
-    color: white;
-    background-color: rgb(0, 62, 84);
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 15px;
+    background-color: transparent;
+    padding: 4px;
+    border-radius: 50px;
     transition: 0.3s;
 }
 .projects-devpost-badge-container:hover {
-    background-color: rgb(0, 94, 128);
+    box-shadow: 0 0 10px white;
+}
+
+.projects-website-footer-link-icon {
+    color: rgb(25, 144, 160);
+}
+
+.projects-website-badge-container {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 4px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.projects-website-badge-container:hover {
     box-shadow: 0 0 10px white;
 }
 

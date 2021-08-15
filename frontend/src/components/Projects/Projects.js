@@ -10,6 +10,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 import { Github, Devpost } from '@icons-pack/react-simple-icons';
 import Carousel from 'react-material-ui-carousel';
+import LanguageOutlinedIcon from '@material-ui/icons/LanguageOutlined';
 import data from './data';
 
 import UbuntuLogo from '../../images/ubuntu_logo.png';
@@ -43,7 +44,7 @@ function Projects(props, ref) {
                         />
                     </span>
                 </div>
-                <Carousel animation="slide" interval={8000} timeout={700} navButtonsAlwaysVisible="true">
+                <Carousel animation="slide" interval={8000} timeout={700} navButtonsAlwaysVisible="true" navButtonsProps={{style: {color: '#111111', backgroundImage: 'linear-gradient(to right, #B3D9FF, #8080FF)'}}}>
                     {data.map(prj => {
                         return (
                             <div className="projects-card-parent-container" href="">
@@ -87,7 +88,7 @@ function Projects(props, ref) {
                                                     <div className="projects-footer-links-spacing">
                                                         <a className="projects-footer-link" href={prj.github} target="_blank" rel="noopener noreferrer">
                                                             <div className="projects-github-badge-container">
-                                                                Github<Github className="projects-footer-link-icon" color='#FFFFFF' size={30} />
+                                                                <Github className="projects-github-footer-link-icon" size={30} />
                                                             </div>
                                                         </a>
                                                     </div>
@@ -95,7 +96,15 @@ function Projects(props, ref) {
                                                         {prj.devpost ?
                                                         <a className="projects-footer-link" href={prj.devpost} target="_blank" rel="noopener noreferrer">
                                                             <div className="projects-devpost-badge-container">
-                                                                Devpost<Devpost className="projects-footer-link-icon" color='#FFFFFF' size={30} />
+                                                                <Devpost className="projects-devpost-footer-link-icon" size={30} />
+                                                            </div>
+                                                        </a> : null}
+                                                    </div>
+                                                    <div className="projects-footer-links-spacing">
+                                                        {prj.website ?
+                                                        <a className="projects-footer-link" href={prj.website} target="_blank" rel="noopener noreferrer">
+                                                            <div className="projects-website-badge-container">
+                                                                <LanguageOutlinedIcon className="projects-website-footer-link-icon" style={{fontSize: 30}} />
                                                             </div>
                                                         </a> : null}
                                                     </div>

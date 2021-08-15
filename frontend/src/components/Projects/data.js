@@ -22,14 +22,16 @@ const data = [
         description: [
             'Utilized <strong>Python</strong> library <strong>SymPy</strong> for symbolic mathematics to compute Routh-Hurwitz Table',
             'Accomodated complex mathematical computations using named variables',
-            'Developed and deployed web application using <strong>Flask</strong> and <strong>Bootstrap</strong> templates',
+            'Developed <strong>Flask</strong> web application using <strong>Bootstrap</strong> templates and deployed as <strong>Heroku</strong> app',
         ],
         github: 'https://github.com/alvii147/RouthHurwitz',
+        website: 'https://routhhurwitz.herokuapp.com',
         milestones: [],
         technologies: [
             TechIcons.PythonIcon,
             TechIcons.SympyIcon,
             TechIcons.FlaskIcon,
+            TechIcons.HerokuIcon,
             TechIcons.BootstrapIcon,
         ]
     },
@@ -80,12 +82,13 @@ const data = [
         caption: 'Web platform that uses natural language processing to analyze lecture videos and generate learning flashcards',
         image: cramaiImage,
         description: [
-            'Utilized <strong>YouTube Transcript API</strong> to extract lecture video transcript and applied pre-trained <strong>RNN</strong> to add puncuation',
-            'Incorportated <strong>Python NLTK</strong> library and <strong>Google Cloud Language</strong> to summarize key points from lecture videos',
-            'Generated flashcards with questions and answers in a user-friendly frontend served by a <strong>Flask</strong> backend',
+            'Utilized <strong>YouTube Transcript API</strong> to extract lecture video transcript and applied pre-trained <strong>RNN</strong> to add punctuation',
+            'Incorporated <strong>Python NLTK</strong> library and <strong>Google Cloud Language</strong> to summarize key points from lecture videos',
+            'Generated flashcards with questions and answers in a user-friendly frontend served by a <strong>Flask</strong> backend hosted on <strong>Heroku</strong>',
         ],
         github: 'https://github.com/alvii147/cram.ai',
         devpost: 'https://devpost.com/software/cram-ai',
+        website: 'https://cram-ai.herokuapp.com',
         milestones: [
             ['Best Use of Google Cloud', 'WinterHacklympics'],
         ],
@@ -93,6 +96,7 @@ const data = [
             TechIcons.PythonIcon,
             TechIcons.FlaskIcon,
             TechIcons.GooglecloudIcon,
+            TechIcons.HerokuIcon,
             TechIcons.YoutubeIcon,
             TechIcons.BootstrapIcon,
         ],
@@ -143,7 +147,7 @@ const data = [
     },
     {
         title: 'Hachiko\'s Journal',
-        caption: 'AI-based digital therapeutic journal writing for mental health patients with interactive virtual assistant',
+        caption: 'AI-based digital therapeutic journal writing application for mental health patients with interactive virtual assistant',
         image: HachikosJournalImage,
         description: [
             'Developed desktop application with user-friendly frontend and interactive virtual assistant using <strong>PyQt5</strong>',
@@ -187,7 +191,7 @@ const data = [
         image: EduSourceImage,
         description: [
             'Constructed full-fledged <strong>Flask</strong> application in Python with HTML, CSS and Bootstrap',
-            'Established and managed foreign key relations between ORM objects using <strong>FlaskSQLAlchemy</strong> and <strong>SQLite3</strong>',
+            'Established and managed foreign key relations between ORM objects using <strong>Flask SQLAlchemy</strong> and <strong>SQLite3</strong>',
             'Employed <strong>Google Cloud Vision</strong> tool to implement scientific equation recognition from handwriting',
         ],
         github: 'https://github.com/alvii147/EduSource',
@@ -252,9 +256,10 @@ const data = [
         description: [
             'Trained and tested model using 4-layered <strong>neural network</strong> under <strong>Tensorflow</strong> and <strong>Keras</strong>',
             'Cleaned image dataset using customized <strong>sigmoid activation function</strong> to prevent overfitting',
-            'Developed and deployed canvas-based web application for demo using a <strong>Flask</strong> server',
+            'Developed and deployed canvas-based web application for demo using a <strong>Flask</strong> server on <strong>Heroku</strong>',
         ],
         github: 'https://github.com/alvii147/BanglaNotepad',
+        website: 'https://banglanotepad.herokuapp.com/',
         milestones: [],
         technologies: [
             TechIcons.PythonIcon,
@@ -262,6 +267,7 @@ const data = [
             TechIcons.TensorflowIcon,
             TechIcons.KerasIcon,
             TechIcons.FlaskIcon,
+            TechIcons.HerokuIcon,
         ]
     },
     {
