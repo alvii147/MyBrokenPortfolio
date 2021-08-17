@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Skills.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,9 +7,18 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 import { Typewriter } from 'react-simple-typewriter';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 import data from './data';
 
 function Skills(props, ref) {
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+        });
+    }, []);
+
     return (
         <div id="skills-main-container">
             <div ref={ref} id="skills-container" className="section-container">
@@ -28,7 +37,7 @@ function Skills(props, ref) {
                 </div>
                 <div id="skills-main-block">
                     <div className="skills-card-container">
-                        <Card className="skills-card">
+                        <Card data-aos="fade-up" className="skills-card">
                             <Card.Header as="h5" className="skills-card-header">Languages</Card.Header>
                             <Card.Body className="skills-card-body">
                                 <ListGroup variant="flush">
@@ -53,7 +62,7 @@ function Skills(props, ref) {
                         </Card>
                     </div>
                     <div className="skills-card-container">
-                        <Card className="skills-card">
+                        <Card data-aos="fade-down" data-aos-delay="300" className="skills-card">
                             <Card.Header as="h5" className="skills-card-header">Web/App Frameworks</Card.Header>
                             <Card.Body className="skills-card-body">
                                 <ListGroup variant="flush">
@@ -78,7 +87,7 @@ function Skills(props, ref) {
                         </Card>
                     </div>
                     <div className="skills-card-container">
-                        <Card className="skills-card">
+                        <Card data-aos="fade-up" data-aos-delay="600" className="skills-card">
                             <Card.Header as="h5" className="skills-card-header">Data Science</Card.Header>
                             <Card.Body className="skills-card-body">
                                 <ListGroup variant="flush">
@@ -103,7 +112,7 @@ function Skills(props, ref) {
                         </Card>
                     </div>
                     <div className="skills-card-container">
-                    <Card className="skills-card">
+                    <Card data-aos="fade-down" data-aos-delay="900" className="skills-card">
                             <Card.Header as="h5" className="skills-card-header">Soft Skills</Card.Header>
                             <Card.Body className="skills-card-body">
                                 <ListGroup variant="flush">

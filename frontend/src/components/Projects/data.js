@@ -2,14 +2,15 @@ import RouthHurwitzImage from '../../images/Projects/RouthHurwitz.png';
 import AltruistImage from '../../images/Projects/Altruist.png';
 import quickVaxImage from '../../images/Projects/quickVax.png';
 import cramaiImage from '../../images/Projects/cramai.gif';
-import pupilImage from '../../images/Projects/pupil.png'
+import pupilImage from '../../images/Projects/pupil.png';
+import MangoUIImage from '../../images/Projects/MangoUI.gif';
 import kkardImage from '../../images/Projects/kkard.png';
 import HachikosJournalImage from '../../images/Projects/HachikosJournal.gif';
 import DSLXAcademyImage from '../../images/Projects/DSLXAcademy.gif';
 import EduSourceImage from '../../images/Projects/EduSource.png';
 import GoodwillStudioImage from '../../images/Projects/GoodwillStudio.png';
-import BuildAboutImage from '../../images/Projects/BuildAbout.png'
-import BanglaNotepadImage from '../../images/Projects/BanglaNotepad.gif'
+import BuildAboutImage from '../../images/Projects/BuildAbout.png';
+import BanglaNotepadImage from '../../images/Projects/BanglaNotepad.gif';
 import SmartWardrobeImage from '../../images/Projects/SmartWardrobe.png';
 
 import * as TechIcons from '../TechIcons/TechIcons';
@@ -119,6 +120,22 @@ const data = [
             TechIcons.PythonIcon,
             TechIcons.NumpyIcon,
             TechIcons.OpencvIcon,
+            TechIcons.QtIcon,
+        ],
+    },
+    {
+        title: 'Mango.UI',
+        caption: 'Python PyQt5 library that provides custom-styled widgets for sharper desktop app development',
+        image: MangoUIImage,
+        description: [
+            'Incorporate <strong>Qt Style Sheets</strong> and QVariantAnimation object to configure hover-animated button widgets',
+            'Utilized QPainter and QPixmap to build Canvas object for drawing on window',
+            'Handled color operations and conversions between RGB, Hex and QColor objects',
+        ],
+        github: 'https://github.com/alvii147/MangoUI',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
             TechIcons.QtIcon,
         ],
     },

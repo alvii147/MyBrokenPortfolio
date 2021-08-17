@@ -20,6 +20,9 @@ import Carousel from 'react-material-ui-carousel';
 
 import { Typewriter } from 'react-simple-typewriter';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const { REACT_APP_API_KEY, REACT_APP_API_BASE, REACT_APP_ENDORSEMENTS_GET, REACT_APP_ENDORSEMENTS_POST } = process.env;
 const axios_config = {
     headers: {
@@ -42,6 +45,12 @@ function Endorsements(props, ref) {
             axios_config,
         ).then((response) => {
             setEndorsementsData(response.data);
+        });
+    }, []);
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
         });
     }, []);
 
@@ -179,10 +188,10 @@ function Endorsements(props, ref) {
                     </span>
                 </div>
                 <div id="endorsements-main-block">
-                    <Carousel animation="fade" interval={8000} timeout={700} navButtonsAlwaysVisible="true">
+                    <Carousel animation="fade" interval={8000} timeout={700} navButtonsAlwaysVisible="true" navButtonsProps={{style: {color: '#111111', backgroundImage: 'linear-gradient(to right, #FF884D, #B37700)'}}}>
                         {endorsementsData.map(endorsement => {
                             return (
-                                <div className="endorsements-main-card-container">
+                                <div data-aos="zoom-out" className="endorsements-main-card-container">
                                     <div className="endorsements-main-card">
                                         <div className="endorsements-title-container">
                                             <div className="endorsements-title">

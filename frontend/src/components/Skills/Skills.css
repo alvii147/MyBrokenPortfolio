@@ -36,16 +36,17 @@
 
 .skills-card-container {
     width: 20%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.skills-card-container:hover {
+    box-shadow: 0 0 15px white;
 }
 
 .skills-card {
     border-radius: 10px;
     background-color: rgb(173, 235, 235);
     background-image: linear-gradient(to right, rgb(254, 219, 255), rgb(181, 204, 255));
-    transition: 0.3s;
-}
-.skills-card:hover {
-    box-shadow: 0 0 15px white;
 }
 
 .skills-card-header {

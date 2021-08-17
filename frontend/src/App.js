@@ -31,7 +31,7 @@ function App() {
       </Ubuntu>
       <About
         ref={aboutRef}
-        scrollToProjects={() => scroller(projectsRef)}>
+        scrollToContact={() => scroller(contactRef)}>
       </About>
       <Projects
         ref={projectsRef}>

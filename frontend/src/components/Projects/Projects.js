@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Projects.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,6 +11,10 @@ import { Typewriter } from 'react-simple-typewriter';
 import { Github, Devpost } from '@icons-pack/react-simple-icons';
 import Carousel from 'react-material-ui-carousel';
 import LanguageOutlinedIcon from '@material-ui/icons/LanguageOutlined';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 import data from './data';
 
 function shuffle(arr) {
@@ -24,7 +28,14 @@ function shuffle(arr) {
 }
 
 function Projects(props, ref) {
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+        });
+    }, []);
+
     shuffle(data);
+
     return (
         <div id="projects-main-container">
             <div ref={ref} id="projects-container" className="section-container">
@@ -45,7 +56,7 @@ function Projects(props, ref) {
                     {data.map(prj => {
                         return (
                             <div className="projects-card-parent-container" href="">
-                                <Card className="projects-card-container">
+                                <Card data-aos="fade-left" className="projects-card-container">
                                     <Card.Header as="h1" className="display-6 projects-card-header">{prj.title}</Card.Header>
                                     <div className="projects-card-content-container">
                                         <Card.Img className="projects-card-img" style={{padding: '40px', width: '50%'}} variant="top" src={prj.image} />

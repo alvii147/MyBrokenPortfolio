@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Experience.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,6 +13,9 @@ import StepLabel from '@material-ui/core/StepLabel';
 import StepConnector from '@material-ui/core/StepConnector';
 
 import { Typewriter } from 'react-simple-typewriter';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import UbuntuLogo from '../../images/ubuntu_logo.png';
 
@@ -63,6 +66,12 @@ const TimelineConnector = withStyles({
 function Experience(props, ref) {
     const [activeExp, setActiveExp] = useState(0);
 
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+        });
+    }, []);
+
     return (
         <div id="experience-main-container">
             <div ref={ref} id="experience-container" className="section-container">
@@ -81,7 +90,7 @@ function Experience(props, ref) {
                 </div>
                 <div id="experience-main-block">
                     <div id="experience-thumbnail-list-container">
-                        <Stepper alternativeLabel activeStep={activeExp} id="experience-main-stepper" connector={<TimelineConnector />}>
+                        <Stepper data-aos="fade-down" alternativeLabel activeStep={activeExp} id="experience-main-stepper" connector={<TimelineConnector />}>
                             {data.map((exp, index) => {
                                 return (
                                     <Step key={index}>
@@ -97,7 +106,7 @@ function Experience(props, ref) {
                         </Stepper>
                     </div>
                     <div id="experience-list-container">
-                        <Card bg="dark" className="experience-card">
+                        <Card data-aos="flip-left" data-aos-delay="300" bg="dark" className="experience-card">
                             <Card.Header as="h3" className="experience-card-header">
                                 <div className="experience-card-header-text">{data[activeExp].company}</div>
                                 {data[activeExp].rating &&
