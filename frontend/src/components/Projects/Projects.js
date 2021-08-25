@@ -8,7 +8,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 import { Typewriter } from 'react-simple-typewriter';
 
-import { Github, Devpost } from '@icons-pack/react-simple-icons';
+import { Github, Devpost, Youtube } from '@icons-pack/react-simple-icons';
 import Carousel from 'react-material-ui-carousel';
 import LanguageOutlinedIcon from '@material-ui/icons/LanguageOutlined';
 
@@ -52,7 +52,12 @@ function Projects(props, ref) {
                         />
                     </span>
                 </div>
-                <Carousel animation="slide" interval={8000} timeout={700} navButtonsAlwaysVisible="true" navButtonsProps={{style: {color: '#111111', backgroundImage: 'linear-gradient(to right, #B3D9FF, #8080FF)'}}}>
+                <Carousel
+                    animation="slide"
+                    interval={8000}
+                    timeout={700}
+                    navButtonsAlwaysVisible="true"
+                    navButtonsProps={{style: {color: '#111111', backgroundImage: 'linear-gradient(to right, #B3D9FF, #8080FF)'}}}>
                     {data.map(prj => {
                         return (
                             <div className="projects-card-parent-container" href="">
@@ -94,11 +99,12 @@ function Projects(props, ref) {
                                                 </div>
                                                 <div className="projects-footer-links-container">
                                                     <div className="projects-footer-links-spacing">
+                                                        {prj.github ?
                                                         <a className="projects-footer-link" href={prj.github} target="_blank" rel="noopener noreferrer">
                                                             <div className="projects-github-badge-container">
                                                                 <Github className="projects-github-footer-link-icon" size={30} />
                                                             </div>
-                                                        </a>
+                                                        </a> : null}
                                                     </div>
                                                     <div className="projects-footer-links-spacing">
                                                         {prj.devpost ?
@@ -113,6 +119,14 @@ function Projects(props, ref) {
                                                         <a className="projects-footer-link" href={prj.website} target="_blank" rel="noopener noreferrer">
                                                             <div className="projects-website-badge-container">
                                                                 <LanguageOutlinedIcon className="projects-website-footer-link-icon" style={{fontSize: 30}} />
+                                                            </div>
+                                                        </a> : null}
+                                                    </div>
+                                                    <div className="projects-footer-links-spacing">
+                                                        {prj.youtube ?
+                                                        <a className="projects-footer-link" href={prj.youtube} target="_blank" rel="noopener noreferrer">
+                                                            <div className="projects-youtube-badge-container">
+                                                                <Youtube className="projects-youtube-footer-link-icon" size={30} />
                                                             </div>
                                                         </a> : null}
                                                     </div>

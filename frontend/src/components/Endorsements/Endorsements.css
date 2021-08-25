@@ -41,6 +41,12 @@
     padding-left: 150px;
     padding-right: 150px;
 }
+@media only screen and (max-width: 767px) {
+    .endorsements-main-card-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
 
 .endorsements-main-card {
     width: 1000px;

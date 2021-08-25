@@ -65,10 +65,6 @@
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    background-image: linear-gradient(#FF9999, #FF9999);
-    background-size: 1px 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 /* typewriter font is smaller in small screens */

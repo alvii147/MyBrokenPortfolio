@@ -199,6 +199,22 @@
     box-shadow: 0 0 10px white;
 }
 
+.projects-youtube-footer-link-icon {
+    color: rgb(255, 0, 0);
+}
+
+.projects-youtube-badge-container {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 4px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.projects-youtube-badge-container:hover {
+    box-shadow: 0 0 10px white;
+}
+
 #projects-next-page-container {
     display: flex;
     justify-content: center;

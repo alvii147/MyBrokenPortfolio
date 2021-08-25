@@ -47,6 +47,7 @@ const data = [
         ],
         github: 'https://github.com/alvii147/Altruist',
         devpost: 'https://devpost.com/software/altruist-2fvaod',
+        youtube: 'https://youtu.be/0xuxMHK1F9Y',
         milestones: [],
         technologies: [
             TechIcons.PythonIcon,
@@ -67,6 +68,7 @@ const data = [
         ],
         github: 'https://github.com/alvii147/quickVax',
         devpost: 'https://devpost.com/software/quickvax',
+        youtube: 'https://youtu.be/CR-H_pygR2w',
         milestones: [],
         technologies: [
             TechIcons.PythonIcon,
@@ -90,6 +92,7 @@ const data = [
         github: 'https://github.com/alvii147/cram.ai',
         devpost: 'https://devpost.com/software/cram-ai',
         website: 'https://cram-ai.herokuapp.com',
+        youtube: 'https://youtu.be/P16aGODx5OU',
         milestones: [
             ['Best Use of Google Cloud', 'WinterHacklympics'],
         ],
@@ -113,6 +116,7 @@ const data = [
         ],
         github: 'https://github.com/alvii147/pupil',
         devpost: 'https://devpost.com/software/pupil-3sctez',
+        youtube: 'https://youtu.be/_9XTW2mqdjo',
         milestones: [
             ['Wolfram Award', 'HackDuke'],
         ],
@@ -150,6 +154,7 @@ const data = [
         ],
         github: 'https://github.com/christylo/kardv3',
         devpost: 'https://devpost.com/software/k-kard',
+        youtube: 'https://youtu.be/3eHyQgif-yI',
         milestones: [
             ['Perfect Pitch', 'HackWestern'],
             ['FuturFund: Women in Financial Literacy Award', 'HackWestern'],
@@ -173,6 +178,7 @@ const data = [
         ],
         github: 'https://github.com/alvii147/HachikosJournal',
         devpost: 'https://devpost.com/software/hachiko-s-journal',
+        youtube: 'https://youtu.be/eLksAlg7IP8',
         milestones: [
             ['1st Place Health Track', 'HackRU'],
         ],
@@ -193,6 +199,7 @@ const data = [
         ],
         github: 'https://github.com/alvii147/HachikosJournal',
         devpost: 'https://devpost.com/software/hachiko-s-journal',
+        youtube: 'https://youtu.be/zFMFPs3CKh0',
         milestones: [],
         technologies: [
             TechIcons.PythonIcon,
@@ -213,6 +220,7 @@ const data = [
         ],
         github: 'https://github.com/alvii147/EduSource',
         devpost: 'https://devpost.com/software/edusource',
+        youtube: 'https://youtu.be/-2_g7Y_6jL8',
         milestones: [
             ['Best Use of Google Cloud', 'Hackrithmitic'],
             ['Best Use of Google Cloud', 'HackTheU'],
@@ -235,6 +243,7 @@ const data = [
         ],
         github: 'https://github.com/alvii147/GoodwillStudio',
         devpost: 'https://devpost.com/software/goodwill-studio',
+        youtube: 'https://youtu.be/s4MnD7pdQyg',
         milestones: [
             ['Best Use of Google Cloud', 'sunhacks'],
         ],
@@ -255,6 +264,7 @@ const data = [
         ],
         github: 'https://github.com/anouarh/ivyhacks-buildabout',
         devpost: 'https://devpost.com/software/buildabout-ewaopy',
+        youtube: 'https://youtu.be/Z5VhOhNzg80',
         milestones: [
             ['Best Use of Google Cloud', 'IvyHacks'],
         ],
