@@ -15,7 +15,7 @@ import SJWSPythonClubLogoThumbnail from '../../images/Experience/sjwspythonclub_
 
 const data = [
     {
-        company: 'Nokia Corporation',
+        company: 'Nokia',
         role: 'Full-Stack Developer',
         logo: NokiaLogo,
         thumbnail: NokiaLogoThumbnail,
@@ -23,7 +23,7 @@ const data = [
         description: [
             'Developed & managed authentication security, community articles page and voucher redemption system for <a href="https://network.developer.nokia.com/" target="_blank" rel="noopener noreferrer" class="experience-link">Nokia Network Developer Portal</a> on <span class="experience-strong">Django</span> server</a> with an <span class="experience-strong">Azure MySQL</span> database',
             'Secured backend using <span class="experience-strong">Django REST framework</span> API authentication, cross site scripting protection and honeypot setups',
-            'Improved test coverage by <span class="experience-strong">10%</span> using Python <span class="experience-strong">unittest</span> module and configured <span class="experience-strong">Docker</span> image for <span class="experience-strong">Gitlab CI</span> automation testing Django of forms, models and REST API endpoints',
+            'Composed unit tests for Django forms, models and REST API endpoints using Python <span class="experience-strong">unittest</span> module and configured <span class="experience-strong">Docker</span> image for <span class="experience-strong">Gitlab CI</span> automation testing',
             'Designed responsive frontend in <span class="experience-strong">Jinja2</span> templates by utilizing <span class="experience-strong">jQuery</span> and <span class="experience-strong">Bootstrap</span>',
         ],
     },
@@ -36,6 +36,7 @@ const data = [
         description: [
             'Expanded <span class="experience-strong">Python</span> multiparty-computation library, <span class="experience-strong">MP-SPDZ,</span> to support <span class="experience-strong">Convolutional Neural Networks,</span> including <span class="experience-strong">SqueezeNet</span>, <span class="experience-strong">ResNet</span> and <span class="experience-strong">DenseNet</span> models',
             'Composed comprehensive tutorials on <a href="https://stumpy.readthedocs.io/en/latest/Tutorial_Annotation_Vectors.html" target="_blank" rel="noopener noreferrer" class="experience-link">Annotation Vectors</a> and <a href="https://stumpy.readthedocs.io/en/latest/Tutorial_Annotation_Vectors.html" target="_blank" rel="noopener noreferrer" class="experience-link">Advanced Annotation Vectors</a> based on Matrix Profile research paper for Python time series analysis library, <span class="experience-strong">STUMPY</span>',
+            'Worked on optimizing multi-threaded Matrix Profile computation algorithm using <span class="experience-strong">NumPy</span> and <span class="experience-strong">Numba</span> to avoid cache misses',
         ],
     },
     {
@@ -53,7 +54,7 @@ const data = [
         rating: 'Excellent',
     },
     {
-        company: 'Qualcomm Inc.',
+        company: 'Qualcomm',
         role: 'Display Verification Engineer',
         logo: QualcommLogo,
         thumbnail: QualcommLogoThumbnail,
@@ -67,7 +68,7 @@ const data = [
         rating: 'Excellent',
     },
     {
-        company: 'Imagine Communications Corp',
+        company: 'Imagine Communications',
         role: 'Embedded Software Developer',
         logo: ImagineCommunicationsLogo,
         thumbnail: ImagineCommunicationsThumbnail,
