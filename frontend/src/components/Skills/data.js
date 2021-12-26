@@ -11,11 +11,13 @@ import GoogleCloudLogo from '../../images/Skills/googlecloud_logo.png';
 import QtLogo from '../../images/Skills/qt_logo.png';
 
 import MySQLLogo from '../../images/Skills/mysql_logo.png';
+import NumPyLogo from '../../images/Skills/numpy_logo.png';
+import MatplotlibLogo from '../../images/Skills/matplotlib_logo.png';
+import PandasLogo from '../../images/Skills/pandas_logo.png';
 import PostgreSQLLogo from '../../images/Skills/postgresql_logo.png';
 import TensorflowLogo from '../../images/Skills/tensorflow_logo.png';
 import KerasLogo from '../../images/Skills/keras_logo.png';
 import OpencvLogo from '../../images/Skills/opencv_logo.png';
-import PandasLogo from '../../images/Skills/pandas_logo.png';
 import RLogo from '../../images/Skills/r_logo.png';
 
 import CommunicationLogo from '../../images/Skills/communication_logo.png';
@@ -92,38 +94,50 @@ const data = {
         {
             name: 'MySQL',
             logo: MySQLLogo,
-            strength: '89%',
+            strength: '93%',
             color: 'linear-gradient(to right, #4479A1, #A5C3D9)',
+        },
+        {
+            name: 'NumPy',
+            logo: NumPyLogo,
+            strength: '92%',
+            color: 'linear-gradient(to right, #013243, #027297)',
+        },
+        {
+            name: 'Matplotlib',
+            logo: MatplotlibLogo,
+            strength: '82%',
+            color: 'linear-gradient(to right, #E64D00, #FF884D)',
+        },
+        {
+            name: 'Pandas',
+            logo: PandasLogo,
+            strength: '80%',
+            color: 'linear-gradient(to right, #150458, #340ADB)',
         },
         {
             name: 'PostgreSQL',
             logo: PostgreSQLLogo,
-            strength: '88%',
+            strength: '78%',
             color: 'linear-gradient(to right, #4169E1, #7B97EA)',
         },
         {
             name: 'TensorFlow',
             logo: TensorflowLogo,
-            strength: '78%',
+            strength: '75%',
             color: 'linear-gradient(to right, #FF6F00, #FFA866)',
         },
         {
             name: 'Keras',
             logo: KerasLogo,
-            strength: '78%',
+            strength: '75%',
             color: 'linear-gradient(to right, #D00000, #FF3333)',
         },
         {
             name: 'OpenCV',
             logo: OpencvLogo,
-            strength: '75%',
-            color: 'linear-gradient(to right, #5C3EE8, #9F8DF2)',
-        },
-        {
-            name: 'Pandas',
-            logo: PandasLogo,
             strength: '69%',
-            color: 'linear-gradient(to right, #150458, #340ADB)',
+            color: 'linear-gradient(to right, #5C3EE8, #9F8DF2)',
         },
         {
             name: 'R',

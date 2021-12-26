@@ -1,3 +1,5 @@
+import ProdigyEducationLogo from '../../images/Experience/prodigy_education_logo.png';
+import ProdigyEducationLogoThumbnail from '../../images/Experience/prodigy_education_logo_thumbnail.png';
 import NokiaLogo from '../../images/Experience/nokia_logo.png';
 import NokiaLogoThumbnail from '../../images/Experience/nokia_logo_thumbnail.png';
 import codePrenticeLogo from '../../images/Experience/codeprentice_logo.png';
@@ -14,6 +16,14 @@ import SJWSPythonClubLogo from '../../images/Experience/sjwspythonclub_logo.png'
 import SJWSPythonClubLogoThumbnail from '../../images/Experience/sjwspythonclub_logo_thumbnail.png';
 
 const data = [
+    {
+        company: 'Prodigy Education',
+        role: 'Full-Stack Developer',
+        logo: ProdigyEducationLogo,
+        thumbnail: ProdigyEducationLogoThumbnail,
+        interval: 'Jan 2022 - Present',
+        description: [],
+    },
     {
         company: 'Nokia',
         role: 'Full-Stack Developer',

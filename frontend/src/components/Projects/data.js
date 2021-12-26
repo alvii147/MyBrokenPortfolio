@@ -12,6 +12,9 @@ import GoodwillStudioImage from '../../images/Projects/GoodwillStudio.png';
 import BuildAboutImage from '../../images/Projects/BuildAbout.png';
 import BanglaNotepadImage from '../../images/Projects/BanglaNotepad.gif';
 import SmartWardrobeImage from '../../images/Projects/SmartWardrobe.png';
+import DiscreteTimeLibImage from '../../images/Projects/DiscreteTimeLib.png';
+import CrimeStatsAnalysisImage from '../../images/Projects/CrimeStatsAnalysis.png';
+import ImageNoiseInterpolationImage from '../../images/Projects/ImageNoiseInterpolation.png';
 
 import * as TechIcons from '../TechIcons/TechIcons';
 
@@ -314,6 +317,62 @@ const data = [
             TechIcons.TensorflowIcon,
             TechIcons.KerasIcon,
             TechIcons.QtIcon,
+        ]
+    },
+    {
+        title: 'DiscreteTimeLib',
+        caption: 'Python package for analysis of discrete time signals and systems',
+        image: DiscreteTimeLibImage,
+        description: [
+            'Utilized object-oriented programming in Python to develop package for discrete-time signals and systems analysis',
+            'Implemented discrete-time operations, including <strong>convolution</strong>, <strong>digital filter</strong>, and <strong>inverse Z-transforms<strong>',
+            'Incorporated Github actions to automate unit testing using <strong>pytest</strong> and <strong>coverage</strong>',
+        ],
+        github: 'https://github.com/alvii147/DiscreteTimeLib',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.NumpyIcon,
+            TechIcons.PandasIcon,
+            TechIcons.ScipyIcon,
+            TechIcons.SympyIcon,
+        ]
+    },
+    {
+        title: 'Crime Stats Analysis',
+        caption: 'Crime statistics database design & analysis',
+        image: CrimeStatsAnalysisImage,
+        description: [
+            'Analyzed crime records datasets of London, New York, Chicago and Los Angeles, and outlined <strong>entity-relationship model</strong> for database',
+            'Automated creation of <strong>MySQL</strong> database and built command-line interface in Python to handle basic queries',
+            'Applied <strong>Spearman\'s Rank Correlation</strong> in SciPy and visualized data in <strong>Matplotlib</strong> to investigate factors that determine stop-and-search outcomes',
+        ],
+        github: 'https://github.com/alvii147/CrimeStatsAnalysis',
+        website: 'https://alvii147.github.io/CrimeStatsAnalysis/report/Report',
+        youtube: 'https://youtu.be/aTREWcHJalw',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.MysqlIcon,
+            TechIcons.ScipyIcon,
+        ]
+    },
+    {
+        title: 'Image Noise Interpolation',
+        caption: 'Replication of the color image interpolation methods to correct impulsive noise',
+        image: ImageNoiseInterpolationImage,
+        description: [
+            'Applied methods described in research paper to detect salt-and-pepper noise and perform interpolation to retrieve original colored images',
+            'Outlined functions for manipulation of <strong>NumPy</strong> arrays and used <strong>Matplotlib</strong> color maps for visualization',
+            'Performed <strong>normalized mean-squared error</strong> as performance metric to measure effectiveness of implemented method',
+        ],
+        github: 'https://github.com/alvii147/ImageNoiseInterpolation',
+        website: 'https://alvii147.github.io/ImageNoiseInterpolation/report/ECE_313_Course_Project',
+        youtube: 'https://youtu.be/IIOEmZrXtrY',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.NumpyIcon,
         ]
     },
 ]

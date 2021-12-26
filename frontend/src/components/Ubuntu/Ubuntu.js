@@ -292,7 +292,7 @@ function Ubuntu({scrollToAbout, scrollToProjects, scrollToSkills, scrollToExperi
             <div id='ubuntu-next-page-container-container'>
                 <div id="ubuntu-next-page-container" onClick={scrollToAbout}>
                     <img alt="Ubuntu Section Ubuntu Logo" src={UbuntuLogo} style={{animation: 'ubuntu-spin 3s linear infinite'}} width={30}></img>
-                    &nbsp;&nbsp;Learn about me&nbsp;&nbsp;
+                    &nbsp;&nbsp;About me&nbsp;&nbsp;
                     <img alt="Ubuntu Section Downward Arrows" src={DownwardArrows} width={10}></img>
                 </div>
             </div>

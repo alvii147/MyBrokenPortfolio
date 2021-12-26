@@ -10,6 +10,8 @@ import {
     ReactJs,
     Qt,
     Numpy,
+    Pandas,
+    Scipy,
     Tensorflow,
     Keras,
     Opencv,
@@ -19,6 +21,7 @@ import {
     Springboot,
 
     // Database Query Languages & Management Systems
+    Mysql,
     Sqlite,
     Firebase,
 
@@ -120,6 +123,26 @@ export {
     NumpyIcon,
 };
 
+function PandasIcon() {
+    return (
+        <Pandas color="#150458"></Pandas>
+    );
+}
+
+export {
+    PandasIcon,
+};
+
+function ScipyIcon() {
+    return (
+        <Scipy color="#8CAAE6"></Scipy>
+    );
+}
+
+export {
+    ScipyIcon,
+};
+
 function TensorflowIcon() {
     return (
         <Tensorflow color="#FF6F00"></Tensorflow>
@@ -193,6 +216,16 @@ export {
 // =============================================
 // Database Query Languages & Management Systems
 // =============================================
+
+function MysqlIcon() {
+    return (
+        <Mysql color="#4479A1"></Mysql>
+    );
+}
+
+export {
+    MysqlIcon,
+};
 
 function SqliteIcon() {
     return (
