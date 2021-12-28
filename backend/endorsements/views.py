@@ -13,27 +13,18 @@ from .models import EndorsementRequest, Endorsement
 
 # get list of all approved endorsements
 class ListEndorsementAPIView(ListAPIView):
-    # return all objects
     queryset = Endorsement.objects.all()
-    # set serializer class
     serializer_class = EndorsementSerializer
 
 # create new endorsement request
 @api_view(['POST'])
 def CreateEndorsementRequestAPIView(request):
-    # get email from request data
     email = html.escape(request.POST['email'])
-    # get first name from request data
     first_name = html.escape(request.POST['first_name'])
-    # get last name from request data
     last_name = html.escape(request.POST['last_name'])
-    # get role from request data
     role = html.escape(request.POST['role'])
-    # get relationship from request data
     relationship = html.escape(request.POST['relationship'])
-    # get message from request data
     message = html.escape(request.POST['message'])
-    # get remote IP address from request data
     remote_addr = request.META.get('REMOTE_ADDR')
 
     # get datetime object 24 hours from now
@@ -61,11 +52,9 @@ def CreateEndorsementRequestAPIView(request):
         # return with status 'already exists'
         return Response({'status': 'alreadyexists'})
 
-    # perform analysis of entire message
+    # perform textual analysis of message
     message_analysis = TextBlob(message)
-    # get polarity of message
     polarity = message_analysis.sentiment.polarity
-    # get subjectivity of message
     subjectivity = message_analysis.sentiment.subjectivity
 
     # iterate over POS tags
@@ -80,7 +69,7 @@ def CreateEndorsementRequestAPIView(request):
                 html_word = f'<span class="positive-adjective-word">{tag[0]}</span>'
                 message = message.replace(tag[0], html_word)
 
-    # create endorsement request
+    # create new endorsement request
     endorsement_request = EndorsementRequest(
         email=email,
         first_name=first_name,
@@ -92,8 +81,6 @@ def CreateEndorsementRequestAPIView(request):
         subjectivity=subjectivity,
         remote_addr=remote_addr,
     )
-    # save endorsement request
     endorsement_request.save()
 
-    # return with status 'success'
     return Response({'status': 'success'})

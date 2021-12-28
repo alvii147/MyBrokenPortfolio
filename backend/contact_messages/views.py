@@ -10,13 +10,9 @@ from .models import ContactMessageRequest
 
 @api_view(['POST'])
 def CreateContactMessageRequestAPIView(request):
-    # get email from request data
     email = html.escape(request.POST['email'])
-    # get subject from request data
     subject = html.escape(request.POST['subject'])
-    # get body from request data
     body = html.escape(request.POST['body'])
-    # get remote IP address from request data
     remote_addr = request.META.get('REMOTE_ADDR')
 
     # get datetime object 24 hours from now
@@ -53,8 +49,6 @@ def CreateContactMessageRequestAPIView(request):
         body=body,
         remote_addr=remote_addr,
     )
-    # save contact message request
     contact_msg.save()
 
-    # return with status 'success'
     return Response({'status': 'success'})

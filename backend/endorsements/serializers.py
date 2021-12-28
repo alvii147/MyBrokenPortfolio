@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import EndorsementRequest, Endorsement
+from .models import Endorsement
 
 class EndorsementSerializer(serializers.ModelSerializer):
     class Meta:

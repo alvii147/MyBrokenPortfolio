@@ -7,4 +7,4 @@ if DJANGO_ENV_MODE.lower() == 'dev':
 elif DJANGO_ENV_MODE.lower() == 'prod':
     from .prod import *
 else:
-    raise EnvironmentError('No environment set. Please set DJANGO_ENV_MODE environment variable to `DEV` or `PROD`.')
+    raise EnvironmentError('No environment set. Please set `DJANGO_ENV_MODE` environment variable to `DEV` or `PROD`.')

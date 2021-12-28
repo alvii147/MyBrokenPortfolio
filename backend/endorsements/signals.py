@@ -11,10 +11,8 @@ def send_endorsement_email(sender, instance, created, **kwargs):
     if created:
         # full name of requester
         requester = f'{instance.first_name} {instance.last_name}'
-
         # email subject
         subject = f'New endorsement from {requester}'
-
         # convert new lines in message to line breaks
         message = '<br />'.join(instance.message.split('\n'))
 
@@ -34,5 +32,4 @@ def send_endorsement_email(sender, instance, created, **kwargs):
         body += '</i>'
         body += '</p>'
 
-        # send email
         send_email(subject, body)
