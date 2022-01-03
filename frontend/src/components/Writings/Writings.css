@@ -1,0 +1,122 @@
+#writings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* typerwriter title div container */
+#writings-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* typewriter title styles */
+#writings-heading-styles {
+    color: white;
+    font-family: monospace;
+    font-size: 50pt;
+}
+
+/* typewriter font is smaller in small screens */
+@media only screen and (max-width: 767px) {
+    #writings-heading-styles {
+        font-size: 35pt;
+    }
+}
+
+.writings-card-parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.writings-card-container {
+    background-image: linear-gradient(to right, rgb(184, 223, 208), rgb(204, 226, 175));
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+@media only screen and (max-width: 1200px) {
+    .writings-card-container {
+        width: 700px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .writings-card-container {
+        width: 400px;
+    }
+}
+@media only screen and (max-height: 900px) {
+    .writings-card-container {
+        height: 500px;
+    }
+}
+
+.writings-card-title {
+    font-size: 20pt;
+    text-align: center;
+    padding-top: 10px;
+}
+@media only screen and (max-width: 767px) {
+    .writings-card-title {
+        font-size: 14pt;
+    }
+}
+
+.writings-tags-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+@media only screen and (max-width: 767px) {
+    .writings-tags-container {
+        display: none;
+    }
+}
+
+.writings-tags-left {
+    display: flex;
+}
+.writings-tags-right {
+    display: flex;
+}
+
+.writings-tag {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.writings-tag-badge {
+    background-color: rgb(51, 80, 16);
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgb(63, 165, 59);
+}
+.writings-tag-badge:hover {
+    box-shadow: 0 0 30px rgb(63, 165, 59);
+}
+.writings-link-badge {
+    cursor: pointer;
+    background-color: rgb(110, 19, 69);
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgb(192, 70, 162);
+}
+.writings-link-badge:hover {
+    box-shadow: 0 0 30px rgb(192, 70, 162);
+}
+
+.writings-iframe-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}

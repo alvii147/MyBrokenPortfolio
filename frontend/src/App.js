@@ -7,6 +7,7 @@ import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
 import Endorsements from './components/Endorsements/Endorsements';
+import Writings from './components/Writings/Writings';
 import Contact from './components/Contact/Contact';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   const skillsRef = useRef();
   const experienceRef = useRef();
   const endorsementsRef = useRef();
+  const writingsRef = useRef();
   const contactRef = useRef();
 
   const scroller = (ref) => ref.current.scrollIntoView({block: 'center', inline: 'center', behavior: 'smooth'});
@@ -27,6 +29,7 @@ function App() {
         scrollToSkills={() => scroller(skillsRef)}
         scrollToExperience={() => scroller(experienceRef)}
         scrollToEndorsements={() => scroller(endorsementsRef)}
+        scrollToWritings={()=> scroller(writingsRef)}
         scrollToContact={() => scroller(contactRef)}>
       </Ubuntu>
       <About
@@ -45,6 +48,9 @@ function App() {
       <Endorsements
         ref={endorsementsRef}>
       </Endorsements>
+      <Writings
+        ref={writingsRef}>
+      </Writings>
       <Contact
         ref={contactRef}>
       </Contact>
