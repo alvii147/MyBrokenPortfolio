@@ -47,7 +47,7 @@ const data = [
     },
     {
         title: 'The Tale of Tridania',
-        link: 'https://www.thedailystar.net/shout/fable-factory/the-tale-tridania-167281',
+        link: 'https://alvii147.github.io/OreoStack/Fiction/TheTaleOfTridania/TheTaleOfTridania',
         tags: [
             'Fiction',
             'Fable',
