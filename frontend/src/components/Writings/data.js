@@ -29,8 +29,16 @@ const data = [
         ],
     },
     {
+        title: 'Technical Thesaurus: Docker Cheat Sheet',
+        link: 'https://alvii147.github.io/TechnicalThesaurus/Docker/DockerCheatSheet',
+        tags: [
+            'DevOps',
+            'Docker',
+        ],
+    },
+    {
         title: 'Technical Thesaurus: MySQL Cheat Sheet',
-        link: 'https://alvii147.github.io/TechnicalThesaurus/MySQL/pages/MySQLCheatSheet',
+        link: 'https://alvii147.github.io/TechnicalThesaurus/MySQL/MySQLCheatSheet',
         tags: [
             'Databases',
             'MySQL',
@@ -38,7 +46,7 @@ const data = [
     },
     {
         title: 'Technical Thesaurus: Django Quickstart Guide',
-        link: 'https://alvii147.github.io/TechnicalThesaurus/Django/pages/DjangoQuickstartGuide',
+        link: 'https://alvii147.github.io/TechnicalThesaurus/Django/DjangoQuickstartGuide',
         tags: [
             'Backend Development',
             'Web Development',
