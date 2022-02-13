@@ -22,7 +22,10 @@ const data = [
         logo: ProdigyEducationLogo,
         thumbnail: ProdigyEducationLogoThumbnail,
         interval: 'Jan 2022 - Present',
-        description: [],
+        description: [
+            'Maintained <span class="experience-strong">OAuth 2.0</span> & <span class="experience-strong">Open ID Connect</span> based identity service built on <span class="experience-strong">Ruby on Rails</span>',
+            'Leveraged <span class="experience-strong">Multi-staged Docker builds</span> to reduce production image size by <span class="experience-strong">58.4%</span>',
+        ],
     },
     {
         company: 'Nokia',

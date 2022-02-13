@@ -178,7 +178,7 @@ function Projects(props, ref) {
                                             <SchoolOutlinedIcon style={{color: UIStyles.schoolIconColor}} size={17} />
                                         </div>
                                         <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text about-sidebar-component-text-small">
-                                            83.9% Average<br />
+                                            84.6% Average<br />
                                         </div>
                                     </div>
                                 </div>
