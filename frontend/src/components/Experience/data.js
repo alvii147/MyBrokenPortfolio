@@ -39,6 +39,7 @@ const data = [
             'Composed unit tests for Django forms, models and REST API endpoints using Python <span class="experience-strong">unittest</span> module and configured <span class="experience-strong">Docker</span> image for <span class="experience-strong">Gitlab CI</span> automation testing',
             'Designed responsive frontend in <span class="experience-strong">Jinja2</span> templates by utilizing <span class="experience-strong">jQuery</span> and <span class="experience-strong">Bootstrap</span>',
         ],
+        rating: 'Excellent',
     },
     {
         company: 'codePrentice',

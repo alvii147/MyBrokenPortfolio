@@ -39,7 +39,7 @@ function Skills(props, ref) {
                     <div data-aos="fade-up" className="skills-card-container">
                         <Card className="skills-card">
                             <Card.Header as="h5" className="skills-card-header">Languages</Card.Header>
-                            <Card.Body style={{height: '340px'}} className="skills-card-body">
+                            <Card.Body style={{height: '410px'}} className="skills-card-body">
                                 <ListGroup variant="flush">
                                     {data.languages.map(lang => {
                                         return (
@@ -64,7 +64,7 @@ function Skills(props, ref) {
                     <div data-aos="fade-down" data-aos-delay="300" className="skills-card-container">
                         <Card className="skills-card">
                             <Card.Header as="h5" className="skills-card-header">Tools/Frameworks</Card.Header>
-                            <Card.Body style={{height: '400px'}} className="skills-card-body">
+                            <Card.Body style={{height: '470px'}} className="skills-card-body">
                                 <ListGroup variant="flush">
                                     {data.frameworks.map(frame => {
                                         return (
@@ -89,7 +89,7 @@ function Skills(props, ref) {
                     <div data-aos="fade-up" data-aos-delay="600" className="skills-card-container">
                         <Card className="skills-card">
                             <Card.Header as="h5" className="skills-card-header">Databases/Data Science</Card.Header>
-                            <Card.Body style={{height: '400px'}} className="skills-card-body">
+                            <Card.Body style={{height: '470px'}} className="skills-card-body">
                                 <ListGroup variant="flush">
                                     {data.data.map(ds => {
                                         return (
