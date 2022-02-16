@@ -23,8 +23,8 @@ const data = [
         thumbnail: ProdigyEducationLogoThumbnail,
         interval: 'Jan 2022 - Present',
         description: [
-            'Maintained <span class="experience-strong">OAuth 2.0</span> & <span class="experience-strong">Open ID Connect</span> based identity service built on <span class="experience-strong">Ruby on Rails</span>',
-            'Leveraged <span class="experience-strong">Multi-staged Docker builds</span> to reduce production image size by <span class="experience-strong">58.4%</span>',
+            'Maintained <span class="experience-strong">OAuth 2.0</span> & <span class="experience-strong">Open ID Connect</span> identity service built on <span class="experience-strong">Ruby on Rails</span>',
+            'Leveraged multi-staged <span class="experience-strong">Docker</span> builds to optimize production server container on <span class="experience-strong">Amazon ECS</span>, reducing image size by <span class="experience-strong">58.4%</span>',
         ],
     },
     {
@@ -39,7 +39,7 @@ const data = [
             'Composed unit tests for Django forms, models and REST API endpoints using Python <span class="experience-strong">unittest</span> module and configured <span class="experience-strong">Docker</span> image for <span class="experience-strong">Gitlab CI</span> automation testing',
             'Designed responsive frontend in <span class="experience-strong">Jinja2</span> templates by utilizing <span class="experience-strong">jQuery</span> and <span class="experience-strong">Bootstrap</span>',
         ],
-        rating: 'Excellent',
+        rating: 'Outstanding',
     },
     {
         company: 'codePrentice',
@@ -50,7 +50,7 @@ const data = [
         description: [
             'Expanded <span class="experience-strong">Python</span> multiparty-computation library, <span class="experience-strong">MP-SPDZ,</span> to support <span class="experience-strong">Convolutional Neural Networks,</span> including <span class="experience-strong">SqueezeNet</span>, <span class="experience-strong">ResNet</span> and <span class="experience-strong">DenseNet</span> models',
             'Composed comprehensive tutorials on <a href="https://stumpy.readthedocs.io/en/latest/Tutorial_Annotation_Vectors.html" target="_blank" rel="noopener noreferrer" class="experience-link">Annotation Vectors</a> and <a href="https://stumpy.readthedocs.io/en/latest/Tutorial_Advanced_Annotation_Vectors.html" target="_blank" rel="noopener noreferrer" class="experience-link">Advanced Annotation Vectors</a> based on Matrix Profile research paper for Python time series analysis library, <span class="experience-strong">STUMPY</span>',
-            'Worked on optimizing multi-threaded Matrix Profile computation algorithm using <span class="experience-strong">NumPy</span> and <span class="experience-strong">Numba</span> to avoid cache misses',
+            'Optimized cache utilization in multi-threaded Matrix Profile computation algorithm using <span class="experience-strong">NumPy</span> and <span class="experience-strong">Numba</span>',
         ],
     },
     {
