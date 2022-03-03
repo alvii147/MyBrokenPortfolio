@@ -29,6 +29,15 @@ const data = [
         ],
     },
     {
+        title: 'Technical Thesaurus: NumPy Cheat Sheet',
+        link: 'https://alvii147.github.io/TechnicalThesaurus/NumPy/NumPyCheatSheet',
+        tags: [
+            'Data Science',
+            'Python',
+            'NumPy',
+        ]
+    },
+    {
         title: 'Technical Thesaurus: Docker Cheat Sheet',
         link: 'https://alvii147.github.io/TechnicalThesaurus/Docker/DockerCheatSheet',
         tags: [

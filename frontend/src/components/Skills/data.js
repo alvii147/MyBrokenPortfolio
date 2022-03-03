@@ -5,9 +5,9 @@ import JavascriptLogo from '../../images/Skills/javascript_logo.png';
 import BashLogo from '../../images/Skills/bash_logo.png';
 
 import DjangoLogo from '../../images/Skills/django_logo.png';
+import DockerLogo from '../../images/Skills/docker_logo.png';
 import ReactLogo from '../../images/Skills/react_logo.png';
 import FlaskLogo from '../../images/Skills/flask_logo.png';
-import DockerLogo from '../../images/Skills/docker_logo.png';
 import GoogleCloudLogo from '../../images/Skills/googlecloud_logo.png';
 import AWSLogo from '../../images/Skills/aws_logo.png';
 import RailsLogo from '../../images/Skills/rails_logo.png';
@@ -39,25 +39,25 @@ const data = {
         {
             name: 'C++',
             logo: CppLogo,
-            strength: '82%',
+            strength: '88%',
             color: 'linear-gradient(to right, #3776AB, #659ECD)',
         },
         {
             name: 'Go',
             logo: GoLogo,
-            strength: '80%',
+            strength: '82%',
             color: 'linear-gradient(to right, #00ADD8, #99EBFF)',
         },
         {
             name: 'JavaScript',
             logo: JavascriptLogo,
-            strength: '72%',
+            strength: '77%',
             color: 'linear-gradient(to right, #F7DF1E, #FCF19C)',
         },
         {
             name: 'Bash',
             logo: BashLogo,
-            strength: '61%',
+            strength: '68%',
             color: 'linear-gradient(to right, #4EAA25, #9FE382)',
         },
     ],
@@ -69,39 +69,39 @@ const data = {
             color: 'linear-gradient(to right, #092E20, #1D9567)',
         },
         {
+            name: 'Docker',
+            logo: DockerLogo,
+            strength: '84%',
+            color: 'linear-gradient(to right, #2496ED, #71BBF4)',
+        },
+        {
             name: 'React.js',
             logo: ReactLogo,
             strength: '78%',
             color: 'linear-gradient(to right, #61DAFB, #B4EEFD)',
         },
         {
-            name: 'Docker',
-            logo: DockerLogo,
-            strength: '74%',
-            color: 'linear-gradient(to right, #2496ED, #71BBF4)',
-        },
-        {
             name: 'Flask',
             logo: FlaskLogo,
-            strength: '65%',
+            strength: '71%',
             color: 'linear-gradient(to right, #000000, #666666)',
         },
         {
             name: 'Google Cloud',
             logo: GoogleCloudLogo,
-            strength: '58%',
+            strength: '65%',
             color: 'linear-gradient(to right, #EA4335, #F07F75)',
         },
         {
             name: 'Amazon Web Services',
             logo: AWSLogo,
-            strength: '56%',
+            strength: '62%',
             color: 'linear-gradient(to right, #232F3E, #7C96B6)',
         },
         {
             name: 'Ruby on Rails',
             logo: RailsLogo,
-            strength: '55%',
+            strength: '59%',
             color: 'linear-gradient(to right, #CC0000, #FF8080)',
         },
     ],
@@ -177,19 +177,19 @@ const data = {
         {
             name: 'Problem Solving',
             logo: ProblemsolvingLogo,
-            strength: '85%',
+            strength: '89%',
             color: 'linear-gradient(to right, #F7CB4F, #F9DA85)',
         },
         {
             name: 'Documentation',
             logo: DocumentationLogo,
-            strength: '80%',
+            strength: '85%',
             color: 'linear-gradient(to right, #FF6838, #FFB199)',
         },
         {
             name: 'Organizational',
             logo: OrganizationalLogo,
-            strength: '78%',
+            strength: '82%',
             color: 'linear-gradient(to right, #21B794, #53DFBF)',
         },
     ],
