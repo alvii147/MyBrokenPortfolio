@@ -20,6 +20,62 @@ import * as TechIcons from '../TechIcons/TechIcons';
 
 const data = [
     {
+        title: 'Image Noise Interpolation',
+        caption: 'Replication of the color image interpolation methods to correct impulsive noise',
+        image: ImageNoiseInterpolationImage,
+        description: [
+            'Applied methods described in research paper to detect salt-and-pepper noise in colored images and perform interpolation operation to retrieve original pixels',
+            'Outlined functions for manipulation of <strong>NumPy</strong> arrays and used <strong>Matplotlib</strong> color maps for visualization',
+            'Performed <strong>normalized mean-squared error</strong> as performance metric to measure effectiveness of implemented method',
+        ],
+        github: 'https://github.com/alvii147/ImageNoiseInterpolation',
+        website: 'https://alvii147.github.io/ImageNoiseInterpolation/report/ECE_313_Course_Project',
+        youtube: 'https://youtu.be/IIOEmZrXtrY',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.NumpyIcon,
+        ]
+    },
+    {
+        title: 'Crime Stats Analysis',
+        caption: 'Crime statistics database design & analysis',
+        image: CrimeStatsAnalysisImage,
+        description: [
+            'Analyzed crime records datasets of London, New York, Chicago, and Los Angeles, and outlined <strong>entity-relationship model</strong> for database',
+            'Automated creation of <strong>MySQL</strong> database and built command-line interface in Python to handle basic queries',
+            'Applied <strong>Spearman\'s Rank Correlation</strong> in SciPy and visualized data in <strong>Matplotlib</strong> to investigate factors that determine stop-and-search outcomes',
+        ],
+        github: 'https://github.com/alvii147/CrimeStatsAnalysis',
+        website: 'https://alvii147.github.io/CrimeStatsAnalysis/report/Report',
+        youtube: 'https://youtu.be/aTREWcHJalw',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.MysqlIcon,
+            TechIcons.ScipyIcon,
+        ]
+    },
+    {
+        title: 'DiscreteTimeLib',
+        caption: 'Python package for analysis of discrete time signals and systems',
+        image: DiscreteTimeLibImage,
+        description: [
+            'Utilized object-oriented programming in Python to develop package for discrete-time signals and systems analysis',
+            'Implemented discrete-time operations, including <strong>convolution</strong>, <strong>digital filtering</strong>, and <strong>inverse Z-transforms<strong>',
+            'Incorporated Github actions to automate unit testing using <strong>pytest</strong> and <strong>coverage</strong>',
+        ],
+        github: 'https://github.com/alvii147/DiscreteTimeLib',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.NumpyIcon,
+            TechIcons.PandasIcon,
+            TechIcons.ScipyIcon,
+            TechIcons.SympyIcon,
+        ]
+    },
+    {
         title: 'Routh-Hurwitz Table Generator',
         caption: 'Web application that computes the Routh-Hurwitz Stability Table for Control Systems Analysis',
         image: RouthHurwitzImage,
@@ -41,7 +97,7 @@ const data = [
     },
     {
         title: 'Altruist',
-        caption: 'Mobile & web platform to promote altruism and the assistance of senior citizens during a difficult time',
+        caption: 'Mobile and web platform to promote altruism and the assistance of senior citizens during a difficult time',
         image: AltruistImage,
         description: [
             'Assembled <strong>Django</strong> server with REST API using <strong>Django REST Framework</strong> including user login and registration web pages',
@@ -65,7 +121,7 @@ const data = [
         caption: 'A web application that efficiently matches vaccine receivers with medical institutions using patient priority queue system',
         image: quickVaxImage,
         description: [
-            'Employed backend <strong>Django</strong> server with REST API using <strong>Django REST Framework</strong> and <strong>SQLite3</strong> database using Django ORM to store user data',
+            'Employed backend <strong>Django</strong> server with REST API using <strong>Django REST Framework</strong> and <strong>SQLite3</strong> database, using Django ORMs to store user data',
             'Managed <strong>priority queue</strong> for vaccination to prioritize senior patients and patients with underlying health issues',
             'Developed interactive <strong>React.js</strong> application with <strong>React Bootstrap</strong> and <strong>Materials UI</strong> frontend libraries',
         ],
@@ -113,7 +169,7 @@ const data = [
         caption: 'Computer vision application that detects pupil movement and develops eye-tracking communication for Cerebral Palsy patients',
         image: pupilImage,
         description: [
-            'Applied <strong>Haar Cascade classifiers, blob detection</strong> and <strong>morphological transformations</strong> in <strong>OpenCV</strong> to process images in real-time',
+            'Applied <strong>Haar Cascade classifiers, blob detection,</strong> and <strong>morphological transformations</strong> in <strong>OpenCV</strong> to process images in real-time',
             'Utilized <strong>multi-state sigmoid activation function</strong> to calibrate pupil coordinates',
             'Designed user-friendly <strong>multi-threaded</strong> interface in <strong>PyQt5</strong> and developed efficient mapping between pupil movement patterns and words',
         ],
@@ -135,7 +191,7 @@ const data = [
         caption: 'Python PyQt5 library that provides custom-styled widgets for sharper desktop app development',
         image: MangoUIImage,
         description: [
-            'Incorporate <strong>Qt Style Sheets</strong> and QVariantAnimation object to configure hover-animated button widgets',
+            'Incorporated <strong>Qt Style Sheets</strong> and QVariantAnimation object to configure hover-animated button widgets',
             'Utilized QPainter and QPixmap to build Canvas object for drawing on window',
             'Handled color operations and conversions between RGB, Hex and QColor objects',
         ],
@@ -214,10 +270,10 @@ const data = [
     },
     {
         title: 'EduSource',
-        caption: 'Web application for enriched remote education, crowdsourcing course materials and scientific equation recognition',
+        caption: 'Web application for enriched remote education, crowdsourcing course materials, and scientific equation recognition',
         image: EduSourceImage,
         description: [
-            'Constructed full-fledged <strong>Flask</strong> application in Python with HTML, CSS and Bootstrap',
+            'Constructed full-fledged <strong>Flask</strong> application in Python with HTML, CSS, and Bootstrap',
             'Established and managed foreign key relations between ORM objects using <strong>Flask SQLAlchemy</strong> and <strong>SQLite3</strong>',
             'Employed <strong>Google Cloud Vision</strong> tool to implement scientific equation recognition from handwriting',
         ],
@@ -317,62 +373,6 @@ const data = [
             TechIcons.TensorflowIcon,
             TechIcons.KerasIcon,
             TechIcons.QtIcon,
-        ]
-    },
-    {
-        title: 'DiscreteTimeLib',
-        caption: 'Python package for analysis of discrete time signals and systems',
-        image: DiscreteTimeLibImage,
-        description: [
-            'Utilized object-oriented programming in Python to develop package for discrete-time signals and systems analysis',
-            'Implemented discrete-time operations, including <strong>convolution</strong>, <strong>digital filter</strong>, and <strong>inverse Z-transforms<strong>',
-            'Incorporated Github actions to automate unit testing using <strong>pytest</strong> and <strong>coverage</strong>',
-        ],
-        github: 'https://github.com/alvii147/DiscreteTimeLib',
-        milestones: [],
-        technologies: [
-            TechIcons.PythonIcon,
-            TechIcons.NumpyIcon,
-            TechIcons.PandasIcon,
-            TechIcons.ScipyIcon,
-            TechIcons.SympyIcon,
-        ]
-    },
-    {
-        title: 'Crime Stats Analysis',
-        caption: 'Crime statistics database design & analysis',
-        image: CrimeStatsAnalysisImage,
-        description: [
-            'Analyzed crime records datasets of London, New York, Chicago and Los Angeles, and outlined <strong>entity-relationship model</strong> for database',
-            'Automated creation of <strong>MySQL</strong> database and built command-line interface in Python to handle basic queries',
-            'Applied <strong>Spearman\'s Rank Correlation</strong> in SciPy and visualized data in <strong>Matplotlib</strong> to investigate factors that determine stop-and-search outcomes',
-        ],
-        github: 'https://github.com/alvii147/CrimeStatsAnalysis',
-        website: 'https://alvii147.github.io/CrimeStatsAnalysis/report/Report',
-        youtube: 'https://youtu.be/aTREWcHJalw',
-        milestones: [],
-        technologies: [
-            TechIcons.PythonIcon,
-            TechIcons.MysqlIcon,
-            TechIcons.ScipyIcon,
-        ]
-    },
-    {
-        title: 'Image Noise Interpolation',
-        caption: 'Replication of the color image interpolation methods to correct impulsive noise',
-        image: ImageNoiseInterpolationImage,
-        description: [
-            'Applied methods described in research paper to detect salt-and-pepper noise and perform interpolation to retrieve original colored images',
-            'Outlined functions for manipulation of <strong>NumPy</strong> arrays and used <strong>Matplotlib</strong> color maps for visualization',
-            'Performed <strong>normalized mean-squared error</strong> as performance metric to measure effectiveness of implemented method',
-        ],
-        github: 'https://github.com/alvii147/ImageNoiseInterpolation',
-        website: 'https://alvii147.github.io/ImageNoiseInterpolation/report/ECE_313_Course_Project',
-        youtube: 'https://youtu.be/IIOEmZrXtrY',
-        milestones: [],
-        technologies: [
-            TechIcons.PythonIcon,
-            TechIcons.NumpyIcon,
         ]
     },
 ]
