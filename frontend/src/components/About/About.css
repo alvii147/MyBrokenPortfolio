@@ -36,6 +36,11 @@
     width: 60%;
     font-family: Ubuntu;
 }
+@media only screen and (max-width: 767px) {
+    #about-main-block {
+        width: 80%;
+    }
+}
 
 #about-title-bar {
     height: 30px;
@@ -198,7 +203,7 @@
 }
 @media only screen and (max-width: 767px) {
     #about-avatar {
-        width: 60%;
+        width: 65%;
     }
 }
 
@@ -222,6 +227,7 @@
 @media only screen and (max-width: 767px) {
     #about-description-block {
         font-size: 11pt;
+        max-height: 300px;
     }
 }
 #about-description-block::-webkit-scrollbar {

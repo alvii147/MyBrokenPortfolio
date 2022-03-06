@@ -43,12 +43,12 @@
 }
 @media only screen and (max-width: 1200px) {
     .writings-card-container {
-        width: 700px;
+        width: 550px;
     }
 }
 @media only screen and (max-width: 767px) {
     .writings-card-container {
-        width: 400px;
+        width: 375px;
     }
 }
 @media only screen and (max-height: 900px) {

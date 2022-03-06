@@ -84,9 +84,28 @@
     flex-direction: row;
     padding-bottom: 5px;
 }
+@media only screen and (max-width: 767px) {
+    .skills-card-label {
+        justify-content: center;
+    }
+}
+
+.skills-card-img {
+    width: 35px;
+}
+@media only screen and (max-width: 767px) {
+    .skills-card-img {
+        width: 50px;
+    }
+}
 
 .skills-list-item {
     background-color: transparent;
+}
+@media only screen and (max-width: 767px) {
+    .skills-list-item {
+        border: none;
+    }
 }
 @media only screen and (max-width: 767px) {
     .skills-card-text-container {

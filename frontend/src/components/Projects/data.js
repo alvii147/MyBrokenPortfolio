@@ -207,7 +207,7 @@ const data = [
         caption: 'A mobile app that provides a fun, yet educational way for children and parents to manage their finances',
         image: kkardImage,
         description: [
-            'Developed and Deployed fin-tech mobile application with stack and tab navigation using <strong>React Native</strong> and <strong>Expo</strong>',
+            'Developed & deployed fin-tech mobile application with stack and tab navigation using <strong>React Native</strong> and <strong>Expo</strong>',
             'Leveraged <strong>Google Cloud Vision</strong> to implement object detection and identification',
             'Assembled a document-based <strong>Firebase</strong> backend to store user credentials and information',
         ],

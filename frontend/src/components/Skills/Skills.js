@@ -46,7 +46,7 @@ function Skills(props, ref) {
                                             <ListGroup.Item className="skills-list-item">
                                                 <div className="skills-card-label-container">
                                                     <div className="skills-card-label">
-                                                        <Card.Img className="skills-card-img" variant="top" style={{width: '35px'}} src={lang.logo} />
+                                                        <Card.Img className="skills-card-img" variant="top" src={lang.logo} />
                                                         &nbsp;&nbsp;
                                                         <Card.Title className="skills-card-text-container">{lang.name}</Card.Title>
                                                     </div>
@@ -71,7 +71,7 @@ function Skills(props, ref) {
                                             <ListGroup.Item className="skills-list-item">
                                                 <div className="skills-card-label-container">
                                                     <div className="skills-card-label">
-                                                        <Card.Img className="skills-card-img" variant="top" style={{width: '35px'}} src={frame.logo} />
+                                                        <Card.Img className="skills-card-img" variant="top" src={frame.logo} />
                                                         &nbsp;&nbsp;
                                                         <Card.Title className="skills-card-text-container">{frame.name}</Card.Title>
                                                     </div>
@@ -96,7 +96,7 @@ function Skills(props, ref) {
                                             <ListGroup.Item className="skills-list-item">
                                                 <div className="skills-card-label-container">
                                                     <div className="skills-card-label">
-                                                        <Card.Img className="skills-card-img" variant="top" style={{width: '35px'}} src={ds.logo} />
+                                                        <Card.Img className="skills-card-img" variant="top" src={ds.logo} />
                                                         &nbsp;&nbsp;
                                                         <Card.Title className="skills-card-text-container">{ds.name}</Card.Title>
                                                     </div>
@@ -121,7 +121,7 @@ function Skills(props, ref) {
                                             <ListGroup.Item className="skills-list-item">
                                                 <div className="skills-card-label-container">
                                                     <div className="skills-card-label">
-                                                        <Card.Img className="skills-card-img" variant="top" style={{width: '35px'}} src={ss.logo} />
+                                                        <Card.Img className="skills-card-img" variant="top" src={ss.logo} />
                                                         &nbsp;&nbsp;
                                                         <Card.Title className="skills-card-text-container">{ss.name}</Card.Title>
                                                     </div>
