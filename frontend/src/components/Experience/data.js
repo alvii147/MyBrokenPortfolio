@@ -26,6 +26,7 @@ const data = [
             'Maintained <span class="experience-strong">OAuth 2.0</span> & <span class="experience-strong">OpenID Connect</span> identity service built on <span class="experience-strong">Ruby on Rails</span>',
             'Leveraged multi-staged <span class="experience-strong">Docker</span> builds to optimize production server container hosted on <span class="experience-strong">Amazon ECS</span>, reducing image size by <span class="experience-strong">58.4%</span>',
             'Designed and documented <span class="experience-strong">Apache Kafka</span> calls to stream backend server events for data tracking and verified data payloads with unit tests utilizing <span class="experience-strong">RSpec</span> & <span class="experience-strong">Minitest</span> on Rails',
+            'Configured frontend <span class="experience-strong">A/B testing</span> experiments on Optimizely to track performance of UI variations and assess statistical significance of results',
         ],
     },
     {

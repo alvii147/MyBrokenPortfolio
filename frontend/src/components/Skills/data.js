@@ -17,8 +17,9 @@ import NumPyLogo from '../../images/Skills/numpy_logo.png';
 import MatplotlibLogo from '../../images/Skills/matplotlib_logo.png';
 import PandasLogo from '../../images/Skills/pandas_logo.png';
 import PostgreSQLLogo from '../../images/Skills/postgresql_logo.png';
-import ScikitLearnLogo from '../../images/Skills/sklearn_logo.png';
 import TensorflowLogo from '../../images/Skills/tensorflow_logo.png';
+import MongoDBLogo from '../../images/Skills/mongodb_logo.png';
+import ScikitLearnLogo from '../../images/Skills/sklearn_logo.png';
 import KerasLogo from '../../images/Skills/keras_logo.png';
 import OpencvLogo from '../../images/Skills/opencv_logo.png';
 import RLogo from '../../images/Skills/r_logo.png';
@@ -137,21 +138,27 @@ const data = {
             color: 'linear-gradient(to right, #4169E1, #7B97EA)',
         },
         {
-            name: 'scikit-learn',
-            logo: ScikitLearnLogo,
-            strength: '75%',
-            color: 'linear-gradient(to right, #F7931E, #FBCF9D)',
-        },
-        {
             name: 'TensorFlow',
             logo: TensorflowLogo,
             strength: '75%',
             color: 'linear-gradient(to right, #FF6F00, #FFA866)',
         },
         {
+            name: 'MongoDB',
+            logo: MongoDBLogo,
+            strength: '75%',
+            color: 'linear-gradient(to right, #47A248, #B8E0B9)',
+        },
+        {
+            name: 'scikit-learn',
+            logo: ScikitLearnLogo,
+            strength: '74%',
+            color: 'linear-gradient(to right, #F7931E, #FBCF9D)',
+        },
+        {
             name: 'Keras',
             logo: KerasLogo,
-            strength: '75%',
+            strength: '72%',
             color: 'linear-gradient(to right, #D00000, #FF3333)',
         },
         {
