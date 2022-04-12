@@ -20,6 +20,7 @@ import * as TechIcons from '../TechIcons/TechIcons';
 
 const data = [
     {
+        active: true,
         title: 'Image Noise Interpolation',
         caption: 'Replication of the color image interpolation methods to correct impulsive noise',
         image: ImageNoiseInterpolationImage,
@@ -38,6 +39,7 @@ const data = [
         ]
     },
     {
+        active: true,
         title: 'Crime Stats Analysis',
         caption: 'Crime statistics database design & analysis',
         image: CrimeStatsAnalysisImage,
@@ -57,6 +59,7 @@ const data = [
         ]
     },
     {
+        active: true,
         title: 'DiscreteTimeLib',
         caption: 'Python package for analysis of discrete time signals and systems',
         image: DiscreteTimeLibImage,
@@ -76,6 +79,7 @@ const data = [
         ]
     },
     {
+        active: true,
         title: 'Routh-Hurwitz Table Generator',
         caption: 'Web application that computes the Routh-Hurwitz Stability Table for Control Systems Analysis',
         image: RouthHurwitzImage,
@@ -96,6 +100,7 @@ const data = [
         ]
     },
     {
+        active: true,
         title: 'Altruist',
         caption: 'Mobile and web platform to promote altruism and the assistance of senior citizens during a difficult time',
         image: AltruistImage,
@@ -117,6 +122,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'quickVax',
         caption: 'A web application that efficiently matches vaccine receivers with medical institutions using patient priority queue system',
         image: quickVaxImage,
@@ -140,6 +146,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'cram.ai',
         caption: 'Web platform that uses natural language processing to analyze lecture videos and generate learning flashcards',
         image: cramaiImage,
@@ -165,6 +172,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'pupil',
         caption: 'Computer vision application that detects pupil movement and develops eye-tracking communication for Cerebral Palsy patients',
         image: pupilImage,
@@ -187,6 +195,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'Mango.UI',
         caption: 'Python PyQt5 library that provides custom-styled widgets for sharper desktop app development',
         image: MangoUIImage,
@@ -203,6 +212,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'k kard',
         caption: 'A mobile app that provides a fun, yet educational way for children and parents to manage their finances',
         image: kkardImage,
@@ -227,6 +237,7 @@ const data = [
         ]
     },
     {
+        active: true,
         title: 'Hachiko\'s Journal',
         caption: 'AI-based digital therapeutic journal writing application for mental health patients with interactive virtual assistant',
         image: HachikosJournalImage,
@@ -248,6 +259,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'DSLX Academy',
         caption: 'Platform dedicated to helping children overcome dyslexia',
         image: DSLXAcademyImage,
@@ -269,6 +281,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'EduSource',
         caption: 'Web application for enriched remote education, crowdsourcing course materials, and scientific equation recognition',
         image: EduSourceImage,
@@ -292,6 +305,7 @@ const data = [
         ]
     },
     {
+        active: true,
         title: 'Goodwill Studio',
         caption: 'An efficient profanity-filtering tool to combat Tourette Syndrome',
         image: GoodwillStudioImage,
@@ -313,6 +327,7 @@ const data = [
         ]
     },
     {
+        active: true,
         title: 'BuildAbout',
         caption: 'Machine learning based web application for brainstorming eco-friendly project ideas for specified tools and materials',
         image: BuildAboutImage,
@@ -336,6 +351,7 @@ const data = [
         ]
     },
     {
+        active: true,
         title: 'Bangla Notepad',
         caption: 'Deep learning application to recognize Bengali alphabets and numerals',
         image: BanglaNotepadImage,
@@ -357,6 +373,7 @@ const data = [
         ]
     },
     {
+        active: true,
         title: 'Smart Wardrobe',
         caption: 'Deep learning application that identifies pieces of clothing',
         image: SmartWardrobeImage,

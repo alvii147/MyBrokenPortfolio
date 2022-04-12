@@ -1,5 +1,6 @@
 const data = [
     {
+        active: true,
         title: 'Impulsive Noise Reduction using Interpolation of Color Images',
         link: 'https://alvii147.github.io/ImageNoiseInterpolation/report/ECE_313_Course_Project',
         tags: [
@@ -9,6 +10,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'Annotation Vectors with Matrix Profile for Time Series Analysis',
         link: 'https://stumpy.readthedocs.io/en/latest/Tutorial_Annotation_Vectors.html',
         tags: [
@@ -19,6 +21,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'Advanced Annotation Vectors with Matrix Profile for Time Series Analysis',
         link: 'https://stumpy.readthedocs.io/en/latest/Tutorial_Advanced_Annotation_Vectors.html',
         tags: [
@@ -29,6 +32,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'Technical Thesaurus: NumPy Cheat Sheet',
         link: 'https://alvii147.github.io/TechnicalThesaurus/NumPy/NumPyCheatSheet',
         tags: [
@@ -38,6 +42,7 @@ const data = [
         ]
     },
     {
+        active: true,
         title: 'Technical Thesaurus: Docker Cheat Sheet',
         link: 'https://alvii147.github.io/TechnicalThesaurus/Docker/DockerCheatSheet',
         tags: [
@@ -46,6 +51,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'Technical Thesaurus: MySQL Cheat Sheet',
         link: 'https://alvii147.github.io/TechnicalThesaurus/MySQL/MySQLCheatSheet',
         tags: [
@@ -54,6 +60,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'Technical Thesaurus: Django Quickstart Guide',
         link: 'https://alvii147.github.io/TechnicalThesaurus/Django/DjangoQuickstartGuide',
         tags: [
@@ -63,6 +70,7 @@ const data = [
         ],
     },
     {
+        active: true,
         title: 'The Tale of Tridania',
         link: 'https://alvii147.github.io/OreoStack/Fiction/TheTaleOfTridania/TheTaleOfTridania',
         tags: [

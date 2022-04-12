@@ -41,7 +41,7 @@ function Skills(props, ref) {
                             <Card.Header as="h5" className="skills-card-header">Languages</Card.Header>
                             <Card.Body style={{height: '410px'}} className="skills-card-body">
                                 <ListGroup variant="flush">
-                                    {data.languages.map(lang => {
+                                    {data.languages.filter(lang => lang.active).map(lang => {
                                         return (
                                             <ListGroup.Item className="skills-list-item">
                                                 <div className="skills-card-label-container">
@@ -66,7 +66,7 @@ function Skills(props, ref) {
                             <Card.Header as="h5" className="skills-card-header">Tools/Frameworks</Card.Header>
                             <Card.Body style={{height: '470px'}} className="skills-card-body">
                                 <ListGroup variant="flush">
-                                    {data.frameworks.map(frame => {
+                                    {data.frameworks.filter(frame => frame.active).map(frame => {
                                         return (
                                             <ListGroup.Item className="skills-list-item">
                                                 <div className="skills-card-label-container">
@@ -91,7 +91,7 @@ function Skills(props, ref) {
                             <Card.Header as="h5" className="skills-card-header">Databases/Data Science</Card.Header>
                             <Card.Body style={{height: '470px'}} className="skills-card-body">
                                 <ListGroup variant="flush">
-                                    {data.data.map(ds => {
+                                    {data.data.filter(ds => ds.active).map(ds => {
                                         return (
                                             <ListGroup.Item className="skills-list-item">
                                                 <div className="skills-card-label-container">
@@ -116,7 +116,7 @@ function Skills(props, ref) {
                             <Card.Header as="h5" className="skills-card-header">Soft Skills</Card.Header>
                             <Card.Body style={{height: '340px'}} className="skills-card-body">
                                 <ListGroup variant="flush">
-                                    {data.soft.map(ss => {
+                                    {data.soft.filter(ss => ss.active).map(ss => {
                                         return (
                                             <ListGroup.Item className="skills-list-item">
                                                 <div className="skills-card-label-container">

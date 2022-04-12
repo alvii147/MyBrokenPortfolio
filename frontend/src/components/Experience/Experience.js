@@ -65,6 +65,7 @@ const TimelineConnector = withStyles({
 
 function Experience(props, ref) {
     const [activeExp, setActiveExp] = useState(0);
+    const expData = data.filter(exp => exp.active);
 
     useEffect(() => {
         Aos.init({
@@ -91,7 +92,7 @@ function Experience(props, ref) {
                 <div id="experience-main-block">
                     <div id="experience-thumbnail-list-container">
                         <Stepper data-aos="fade-down" alternativeLabel activeStep={activeExp} id="experience-main-stepper" connector={<TimelineConnector />}>
-                            {data.map((exp, index) => {
+                            {expData.map((exp, index) => {
                                 return (
                                     <Step key={index}>
                                         <StepLabel StepIconComponent={TimelineUbuntuIcon} StepIconProps={{
@@ -108,8 +109,8 @@ function Experience(props, ref) {
                     <div id="experience-list-container">
                         <Card data-aos="flip-left" data-aos-delay="300" bg="dark" className="experience-card">
                             <Card.Header as="h3" className="experience-card-header">
-                                <div className="experience-card-header-text">{data[activeExp].company}</div>
-                                {data[activeExp].rating &&
+                                <div className="experience-card-header-text">{expData[activeExp].company}</div>
+                                {expData[activeExp].rating &&
                                 <div className="experience-card-header-badge">
                                     <div className="experience-badge-container">
                                         <Badge className="experience-badge-left" style={{borderTopRightRadius: '0px', borderBottomRightRadius: '0px'}}>Co-op Rating</Badge>
@@ -120,16 +121,16 @@ function Experience(props, ref) {
                             <Card.Body className="experience-card-body">
                                 <div className="experience-card-top-container">
                                     <div className="experience-card-title-container">
-                                        <Card.Title>{data[activeExp].role}</Card.Title>
-                                        <Card.Text style={{fontSize: '10pt'}}>{data[activeExp].interval}</Card.Text>
+                                        <Card.Title>{expData[activeExp].role}</Card.Title>
+                                        <Card.Text style={{fontSize: '10pt'}}>{expData[activeExp].interval}</Card.Text>
                                     </div>
                                     <div className="experience-card-img-container">
-                                        <img alt="Experience Company" src={data[activeExp].logo} className="experience-card-img" />
+                                        <img alt="Experience Company" src={expData[activeExp].logo} className="experience-card-img" />
                                     </div>
                                 </div>
                                 <Card.Text className="experience-card-text">
                                     <ListGroup variant="flush" className="experience-list-group">
-                                        {data[activeExp].description.map(desc => {
+                                        {expData[activeExp].description.map(desc => {
                                             return(
                                                 <ListGroup.Item style={{color: 'inherit', borderColor: 'inherit', backgroundColor: 'transparent'}} dangerouslySetInnerHTML={{__html: desc}}></ListGroup.Item>
                                             );

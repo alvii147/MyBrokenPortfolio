@@ -43,7 +43,7 @@ function Writings(props, ref) {
                     fullHeightHover={false}
                     navButtonsAlwaysVisible="true"
                     navButtonsProps={{style: {color: '#E6E6E6', backgroundImage: 'linear-gradient(to right, #004D4D, #003300)'}}}>
-                    {data.map(wr => {
+                    {data.filter(wr => wr.active).map(wr => {
                         return (
                             <div className="writings-card-parent-container" href="">
                                 <Card data-aos="fade-right" className="writings-card-container">

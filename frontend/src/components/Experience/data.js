@@ -17,6 +17,7 @@ import SJWSPythonClubLogoThumbnail from '../../images/Experience/sjwspythonclub_
 
 const data = [
     {
+        active: true,
         company: 'Prodigy Education',
         role: 'Full-Stack Developer',
         logo: ProdigyEducationLogo,
@@ -30,6 +31,7 @@ const data = [
         ],
     },
     {
+        active: true,
         company: 'Nokia',
         role: 'Full-Stack Developer',
         logo: NokiaLogo,
@@ -44,6 +46,7 @@ const data = [
         rating: 'Outstanding',
     },
     {
+        active: true,
         company: 'codePrentice',
         role: 'Open Source Software Developer',
         logo: codePrenticeLogo,
@@ -56,6 +59,7 @@ const data = [
         ],
     },
     {
+        active: true,
         company: 'Wind River Systems',
         role: 'Software Developer',
         logo: WindRiverLogo,
@@ -70,6 +74,7 @@ const data = [
         rating: 'Excellent',
     },
     {
+        active: true,
         company: 'Qualcomm',
         role: 'Display Verification Engineer',
         logo: QualcommLogo,
@@ -84,6 +89,7 @@ const data = [
         rating: 'Excellent',
     },
     {
+        active: true,
         company: 'Imagine Communications',
         role: 'Embedded Software Developer',
         logo: ImagineCommunicationsLogo,
@@ -97,6 +103,7 @@ const data = [
         rating: 'Very Good',
     },
     {
+        active: true,
         company: 'WATonomous',
         role: 'CAN Interfacing Team Member',
         logo: WatonomousLogo,
@@ -108,6 +115,7 @@ const data = [
         ],
     },
     {
+        active: true,
         company: 'SJWS Python Club',
         role: 'Co-Founder & Tutor',
         logo: SJWSPythonClubLogo,

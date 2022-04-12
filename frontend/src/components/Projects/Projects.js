@@ -58,7 +58,7 @@ function Projects(props, ref) {
                     timeout={700}
                     navButtonsAlwaysVisible="true"
                     navButtonsProps={{style: {color: '#111111', backgroundImage: 'linear-gradient(to right, #B3D9FF, #8080FF)'}}}>
-                    {data.map(prj => {
+                    {data.filter(prj => prj.active).map(prj => {
                         return (
                             <div className="projects-card-parent-container" href="">
                                 <Card data-aos="fade-left" className="projects-card-container">
