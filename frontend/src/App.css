@@ -26,6 +26,10 @@
     --scrollbar-bg-color: rgb(203, 185, 218);
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--ubuntu-bg-middle-color);
     background-image: linear-gradient(to right, var(--ubuntu-bg-top-color), var(--ubuntu-bg-middle-color), var(--ubuntu-bg-bottom-color));

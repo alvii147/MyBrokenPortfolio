@@ -25,6 +25,7 @@ import data from './data';
 
 import AvatarRound from '../../images/About/avatar_round.png';
 import Waterloo from '../../images/About/waterloo.png';
+import Palestine from '../../images/About/palestine.png';
 
 function Projects(props, ref) {
     const [showAvatar, setShowAvatar] = useState(false);
@@ -34,6 +35,10 @@ function Projects(props, ref) {
     const darkModeStyles = {
         mainContainerStyle: {
             color: 'rgb(235, 235, 235)',
+        },
+        linkWrap: {
+            color: 'rgb(235, 235, 235)',
+            textDecoration: 'none',
         },
         titlebarStyle: {
             backgroundImage: 'linear-gradient(rgb(63, 72, 90), rgb(40, 46, 57))',
@@ -66,6 +71,10 @@ function Projects(props, ref) {
     const lightModeStyles = {
         mainContainerStyle: {
             color: 'rgb(30, 30, 30)',
+        },
+        linkWrap: {
+            color: 'rgb(30, 30, 30)',
+            textDecoration: 'none',
         },
         titlebarStyle: {
             backgroundImage: 'linear-gradient(rgb(62, 62, 62), rgb(44, 44, 44))',
@@ -130,7 +139,7 @@ function Projects(props, ref) {
                         />
                     </span>
                 </div>
-                <div data-aos="fade-left" id="about-main-block">
+                <div data-aos="flip-up" id="about-main-block">
                     <div id="about-title-bar" style={UIStyles.titlebarStyle}>
                         <div id="about-title-text-container">
                             About Me
@@ -184,36 +193,42 @@ function Projects(props, ref) {
                                 </div>
                             </div>
                             <div id="about-sidebar-socials">
-                                <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={(e) => {e.preventDefault(); window.open('https://www.linkedin.com/in/zahin-zaman/', '_blank');}}>
-                                    <div className="about-sidebar-component">
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                            <Linkedin color={UIStyles.linkedinIconColor} size={17} />
-                                        </div>
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
-                                            LinkedIn
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={(e) => {e.preventDefault(); window.open('https://github.com/alvii147', '_blank');}}>
-                                    <div className="about-sidebar-component">
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                            <Github color={UIStyles.githubIconColor} size={17} />
-                                        </div>
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
-                                            Github
+                                <a href="https://www.linkedin.com/in/zahin-zaman/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                        <div className="about-sidebar-component">
+                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
+                                                <Linkedin color={UIStyles.linkedinIconColor} size={17} />
+                                            </div>
+                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
+                                                LinkedIn
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={(e) => {e.preventDefault(); window.open('https://devpost.com/alvii147', '_blank');}}>
-                                    <div className="about-sidebar-component">
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                            <Devpost color={UIStyles.devpostIconColor} size={17} />
-                                        </div>
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
-                                            Devpost
+                                </a>
+                                <a href="https://github.com/alvii147" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                        <div className="about-sidebar-component">
+                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
+                                                <Github color={UIStyles.githubIconColor} size={17} />
+                                            </div>
+                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
+                                                Github
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
+                                <a href="https://devpost.com/alvii147" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                        <div className="about-sidebar-component">
+                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
+                                                <Devpost color={UIStyles.devpostIconColor} size={17} />
+                                            </div>
+                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
+                                                Devpost
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                                 <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={props.scrollToContact}>
                                     <div className="about-sidebar-component">
                                         <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
@@ -224,16 +239,30 @@ function Projects(props, ref) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={(e) => {e.preventDefault(); window.open('https://github.com/alvii147/Resume/raw/master/ZahinZaman.pdf', '_blank');}}>
-                                    <div className="about-sidebar-component">
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                            <AccountBoxIcon style={{color: UIStyles.resumeIconColor, fontSize: 23}} />
-                                        </div>
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
-                                            Resume
+                                <a href="https://github.com/alvii147/Resume/raw/master/ZahinZaman.pdf" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                        <div className="about-sidebar-component">
+                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
+                                                <AccountBoxIcon style={{color: UIStyles.resumeIconColor, fontSize: 23}} />
+                                            </div>
+                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
+                                                Resume
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
+                                <a href="https://www.islamicreliefcanada.org/emergencies/palestine/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                        <div className="about-sidebar-component">
+                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
+                                                <img alt="Palestine Icon" src={Palestine} style={{width: '17px'}} />
+                                            </div>
+                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
+                                                Free Palestine
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                             <div id="about-modeselect-container">
                                 <Switch

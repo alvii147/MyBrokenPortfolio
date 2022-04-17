@@ -155,6 +155,10 @@
 .about-sidebar-component-text {
     font-size: 13pt;
     padding-left: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .about-sidebar-component-text-small {
