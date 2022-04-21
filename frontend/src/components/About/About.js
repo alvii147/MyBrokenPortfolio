@@ -51,6 +51,9 @@ function Projects(props, ref) {
         sidebarComponentContainerStyle: {
             borderBottom: '1px solid rgb(90, 90, 90)',
         },
+        sidebarComponentContainerStyleSpecial: {
+            borderTop: '1px solid rgb(90, 90, 90)',
+        },
         contentsContainerStyle: {
             backgroundColor: 'rgb(43, 53, 70)',
         },
@@ -86,6 +89,9 @@ function Projects(props, ref) {
         },
         sidebarComponentContainerStyle: {
             borderBottom: '1px solid rgb(130, 130, 130)',
+        },
+        sidebarComponentContainerStyleSpecial: {
+            borderTop: '1px solid rgb(130, 130, 130)',
         },
         contentsContainerStyle: {
             backgroundColor: 'rgb(230, 230, 255)',
@@ -156,133 +162,137 @@ function Projects(props, ref) {
                     </div>
                     <div id="about-contents-container" style={UIStyles.mainContainerStyle}>
                         <div id="about-sidebar" style={UIStyles.sidebarStyle}>
-                            <div id="about-sidebar-education">
-                                <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={(e) => {e.preventDefault();}}>
-                                    <div className="about-sidebar-component">
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                            <img alt="Waterloo Icon" src={Waterloo} style={{width: '17px'}} />
+                            <div data-aos="custom-fade-in" data-aos-delay="1000" id="about-sidebar-animation-container">
+                                <div id="about-sidebar-education">
+                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={(e) => {e.preventDefault();}}>
+                                        <div className="about-sidebar-component">
+                                            <div className="about-sidebar-component-icon-container">
+                                                <img alt="Waterloo Icon" src={Waterloo} style={{width: '17px'}} />
+                                            </div>
+                                            <div className="about-sidebar-component-text">
+                                                U. Waterloo<br />
+                                            </div>
                                         </div>
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
-                                            U. Waterloo<br />
+                                        <div className="about-sidebar-component">
+                                            <div className="about-sidebar-component-icon-container">
+                                                <EmojiObjectsOutlinedIcon style={{color: UIStyles.electricalIconColor}} size={17} />
+                                            </div>
+                                            <div className="about-sidebar-component-text about-sidebar-component-text-small">
+                                                Electrical Eng.<br />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="about-sidebar-component">
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                            <EmojiObjectsOutlinedIcon style={{color: UIStyles.electricalIconColor}} size={17} />
+                                        <div className="about-sidebar-component">
+                                            <div className="about-sidebar-component-icon-container">
+                                                <BarChartOutlinedIcon style={{color: UIStyles.AIIconColor}} size={17} />
+                                            </div>
+                                            <div className="about-sidebar-component-text about-sidebar-component-text-small">
+                                                A.I. Specialization<br />
+                                            </div>
                                         </div>
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text about-sidebar-component-text-small">
-                                            Electrical Eng.<br />
-                                        </div>
-                                    </div>
-                                    <div className="about-sidebar-component">
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                            <BarChartOutlinedIcon style={{color: UIStyles.AIIconColor}} size={17} />
-                                        </div>
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text about-sidebar-component-text-small">
-                                            A.I. Specialization<br />
-                                        </div>
-                                    </div>
-                                    <div className="about-sidebar-component">
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                            <SchoolOutlinedIcon style={{color: UIStyles.schoolIconColor}} size={17} />
-                                        </div>
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text about-sidebar-component-text-small">
-                                            84.6% Average<br />
+                                        <div className="about-sidebar-component">
+                                            <div className="about-sidebar-component-icon-container">
+                                                <SchoolOutlinedIcon style={{color: UIStyles.schoolIconColor}} size={17} />
+                                            </div>
+                                            <div className="about-sidebar-component-text about-sidebar-component-text-small">
+                                                84.6% Average<br />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="about-sidebar-socials">
-                                <a href="https://www.linkedin.com/in/zahin-zaman/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
-                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                <div id="about-sidebar-socials">
+                                    <a href="https://www.linkedin.com/in/zahin-zaman/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                        <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                            <div className="about-sidebar-component">
+                                                <div className="about-sidebar-component-icon-container">
+                                                    <Linkedin color={UIStyles.linkedinIconColor} size={17} />
+                                                </div>
+                                                <div className="about-sidebar-component-text">
+                                                    LinkedIn
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://github.com/alvii147" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                        <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                            <div className="about-sidebar-component">
+                                                <div className="about-sidebar-component-icon-container">
+                                                    <Github color={UIStyles.githubIconColor} size={17} />
+                                                </div>
+                                                <div className="about-sidebar-component-text">
+                                                    Github
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://devpost.com/alvii147" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                        <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                            <div className="about-sidebar-component">
+                                                <div className="about-sidebar-component-icon-container">
+                                                    <Devpost color={UIStyles.devpostIconColor} size={17} />
+                                                </div>
+                                                <div className="about-sidebar-component-text">
+                                                    Devpost
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={props.scrollToContact}>
                                         <div className="about-sidebar-component">
-                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                                <Linkedin color={UIStyles.linkedinIconColor} size={17} />
+                                            <div className="about-sidebar-component-icon-container">
+                                                <Gmail color={UIStyles.gmailIconColor} size={17} />
                                             </div>
-                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
-                                                LinkedIn
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="https://github.com/alvii147" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
-                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
-                                        <div className="about-sidebar-component">
-                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                                <Github color={UIStyles.githubIconColor} size={17} />
-                                            </div>
-                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
-                                                Github
+                                            <div className="about-sidebar-component-text">
+                                                Email
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                                <a href="https://devpost.com/alvii147" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
-                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
-                                        <div className="about-sidebar-component">
-                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                                <Devpost color={UIStyles.devpostIconColor} size={17} />
+                                    <a href="https://github.com/alvii147/Resume/raw/master/ZahinZaman.pdf" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                        <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                            <div className="about-sidebar-component">
+                                                <div className="about-sidebar-component-icon-container">
+                                                    <AccountBoxIcon style={{color: UIStyles.resumeIconColor, fontSize: 23}} />
+                                                </div>
+                                                <div className="about-sidebar-component-text">
+                                                    Resume
+                                                </div>
                                             </div>
-                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
-                                                Devpost
-                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                                <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={props.scrollToContact}>
-                                    <div className="about-sidebar-component">
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                            <Gmail color={UIStyles.gmailIconColor} size={17} />
-                                        </div>
-                                        <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
-                                            Email
-                                        </div>
-                                    </div>
+                                    </a>
                                 </div>
-                                <a href="https://github.com/alvii147/Resume/raw/master/ZahinZaman.pdf" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
-                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
-                                        <div className="about-sidebar-component">
-                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                                <AccountBoxIcon style={{color: UIStyles.resumeIconColor, fontSize: 23}} />
+                                <div id="about-modeselect-container">
+                                    <Switch
+                                        checked={modeChecked}
+                                        onChange={handleModeChange}
+                                        offColor="#000066"
+                                        onColor="#80bfff"
+                                        onHandleColor="#465f86"
+                                        offHandleColor="#465f86"
+                                        checkedIcon={
+                                            <div style={{display: 'flex', justifyContent: 'center', paddingTop: '4px', paddingLeft: '5px', color: 'rgb(255, 255, 153)'}}>
+                                                <WbSunnyIcon fontSize='small' />
                                             </div>
-                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
-                                                Resume
+                                        }
+                                        uncheckedIcon={
+                                            <div style={{display: 'flex', justifyContent: 'center', paddingTop: '5px', color: 'rgb(255, 255, 153)'}}>
+                                                <NightsStayIcon fontSize='small' />
+                                            </div>
+                                        }>
+                                    </Switch>
+                                </div>
+                                <div id="about-sidebar-socials">
+                                    <a href="https://www.islamicreliefcanada.org/emergencies/palestine/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                        <div className="about-sidebar-component-container about-sidebar-component-container-special" style={UIStyles.sidebarComponentContainerStyleSpecial}>
+                                            <div className="about-sidebar-component">
+                                                <div className="about-sidebar-component-icon-container">
+                                                    <img alt="Palestine Icon" src={Palestine} style={{width: '17px'}} />
+                                                </div>
+                                                <div className="about-sidebar-component-text">
+                                                    Free Palestine
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                                <a href="https://www.islamicreliefcanada.org/emergencies/palestine/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
-                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
-                                        <div className="about-sidebar-component">
-                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-icon-container">
-                                                <img alt="Palestine Icon" src={Palestine} style={{width: '17px'}} />
-                                            </div>
-                                            <div data-aos="custom-fade-in" data-aos-delay="1000" className="about-sidebar-component-text">
-                                                Free Palestine
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div id="about-modeselect-container">
-                                <Switch
-                                    checked={modeChecked}
-                                    onChange={handleModeChange}
-                                    offColor="#000066"
-                                    onColor="#80bfff"
-                                    onHandleColor="#465f86"
-                                    offHandleColor="#465f86"
-                                    checkedIcon={
-                                        <div style={{display: 'flex', justifyContent: 'center', paddingTop: '4px', paddingLeft: '5px', color: 'rgb(255, 255, 153)'}}>
-                                            <WbSunnyIcon fontSize='small' />
-                                        </div>
-                                    }
-                                    uncheckedIcon={
-                                        <div style={{display: 'flex', justifyContent: 'center', paddingTop: '5px', color: 'rgb(255, 255, 153)'}}>
-                                            <NightsStayIcon fontSize='small' />
-                                        </div>
-                                    }>
-                                </Switch>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div id="about-contents" style={UIStyles.contentsContainerStyle}>
