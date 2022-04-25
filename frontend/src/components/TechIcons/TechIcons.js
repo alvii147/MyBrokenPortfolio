@@ -1,6 +1,7 @@
 import {
     // Languages
     Python,
+    Go,
     Javascript,
     Java,
 
@@ -8,6 +9,7 @@ import {
     Flask,
     Django,
     ReactJs,
+    Docker,
     Qt,
     Numpy,
     Pandas,
@@ -21,6 +23,7 @@ import {
     Springboot,
 
     // Database Query Languages & Management Systems
+    Postgresql,
     Mysql,
     Sqlite,
     Firebase,
@@ -47,6 +50,16 @@ function PythonIcon() {
 
 export {
     PythonIcon,
+};
+
+function GoIcon() {
+    return (
+        <Go color="#00ADD8"></Go>
+    );
+}
+
+export {
+    GoIcon,
 };
 
 function JavascriptIcon() {
@@ -101,6 +114,16 @@ function ReactJsIcon() {
 
 export {
     ReactJsIcon,
+};
+
+function DockerIcon() {
+    return (
+        <Docker color="#2496ED"></Docker>
+    );
+}
+
+export {
+    DockerIcon,
 };
 
 function QtIcon() {
@@ -216,6 +239,16 @@ export {
 // =============================================
 // Database Query Languages & Management Systems
 // =============================================
+
+function PostgresqlIcon() {
+    return (
+        <Postgresql color="#4169E1"></Postgresql>
+    );
+}
+
+export {
+    PostgresqlIcon,
+};
 
 function MysqlIcon() {
     return (

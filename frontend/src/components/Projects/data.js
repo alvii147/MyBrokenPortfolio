@@ -15,10 +15,29 @@ import SmartWardrobeImage from '../../images/Projects/SmartWardrobe.png';
 import DiscreteTimeLibImage from '../../images/Projects/DiscreteTimeLib.png';
 import CrimeStatsAnalysisImage from '../../images/Projects/CrimeStatsAnalysis.png';
 import ImageNoiseInterpolationImage from '../../images/Projects/ImageNoiseInterpolation.png';
+import VentryImage from '../../images/Projects/Ventry.png';
 
 import * as TechIcons from '../TechIcons/TechIcons';
 
 const data = [
+    {
+        active: true,
+        title: 'Ventry',
+        caption: 'Inventory tracking CRUD application',
+        image: VentryImage,
+        description: [
+            'Constructed REST API in <strong>Go</strong> with <strong>CRUD</strong> functionality using <strong>net/http</strong> package and <strong>PostgreSQL</strong> database',
+            'Configured application for exporting inventory items to CSV format',
+            'Dockerized application using <strong>Docker Compose</strong>',
+        ],
+        github: 'https://github.com/alvii147/Ventry',
+        milestones: [],
+        technologies: [
+            TechIcons.GoIcon,
+            TechIcons.PostgresqlIcon,
+            TechIcons.DockerIcon,
+        ]
+    },
     {
         active: true,
         title: 'Image Noise Interpolation',
