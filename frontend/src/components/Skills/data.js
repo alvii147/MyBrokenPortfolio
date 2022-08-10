@@ -10,6 +10,7 @@ import ReactLogo from '../../images/Skills/react_logo.png';
 import FlaskLogo from '../../images/Skills/flask_logo.png';
 import GoogleCloudLogo from '../../images/Skills/googlecloud_logo.png';
 import AWSLogo from '../../images/Skills/aws_logo.png';
+import FastAPILogo from '../../images/Skills/fastapi_logo.png';
 import RailsLogo from '../../images/Skills/rails_logo.png';
 
 import MySQLLogo from '../../images/Skills/mysql_logo.png';
@@ -109,6 +110,13 @@ const data = {
             logo: AWSLogo,
             strength: '62%',
             color: 'linear-gradient(to right, #232F3E, #7C96B6)',
+        },
+        {
+            active: true,
+            name: 'FastAPI',
+            logo: FastAPILogo,
+            strength: '61%',
+            color: 'linear-gradient(to right, #009688, #1AffE8)',
         },
         {
             active: true,
