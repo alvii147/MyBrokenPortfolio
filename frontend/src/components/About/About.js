@@ -194,7 +194,7 @@ function Projects(props, ref) {
                                                 <SchoolOutlinedIcon style={{color: UIStyles.schoolIconColor}} size={17} />
                                             </div>
                                             <div className="about-sidebar-component-text about-sidebar-component-text-small">
-                                                84.6% Average<br />
+                                                {data.average}% Average<br />
                                             </div>
                                         </div>
                                     </div>

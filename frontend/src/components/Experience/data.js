@@ -1,3 +1,5 @@
+import OnePasswordLogo from '../../images/Experience/1password_logo.png';
+import OnePasswordLogoThumbnail from '../../images/Experience/1password_logo_thumbnail.png';
 import ProdigyEducationLogo from '../../images/Experience/prodigy_education_logo.png';
 import ProdigyEducationLogoThumbnail from '../../images/Experience/prodigy_education_logo_thumbnail.png';
 import NokiaLogo from '../../images/Experience/nokia_logo.png';
@@ -16,6 +18,15 @@ import SJWSPythonClubLogo from '../../images/Experience/sjwspythonclub_logo.png'
 import SJWSPythonClubLogoThumbnail from '../../images/Experience/sjwspythonclub_logo_thumbnail.png';
 
 const data = [
+    {
+        active: true,
+        company: '1Password',
+        role: 'Software Developer',
+        logo: OnePasswordLogo,
+        thumbnail: OnePasswordLogoThumbnail,
+        interval: 'Sept 2022 - Present',
+        description: [],
+    },
     {
         active: true,
         company: 'Prodigy Education',

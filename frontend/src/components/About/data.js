@@ -1,4 +1,5 @@
 const data = {
+    average: 85.3,
     bio: `
         Hi, I'm Zahin! I'm a 4th year student at the University of Waterloo,
         pursuing a degree in Electrical Engineering and
