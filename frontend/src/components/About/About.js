@@ -16,7 +16,7 @@ import AccountBoxIcon from '@material-ui/icons/AccountBox';
 
 import { Typewriter } from 'react-simple-typewriter';
 
-import { Linkedin, Github, Devpost, Gmail } from '@icons-pack/react-simple-icons';
+import { Linkedin, Github, Devpost, Gmail, Leetcode } from '@icons-pack/react-simple-icons';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -69,6 +69,7 @@ function Projects(props, ref) {
         devpostIconColor: '#0083B3',
         gmailIconColor: '#EA4335',
         resumeIconColor: '#99E6E6',
+        leetcodeIconColor: '#FFA116',
     }
 
     const lightModeStyles = {
@@ -108,6 +109,7 @@ function Projects(props, ref) {
         devpostIconColor: '#003E54',
         gmailIconColor: '#EA4335',
         resumeIconColor: '#009999',
+        leetcodeIconColor: '#FFA116',
     }
 
     const [UIStyles, setUIStyles] = useState(darkModeStyles);
@@ -232,6 +234,18 @@ function Projects(props, ref) {
                                                 </div>
                                                 <div className="about-sidebar-component-text">
                                                     Devpost
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://github.com/alvii147/leetcode" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                        <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                            <div className="about-sidebar-component">
+                                                <div className="about-sidebar-component-icon-container">
+                                                    <Leetcode color={UIStyles.leetcodeIconColor} size={17} />
+                                                </div>
+                                                <div className="about-sidebar-component-text">
+                                                    Leetcode
                                                 </div>
                                             </div>
                                         </div>

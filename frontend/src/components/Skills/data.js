@@ -1,6 +1,6 @@
 import PythonLogo from '../../images/Skills/python_logo.png';
-import CppLogo from '../../images/Skills/cpp_logo.png';
 import GoLogo from '../../images/Skills/go_logo.png';
+import CppLogo from '../../images/Skills/cpp_logo.png';
 import JavascriptLogo from '../../images/Skills/javascript_logo.png';
 import BashLogo from '../../images/Skills/bash_logo.png';
 
@@ -41,17 +41,17 @@ const data = {
         },
         {
             active: true,
-            name: 'C++',
-            logo: CppLogo,
+            name: 'Go',
+            logo: GoLogo,
             strength: '88%',
-            color: 'linear-gradient(to right, #3776AB, #659ECD)',
+            color: 'linear-gradient(to right, #00ADD8, #99EBFF)',
         },
         {
             active: true,
-            name: 'Go',
-            logo: GoLogo,
+            name: 'C++',
+            logo: CppLogo,
             strength: '82%',
-            color: 'linear-gradient(to right, #00ADD8, #99EBFF)',
+            color: 'linear-gradient(to right, #3776AB, #659ECD)',
         },
         {
             active: true,

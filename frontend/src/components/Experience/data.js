@@ -40,6 +40,7 @@ const data = [
             'Designed and documented <span class="experience-strong">Apache Kafka</span> calls to stream backend server events for data tracking and verified data payloads with unit tests utilizing <span class="experience-strong">RSpec</span> & <span class="experience-strong">Minitest</span> on Rails',
             'Configured frontend <span class="experience-strong">A/B testing</span> experiments on Optimizely to track performance of UI variations and assess statistical significance of results',
         ],
+        rating: 'Outstanding',
     },
     {
         active: true,
