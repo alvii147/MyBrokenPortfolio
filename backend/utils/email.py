@@ -5,7 +5,7 @@ from sendgrid.helpers.mail import Mail, Email, To
 
 
 def send_email(subject, body, receivers=[settings.EMAIL_RECEIVER_ADDRESS]):
-    if False and settings.DJANGO_ENV_MODE == 'DEV':
+    if settings.DJANGO_ENV_MODE == 'DEV':
         # print email contents to console if development environment
         print_email(subject, body, receivers)
     else:
