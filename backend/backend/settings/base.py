@@ -138,6 +138,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_SENDER_ADDRESS = os.environ['EMAIL_SENDER_ADDRESS']
 EMAIL_SENDER_PASSWORD = os.environ['EMAIL_SENDER_PASSWORD']
 EMAIL_RECEIVER_ADDRESS = os.environ['EMAIL_RECEIVER_ADDRESS']
+SENDGRID_API_KEY = os.environ['SENDGRID_API_KEY']
 
 # Number of endorsement requests allowed from IP address per day
 ENDORSEMENT_REQUESTS_PER_IP_PER_DAY = 5
