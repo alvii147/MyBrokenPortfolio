@@ -16,10 +16,66 @@ import DiscreteTimeLibImage from '../../images/Projects/DiscreteTimeLib.png';
 import CrimeStatsAnalysisImage from '../../images/Projects/CrimeStatsAnalysis.png';
 import ImageNoiseInterpolationImage from '../../images/Projects/ImageNoiseInterpolation.png';
 import VentryImage from '../../images/Projects/Ventry.png';
+import chromaticImage from '../../images/Projects/chromatic.png';
+import TordleImage from '../../images/Projects/Tordle.png';
+import gitmsgImage from '../../images/Projects/gitmsg.png';
 
 import * as TechIcons from '../TechIcons/TechIcons';
 
 const data = [
+    {
+        active: true,
+        title: 'gitmsg',
+        caption: 'App for writing git commit messages using 50/72 rule',
+        image: gitmsgImage,
+        description: [
+            'Developed & illustrated user-friendly <strong>PyQt6</strong>-based cross-platform desktop application with commit message preview',
+            'Implemented interactive command-line interface in <strong>Go</strong> with commit message exporting and clipboard copying capabilities',
+            'Devised thorough unit testing in multiple platforms with GitHub actions using QTest module and Go testing package',
+        ],
+        github: 'https://github.com/alvii147/gitmsg',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.GoIcon,
+            TechIcons.QtIcon,
+        ]
+    },
+    {
+        active: true,
+        title: 'Tordle',
+        caption: 'Terminal-based clone of Wordle',
+        image: TordleImage,
+        description: [
+            'Devised <strong>Python</strong> command-line interface program',
+            'Employed Dictionary API to present word definition on the terminal',
+            'Implemented colored terminal output with cross-platform compatibility',
+        ],
+        github: 'https://github.com/alvii147/Tordle',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+        ]
+    },
+    {
+        active: true,
+        title: 'chromatic',
+        caption: 'Image repository with facial detection features',
+        image: chromaticImage,
+        description: [
+            'Engineered full-stack <strong>Django</strong> application with user authentication and static file storage',
+            'Implemented facial detection using Haar Cascade classifiers in <strong>OpenCV</strong>',
+            'Formulated Python unit tests for Django views, URLs, models, and facial detection features',
+        ],
+        github: 'https://github.com/alvii147/chromatic',
+        website: 'https://devpostman404.pythonanywhere.com/',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.DjangoIcon,
+            TechIcons.OpencvIcon,
+        ]
+    },
     {
         active: true,
         title: 'Ventry',
@@ -31,6 +87,7 @@ const data = [
             'Dockerized application using <strong>Docker Compose</strong>',
         ],
         github: 'https://github.com/alvii147/Ventry',
+        website: 'https://ventry.zahinzaman1.repl.co/',
         milestones: [],
         technologies: [
             TechIcons.GoIcon,
