@@ -19,10 +19,29 @@ import VentryImage from '../../images/Projects/Ventry.png';
 import chromaticImage from '../../images/Projects/chromatic.png';
 import TordleImage from '../../images/Projects/Tordle.png';
 import gitmsgImage from '../../images/Projects/gitmsg.png';
+import FunFakerImage from '../../images/Projects/FunFaker.png';
 
 import * as TechIcons from '../TechIcons/TechIcons';
 
 const data = [
+    {
+        active: true,
+        title: 'FunFaker',
+        caption: 'Web API for generating fake data with pop culture references',
+        image: FunFakerImage,
+        description: [
+            'Developed <strong>Go</strong>-based web API from scratch with routers, handlers, and unit testing, using Go net/http package',
+            'Configured multi-staged <strong>Docker</strong> builds and hosted API as service on Northflank',
+            'Gathered and structured datasets based on pop-culture, and implemented management actions for data validation',
+        ],
+        github: 'https://github.com/alvii147/FunFaker',
+        website: 'https://funfaker--api--cgvttg4279tq.code.run/',
+        milestones: [],
+        technologies: [
+            TechIcons.GoIcon,
+            TechIcons.DockerIcon,
+        ]
+    },
     {
         active: true,
         title: 'gitmsg',
