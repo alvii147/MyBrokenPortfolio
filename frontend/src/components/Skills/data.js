@@ -2,6 +2,7 @@ import PythonLogo from '../../images/Skills/python_logo.png';
 import GoLogo from '../../images/Skills/go_logo.png';
 import CppLogo from '../../images/Skills/cpp_logo.png';
 import JavascriptLogo from '../../images/Skills/javascript_logo.png';
+import TypescriptLogo from '../../images/Skills/typescript_logo.png';
 import BashLogo from '../../images/Skills/bash_logo.png';
 
 import DjangoLogo from '../../images/Skills/django_logo.png';
@@ -36,15 +37,29 @@ const data = {
             active: true,
             name: 'Python',
             logo: PythonLogo,
-            strength: '95%',
+            strength: '97%',
             color: 'linear-gradient(to right, #00599C, #0082E6)',
         },
         {
             active: true,
             name: 'Go',
             logo: GoLogo,
-            strength: '88%',
+            strength: '92%',
             color: 'linear-gradient(to right, #00ADD8, #99EBFF)',
+        },
+        {
+            active: true,
+            name: 'JavaScript',
+            logo: JavascriptLogo,
+            strength: '88%',
+            color: 'linear-gradient(to right, #F7DF1E, #FCF19C)',
+        },
+        {
+            active: true,
+            name: 'TypeScript',
+            logo: TypescriptLogo,
+            strength: '84%',
+            color: 'linear-gradient(to right, #3178C6, #5C97D6)',
         },
         {
             active: true,
@@ -55,16 +70,9 @@ const data = {
         },
         {
             active: true,
-            name: 'JavaScript',
-            logo: JavascriptLogo,
-            strength: '77%',
-            color: 'linear-gradient(to right, #F7DF1E, #FCF19C)',
-        },
-        {
-            active: true,
             name: 'Bash',
             logo: BashLogo,
-            strength: '68%',
+            strength: '77%',
             color: 'linear-gradient(to right, #4EAA25, #9FE382)',
         },
     ],

@@ -88,7 +88,7 @@ const data = [
     {
         active: true,
         company: 'Qualcomm',
-        role: 'Display Verification Engineer',
+        role: 'Hardware Verification Engineer',
         logo: QualcommLogo,
         thumbnail: QualcommLogoThumbnail,
         interval: 'Jan 2020 - May 2020',
