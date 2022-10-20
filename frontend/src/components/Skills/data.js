@@ -16,9 +16,9 @@ import RailsLogo from '../../images/Skills/rails_logo.png';
 
 import MySQLLogo from '../../images/Skills/mysql_logo.png';
 import NumPyLogo from '../../images/Skills/numpy_logo.png';
+import PostgreSQLLogo from '../../images/Skills/postgresql_logo.png';
 import MatplotlibLogo from '../../images/Skills/matplotlib_logo.png';
 import PandasLogo from '../../images/Skills/pandas_logo.png';
-import PostgreSQLLogo from '../../images/Skills/postgresql_logo.png';
 import TensorflowLogo from '../../images/Skills/tensorflow_logo.png';
 import MongoDBLogo from '../../images/Skills/mongodb_logo.png';
 import ScikitLearnLogo from '../../images/Skills/sklearn_logo.png';
@@ -151,6 +151,13 @@ const data = {
         },
         {
             active: true,
+            name: 'PostgreSQL',
+            logo: PostgreSQLLogo,
+            strength: '84%',
+            color: 'linear-gradient(to right, #4169E1, #7B97EA)',
+        },
+        {
+            active: true,
             name: 'Matplotlib',
             logo: MatplotlibLogo,
             strength: '82%',
@@ -162,13 +169,6 @@ const data = {
             logo: PandasLogo,
             strength: '80%',
             color: 'linear-gradient(to right, #150458, #340ADB)',
-        },
-        {
-            active: true,
-            name: 'PostgreSQL',
-            logo: PostgreSQLLogo,
-            strength: '78%',
-            color: 'linear-gradient(to right, #4169E1, #7B97EA)',
         },
         {
             active: true,

@@ -202,6 +202,18 @@ function Projects(props, ref) {
                                     </div>
                                 </div>
                                 <div id="about-sidebar-socials">
+                                    <a href="https://github.com/alvii147/Resume/raw/master/ZahinZaman.pdf" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                        <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                            <div className="about-sidebar-component">
+                                                <div className="about-sidebar-component-icon-container">
+                                                    <AccountBoxIcon style={{color: UIStyles.resumeIconColor, fontSize: 23}} />
+                                                </div>
+                                                <div className="about-sidebar-component-text">
+                                                    Resume
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                     <a href="https://www.linkedin.com/in/zahin-zaman/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
                                         <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
                                             <div className="about-sidebar-component">
@@ -260,18 +272,6 @@ function Projects(props, ref) {
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="https://github.com/alvii147/Resume/raw/master/ZahinZaman.pdf" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
-                                        <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
-                                            <div className="about-sidebar-component">
-                                                <div className="about-sidebar-component-icon-container">
-                                                    <AccountBoxIcon style={{color: UIStyles.resumeIconColor, fontSize: 23}} />
-                                                </div>
-                                                <div className="about-sidebar-component-text">
-                                                    Resume
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
                                 </div>
                                 <div id="about-modeselect-container">
                                     <Switch

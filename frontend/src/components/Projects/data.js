@@ -292,7 +292,7 @@ const data = [
     {
         active: true,
         title: 'Mango.UI',
-        caption: 'Python PyQt5 library that provides custom-styled widgets for sharper desktop app development',
+        caption: 'Python PyQt6 library that provides custom-styled widgets for sharper desktop app development',
         image: MangoUIImage,
         description: [
             'Incorporated <strong>Qt Style Sheets</strong> and QVariantAnimation object to configure hover-animated button widgets',
