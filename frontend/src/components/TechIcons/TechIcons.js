@@ -12,6 +12,7 @@ import {
     Docker,
     Qt,
     Numpy,
+    Numba,
     Pandas,
     Scipy,
     Tensorflow,
@@ -144,6 +145,16 @@ function NumpyIcon() {
 
 export {
     NumpyIcon,
+};
+
+function NumbaIcon() {
+    return (
+        <Numba color="#00A3E0"></Numba>
+    );
+}
+
+export {
+    NumbaIcon,
 };
 
 function PandasIcon() {

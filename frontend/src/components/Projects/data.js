@@ -5,6 +5,7 @@ import cramaiImage from '../../images/Projects/cramai.gif';
 import pupilImage from '../../images/Projects/pupil.png';
 import MangoUIImage from '../../images/Projects/MangoUI.gif';
 import kkardImage from '../../images/Projects/kkard.png';
+import STUMPYImage from '../../images/Projects/STUMPY.png';
 import HachikosJournalImage from '../../images/Projects/HachikosJournal.gif';
 import DSLXAcademyImage from '../../images/Projects/DSLXAcademy.gif';
 import EduSourceImage from '../../images/Projects/EduSource.png';
@@ -308,6 +309,24 @@ const data = [
     },
     {
         active: true,
+        title: 'STUMPY',
+        caption: 'A powerful and scalable library that efficiently computes the Matrix Profile for time series data',
+        image: STUMPYImage,
+        description: [
+            'Composed comprehensive tutorials on <a href="https://stumpy.readthedocs.io/en/latest/Tutorial_Annotation_Vectors.html" target="_blank" rel="noopener noreferrer" class="experience-link">Annotation Vectors</a> and <a href="https://stumpy.readthedocs.io/en/latest/Tutorial_Advanced_Annotation_Vectors.html" target="_blank" rel="noopener noreferrer" class="experience-link">Advanced Annotation Vectors</a> based on Matrix Profile research paper',
+            'Implemented tiling scheme algorithm that leverages cache lines to improve Matrix Profile computation speeds by up to 50% using <strong>NumPy</strong> arrays and <strong>Numba</strong> just-in-time compilation',
+            'Devised heuristic algorithm, SHRIMP, that can provide fast approximations to Matrix Profiles',
+        ],
+        github: 'https://github.com/TDAmeritrade/stumpy',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.NumpyIcon,
+            TechIcons.NumbaIcon,
+        ]
+    },
+    {
+        active: true,
         title: 'k kard',
         caption: 'A mobile app that provides a fun, yet educational way for children and parents to manage their finances',
         image: kkardImage,
@@ -363,8 +382,8 @@ const data = [
             'Incorporated <strong>Azure Cognitive Services</strong> for Speech-To-Text conversion to develop app that helps overcome speech impediment',
             'Implemented optical character recognition using <strong>Google Cloud Vision</strong> to provide feedback for handwriting skills',
         ],
-        github: 'https://github.com/alvii147/HachikosJournal',
-        devpost: 'https://devpost.com/software/hachiko-s-journal',
+        github: 'https://github.com/alvii147/DSLX_Academy',
+        devpost: 'https://devpost.com/software/dslx-academy',
         youtube: 'https://youtu.be/zFMFPs3CKh0',
         milestones: [],
         technologies: [

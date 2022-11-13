@@ -4,8 +4,6 @@ import ProdigyEducationLogo from '../../images/Experience/prodigy_education_logo
 import ProdigyEducationLogoThumbnail from '../../images/Experience/prodigy_education_logo_thumbnail.png';
 import NokiaLogo from '../../images/Experience/nokia_logo.png';
 import NokiaLogoThumbnail from '../../images/Experience/nokia_logo_thumbnail.png';
-import codePrenticeLogo from '../../images/Experience/codeprentice_logo.png';
-import codePrenticeLogoThumbnail from '../../images/Experience/codeprentice_logo_thumbnail.png';
 import WindRiverLogo from '../../images/Experience/windriver_logo.png';
 import WindRiverLogoThumbnail from '../../images/Experience/windriver_logo_thumbnail.png';
 import QualcommLogo from '../../images/Experience/qualcomm_logo.png';
@@ -21,16 +19,20 @@ const data = [
     {
         active: true,
         company: '1Password',
-        role: 'Software Developer',
+        role: 'Software Developer Intern',
         logo: OnePasswordLogo,
         thumbnail: OnePasswordLogoThumbnail,
         interval: 'Sept 2022 - Present',
-        description: [],
+        description: [
+            'Expanded backend functionalities using <span class="experience-strong">Go</span> and <span class="experience-strong">Stripe API</span>, including payments module, subscriptions, trial and paid tiers, and promotions',
+            'Enhanced frontend credit card forms and payment flows using <span class="experience-strong">React.js</span> and <span class="experience-strong">Typescript</span>',
+            '<span class="experience-strong">Dockerized</span> Apple Pay and subscriptions microservice <span class="experience-strong">MySQL</span> database and <span class="experience-strong">RabbitMQ</span> message broker',
+        ],
     },
     {
         active: true,
         company: 'Prodigy Education',
-        role: 'Full-Stack Developer',
+        role: 'Full-Stack Developer Intern',
         logo: ProdigyEducationLogo,
         thumbnail: ProdigyEducationLogoThumbnail,
         interval: 'Jan 2022 - April 2022',
@@ -45,7 +47,7 @@ const data = [
     {
         active: true,
         company: 'Nokia',
-        role: 'Full-Stack Developer',
+        role: 'Full-Stack Developer Intern',
         logo: NokiaLogo,
         thumbnail: NokiaLogoThumbnail,
         interval: 'May 2021 - Aug 2021',
@@ -59,21 +61,8 @@ const data = [
     },
     {
         active: true,
-        company: 'codePrentice',
-        role: 'Open Source Software Developer',
-        logo: codePrenticeLogo,
-        thumbnail: codePrenticeLogoThumbnail,
-        interval: 'Sept 2020 - Present',
-        description: [
-            'Expanded <span class="experience-strong">Python</span> multiparty-computation library, <span class="experience-strong">MP-SPDZ,</span> to support <span class="experience-strong">Convolutional Neural Networks,</span> including <span class="experience-strong">SqueezeNet</span>, <span class="experience-strong">ResNet</span> and <span class="experience-strong">DenseNet</span> models',
-            'Composed comprehensive tutorials on <a href="https://stumpy.readthedocs.io/en/latest/Tutorial_Annotation_Vectors.html" target="_blank" rel="noopener noreferrer" class="experience-link">Annotation Vectors</a> and <a href="https://stumpy.readthedocs.io/en/latest/Tutorial_Advanced_Annotation_Vectors.html" target="_blank" rel="noopener noreferrer" class="experience-link">Advanced Annotation Vectors</a> based on Matrix Profile research paper for Python time series analysis library, <span class="experience-strong">STUMPY</span>',
-            'Optimized cache utilization in <span class="experience-strong">STUMPY\'s</span> multi-threaded Matrix Profile computation by implementing tiling scheme algorithm using <span class="experience-strong">NumPy</span> arrays and <span class="experience-strong">Numba</span> just-in-time compilation',
-        ],
-    },
-    {
-        active: true,
         company: 'Wind River Systems',
-        role: 'Software Developer',
+        role: 'Software Developer Intern',
         logo: WindRiverLogo,
         thumbnail: WindRiverLogoThumbnail,
         interval: 'Sept 2020 - Dec 2020',
@@ -88,7 +77,7 @@ const data = [
     {
         active: true,
         company: 'Qualcomm',
-        role: 'Hardware Verification Engineer',
+        role: 'Hardware Verification Engineering Intern',
         logo: QualcommLogo,
         thumbnail: QualcommLogoThumbnail,
         interval: 'Jan 2020 - May 2020',
@@ -103,7 +92,7 @@ const data = [
     {
         active: true,
         company: 'Imagine Communications',
-        role: 'Embedded Software Developer',
+        role: 'Embedded Software Developer Intern',
         logo: ImagineCommunicationsLogo,
         thumbnail: ImagineCommunicationsThumbnail,
         interval: 'May 2019 - Aug 2019',
@@ -117,7 +106,7 @@ const data = [
     {
         active: true,
         company: 'WATonomous',
-        role: 'CAN Interfacing Team Member',
+        role: 'Core Team Member',
         logo: WatonomousLogo,
         thumbnail: WatonomousLogoThumbnail,
         interval: 'Jan 2019 - April 2019',
