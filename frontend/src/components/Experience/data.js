@@ -28,6 +28,7 @@ const data = [
             'Enhanced frontend credit card forms and payment flows using <span class="experience-strong">React.js</span> and <span class="experience-strong">Typescript</span>',
             '<span class="experience-strong">Dockerized</span> Apple Pay and subscriptions microservice <span class="experience-strong">MySQL</span> database and <span class="experience-strong">RabbitMQ</span> message broker',
         ],
+        rating: 'Outstanding',
     },
     {
         active: true,
