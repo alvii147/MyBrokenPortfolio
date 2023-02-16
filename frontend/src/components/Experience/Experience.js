@@ -110,11 +110,11 @@ function Experience(props, ref) {
                         <Card data-aos="flip-left" data-aos-delay="300" bg="dark" className="experience-card">
                             <Card.Header as="h3" className="experience-card-header">
                                 <div className="experience-card-header-text">{expData[activeExp].company}</div>
-                                {expData[activeExp].rating &&
+                                {expData[activeExp].evaluation &&
                                 <div className="experience-card-header-badge">
                                     <div className="experience-badge-container">
-                                        <Badge className="experience-badge-left" style={{borderTopRightRadius: '0px', borderBottomRightRadius: '0px'}}>Co-op Rating</Badge>
-                                        <Badge className="experience-badge-right" style={{borderTopLeftRadius: '0px', borderBottomLeftRadius: '0px'}}>{data[activeExp].rating}</Badge>
+                                        <Badge className="experience-badge-left" style={{borderTopRightRadius: '0px', borderBottomRightRadius: '0px'}}>Intern Evaluation</Badge>
+                                        <Badge className="experience-badge-right" style={{borderTopLeftRadius: '0px', borderBottomLeftRadius: '0px'}}>{data[activeExp].evaluation}</Badge>
                                     </div>
                                 </div>}
                             </Card.Header>

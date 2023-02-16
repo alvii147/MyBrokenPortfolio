@@ -21,10 +21,32 @@ import chromaticImage from '../../images/Projects/chromatic.png';
 import TordleImage from '../../images/Projects/Tordle.png';
 import gitmsgImage from '../../images/Projects/gitmsg.png';
 import FunFakerImage from '../../images/Projects/FunFaker.png';
+import SigmoidAcademyImage from '../../images/Projects/SigmoidAcademy.png';
 
 import * as TechIcons from '../TechIcons/TechIcons';
 
 const data = [
+    {
+        active: true,
+        title: 'Sigmoid Academy',
+        caption: 'Data science learning platform with coding challenges for developers',
+        image: SigmoidAcademyImage,
+        description: [
+            'Orchestrated backend <strong>Django</strong> application that handles JWT-based authentication, database management, and remote-code execution',
+            'Composed user-friendly frontend using <strong>React.js</strong> and <strong>TypeScript</strong> that accommodates coding challenge submissions and test cases',
+            'Incorporated combination of <strong>SQL</strong> and <strong>NoSQL</strong> databases using <strong>PostgreSQL</strong> and <strong>MongoDB</strong>',
+        ],
+        website: 'https://sigmoid-academy.netlify.app/',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.TypescriptIcon,
+            TechIcons.DjangoIcon,
+            TechIcons.PostgresqlIcon,
+            TechIcons.MongodbIcon,
+            TechIcons.ReactJsIcon,
+        ]
+    },
     {
         active: true,
         title: 'FunFaker',

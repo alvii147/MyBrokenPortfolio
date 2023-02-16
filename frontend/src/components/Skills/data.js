@@ -49,17 +49,17 @@ const data = {
         },
         {
             active: true,
-            name: 'JavaScript',
-            logo: JavascriptLogo,
-            strength: '88%',
-            color: 'linear-gradient(to right, #F7DF1E, #FCF19C)',
-        },
-        {
-            active: true,
             name: 'TypeScript',
             logo: TypescriptLogo,
-            strength: '84%',
+            strength: '88%',
             color: 'linear-gradient(to right, #3178C6, #5C97D6)',
+        },
+        {
+            active: false,
+            name: 'JavaScript',
+            logo: JavascriptLogo,
+            strength: '84%',
+            color: 'linear-gradient(to right, #F7DF1E, #FCF19C)',
         },
         {
             active: true,

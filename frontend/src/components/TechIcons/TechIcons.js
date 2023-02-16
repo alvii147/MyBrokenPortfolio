@@ -3,6 +3,7 @@ import {
     Python,
     Go,
     Javascript,
+    Typescript,
     Java,
 
     // Libraries & Frameworks
@@ -27,6 +28,7 @@ import {
     Postgresql,
     Mysql,
     Sqlite,
+    Mongodb,
     Firebase,
 
     // Web service platforms
@@ -71,6 +73,16 @@ function JavascriptIcon() {
 
 export {
     JavascriptIcon,
+};
+
+function TypescriptIcon() {
+    return (
+        <Typescript color="#3178C6" style={{backgroundColor: 'transparent'}}></Typescript>
+    );
+}
+
+export {
+    TypescriptIcon,
 };
 
 function JavaIcon() {
@@ -279,6 +291,16 @@ function SqliteIcon() {
 
 export {
     SqliteIcon,
+};
+
+function MongodbIcon() {
+    return (
+        <Mongodb color="#47A248"></Mongodb>
+    );
+}
+
+export {
+    MongodbIcon,
 };
 
 function FirebaseIcon() {

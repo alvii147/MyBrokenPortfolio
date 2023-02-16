@@ -19,16 +19,25 @@ const data = [
     {
         active: true,
         company: '1Password',
+        role: 'Junior Software Developer',
+        logo: OnePasswordLogo,
+        thumbnail: OnePasswordLogoThumbnail,
+        interval: 'June 2022 - Present',
+        description: [],
+    },
+    {
+        active: true,
+        company: '1Password',
         role: 'Software Developer Intern',
         logo: OnePasswordLogo,
         thumbnail: OnePasswordLogoThumbnail,
-        interval: 'Sept 2022 - Present',
+        interval: 'Sept 2022 - Dec 2022',
         description: [
             'Expanded backend functionalities using <span class="experience-strong">Go</span> and <span class="experience-strong">Stripe API</span>, including payments module, subscriptions, trial and paid tiers, and promotions',
             'Enhanced frontend credit card forms and payment flows using <span class="experience-strong">React.js</span> and <span class="experience-strong">Typescript</span>',
             '<span class="experience-strong">Dockerized</span> Apple Pay and subscriptions microservice <span class="experience-strong">MySQL</span> database and <span class="experience-strong">RabbitMQ</span> message broker',
         ],
-        rating: 'Outstanding',
+        evaluation: 'Outstanding',
     },
     {
         active: true,
@@ -43,7 +52,7 @@ const data = [
             'Designed and documented <span class="experience-strong">Apache Kafka</span> calls to stream backend server events for data tracking and verified data payloads with unit tests utilizing <span class="experience-strong">RSpec</span> & <span class="experience-strong">Minitest</span> on Rails',
             'Configured frontend <span class="experience-strong">A/B testing</span> experiments on Optimizely to track performance of UI variations and assess statistical significance of results',
         ],
-        rating: 'Outstanding',
+        evaluation: 'Outstanding',
     },
     {
         active: true,
@@ -58,7 +67,7 @@ const data = [
             'Composed unit tests for Django forms, models, and REST API endpoints using Python <span class="experience-strong">unittest</span> module and configured <span class="experience-strong">Docker</span> image for <span class="experience-strong">Gitlab CI</span> automation testing',
             'Designed responsive frontend in <span class="experience-strong">Jinja2</span> templates by utilizing <span class="experience-strong">jQuery</span> and <span class="experience-strong">Bootstrap</span>',
         ],
-        rating: 'Outstanding',
+        evaluation: 'Outstanding',
     },
     {
         active: true,
@@ -73,7 +82,7 @@ const data = [
             'Developed interactive program in <span class="experience-strong">PyQt5</span> that assists in writing git commit messages, and verifies status of Jira issues and code reviews',
             'Formulated git hook script to detect and block commits on restricted files',
         ],
-        rating: 'Excellent',
+        evaluation: 'Excellent',
     },
     {
         active: true,
@@ -88,7 +97,7 @@ const data = [
             'Automated formal verification using <span class="experience-strong">Perl</span> scripting to extract design hierarchy and formulate assertions',
             'Web-scraped design database and employed <span class="experience-strong">PyQt5</span> to build interactive GUI for managing hardware registers',
         ],
-        rating: 'Excellent',
+        evaluation: 'Excellent',
     },
     {
         active: true,
@@ -102,10 +111,10 @@ const data = [
             'Extracted IP routing data from data structures and developed troubleshooting functions and mapping tables',
             'Utilized <span class="experience-strong">SoapUI</span> to inspect and track REST API processes',
         ],
-        rating: 'Very Good',
+        evaluation: 'Very Good',
     },
     {
-        active: true,
+        active: false,
         company: 'WATonomous',
         role: 'Core Team Member',
         logo: WatonomousLogo,
@@ -117,7 +126,7 @@ const data = [
         ],
     },
     {
-        active: true,
+        active: false,
         company: 'SJWS Python Club',
         role: 'Co-Founder & Tutor',
         logo: SJWSPythonClubLogo,

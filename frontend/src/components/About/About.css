@@ -191,6 +191,15 @@
 }
 
 .about-sidebar-component-text-small {
+    font-size: 9pt;
+    padding-left: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.about-sidebar-component-text-small {
     font-size: 10pt;
 }
 

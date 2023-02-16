@@ -16,7 +16,7 @@ import AccountBoxIcon from '@material-ui/icons/AccountBox';
 
 import { Typewriter } from 'react-simple-typewriter';
 
-import { Linkedin, Github, Devpost, Gmail, Leetcode } from '@icons-pack/react-simple-icons';
+import { Linkedin, Github, /*Devpost,*/ Gmail/*, Leetcode*/ } from '@icons-pack/react-simple-icons';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -25,7 +25,8 @@ import data from './data';
 
 import AvatarRound from '../../images/About/avatar_round.png';
 import Waterloo from '../../images/About/waterloo.png';
-import Palestine from '../../images/About/palestine.png';
+// import Palestine from '../../images/About/palestine.png';
+import TurkeySyria from '../../images/About/turkeysyria.png';
 
 function Projects(props, ref) {
     const [showAvatar, setShowAvatar] = useState(false);
@@ -238,7 +239,7 @@ function Projects(props, ref) {
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="https://devpost.com/alvii147" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                    {/* <a href="https://devpost.com/alvii147" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
                                         <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
                                             <div className="about-sidebar-component">
                                                 <div className="about-sidebar-component-icon-container">
@@ -249,8 +250,8 @@ function Projects(props, ref) {
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="https://github.com/alvii147/leetcode" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                    </a> */}
+                                    {/* <a href="https://github.com/alvii147/leetcode" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
                                         <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
                                             <div className="about-sidebar-component">
                                                 <div className="about-sidebar-component-icon-container">
@@ -261,7 +262,7 @@ function Projects(props, ref) {
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </a> */}
                                     <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={props.scrollToContact}>
                                         <div className="about-sidebar-component">
                                             <div className="about-sidebar-component-icon-container">
@@ -294,7 +295,19 @@ function Projects(props, ref) {
                                     </Switch>
                                 </div>
                                 <div id="about-sidebar-socials">
-                                    <a href="https://www.islamicreliefcanada.org/emergencies/palestine/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                    <a href="https://www.islamicreliefcanada.org/emergencies/turkey-syria-earthquake-appeal/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                        <div className="about-sidebar-component-container about-sidebar-component-container-special" style={UIStyles.sidebarComponentContainerStyleSpecial}>
+                                            <div className="about-sidebar-component">
+                                                <div className="about-sidebar-component-icon-container">
+                                                    <img alt="Turkey Syria Icon" src={TurkeySyria} style={{width: '17px'}} />
+                                                </div>
+                                                <div className="about-sidebar-component-text-small">
+                                                    Donate to Turkey & Syria
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    {/* <a href="https://www.islamicreliefcanada.org/emergencies/palestine/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
                                         <div className="about-sidebar-component-container about-sidebar-component-container-special" style={UIStyles.sidebarComponentContainerStyleSpecial}>
                                             <div className="about-sidebar-component">
                                                 <div className="about-sidebar-component-icon-container">
@@ -305,7 +318,7 @@ function Projects(props, ref) {
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                         </div>
