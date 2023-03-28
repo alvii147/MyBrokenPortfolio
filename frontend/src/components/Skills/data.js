@@ -14,14 +14,15 @@ import AWSLogo from '../../images/Skills/aws_logo.png';
 import FastAPILogo from '../../images/Skills/fastapi_logo.png';
 import RailsLogo from '../../images/Skills/rails_logo.png';
 
-import MySQLLogo from '../../images/Skills/mysql_logo.png';
 import NumPyLogo from '../../images/Skills/numpy_logo.png';
 import PostgreSQLLogo from '../../images/Skills/postgresql_logo.png';
-import MatplotlibLogo from '../../images/Skills/matplotlib_logo.png';
-import PandasLogo from '../../images/Skills/pandas_logo.png';
 import TensorflowLogo from '../../images/Skills/tensorflow_logo.png';
-import MongoDBLogo from '../../images/Skills/mongodb_logo.png';
+import PyTorchLogo from '../../images/Skills/pytorch_logo.png';
+import MySQLLogo from '../../images/Skills/mysql_logo.png';
+import MatplotlibLogo from '../../images/Skills/matplotlib_logo.png';
 import ScikitLearnLogo from '../../images/Skills/sklearn_logo.png';
+import PandasLogo from '../../images/Skills/pandas_logo.png';
+import MongoDBLogo from '../../images/Skills/mongodb_logo.png';
 import KerasLogo from '../../images/Skills/keras_logo.png';
 import OpencvLogo from '../../images/Skills/opencv_logo.png';
 import RLogo from '../../images/Skills/r_logo.png';
@@ -137,62 +138,69 @@ const data = {
     data: [
         {
             active: true,
-            name: 'MySQL',
-            logo: MySQLLogo,
-            strength: '93%',
-            color: 'linear-gradient(to right, #4479A1, #A5C3D9)',
-        },
-        {
-            active: true,
             name: 'NumPy',
             logo: NumPyLogo,
-            strength: '92%',
+            strength: '96%',
             color: 'linear-gradient(to right, #013243, #027297)',
         },
         {
             active: true,
             name: 'PostgreSQL',
             logo: PostgreSQLLogo,
-            strength: '84%',
+            strength: '93%',
             color: 'linear-gradient(to right, #4169E1, #7B97EA)',
-        },
-        {
-            active: true,
-            name: 'Matplotlib',
-            logo: MatplotlibLogo,
-            strength: '82%',
-            color: 'linear-gradient(to right, #E64D00, #FF884D)',
-        },
-        {
-            active: true,
-            name: 'Pandas',
-            logo: PandasLogo,
-            strength: '80%',
-            color: 'linear-gradient(to right, #150458, #340ADB)',
         },
         {
             active: true,
             name: 'TensorFlow',
             logo: TensorflowLogo,
-            strength: '75%',
+            strength: '84%',
             color: 'linear-gradient(to right, #FF6F00, #FFA866)',
         },
         {
             active: true,
-            name: 'MongoDB',
-            logo: MongoDBLogo,
-            strength: '75%',
-            color: 'linear-gradient(to right, #47A248, #B8E0B9)',
+            name: 'PyTorch',
+            logo: PyTorchLogo,
+            strength: '83%',
+            color: 'linear-gradient(to right, #EE4C2C, #F37359)',
+        },
+        {
+            active: true,
+            name: 'MySQL',
+            logo: MySQLLogo,
+            strength: '82%',
+            color: 'linear-gradient(to right, #4479A1, #A5C3D9)',
+        },
+        {
+            active: true,
+            name: 'Matplotlib',
+            logo: MatplotlibLogo,
+            strength: '80%',
+            color: 'linear-gradient(to right, #E64D00, #FF884D)',
         },
         {
             active: true,
             name: 'scikit-learn',
             logo: ScikitLearnLogo,
-            strength: '74%',
+            strength: '76%',
             color: 'linear-gradient(to right, #F7931E, #FBCF9D)',
         },
         {
             active: true,
+            name: 'Pandas',
+            logo: PandasLogo,
+            strength: '75%',
+            color: 'linear-gradient(to right, #150458, #340ADB)',
+        },
+        {
+            active: true,
+            name: 'MongoDB',
+            logo: MongoDBLogo,
+            strength: '74%',
+            color: 'linear-gradient(to right, #47A248, #B8E0B9)',
+        },
+        {
+            active: false,
             name: 'Keras',
             logo: KerasLogo,
             strength: '72%',
