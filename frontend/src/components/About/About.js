@@ -25,8 +25,8 @@ import data from './data';
 
 import AvatarRound from '../../images/About/avatar_round.png';
 import Waterloo from '../../images/About/waterloo.png';
-// import Palestine from '../../images/About/palestine.png';
-import TurkeySyria from '../../images/About/turkeysyria.png';
+// import TurkeySyria from '../../images/About/turkeysyria.png';
+import Palestine from '../../images/About/palestine.png';
 
 function Projects(props, ref) {
     const [showAvatar, setShowAvatar] = useState(false);
@@ -295,7 +295,7 @@ function Projects(props, ref) {
                                     </Switch>
                                 </div>
                                 <div id="about-sidebar-socials">
-                                    <a href="https://www.islamicreliefcanada.org/emergencies/turkey-syria-earthquake-appeal/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                    {/* <a href="https://www.islamicreliefcanada.org/emergencies/turkey-syria-earthquake-appeal/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
                                         <div className="about-sidebar-component-container about-sidebar-component-container-special" style={UIStyles.sidebarComponentContainerStyleSpecial}>
                                             <div className="about-sidebar-component">
                                                 <div className="about-sidebar-component-icon-container">
@@ -306,19 +306,19 @@ function Projects(props, ref) {
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
-                                    {/* <a href="https://www.islamicreliefcanada.org/emergencies/palestine/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                    </a> */}
+                                    <a href="https://www.islamicreliefcanada.org/emergencies/palestine/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
                                         <div className="about-sidebar-component-container about-sidebar-component-container-special" style={UIStyles.sidebarComponentContainerStyleSpecial}>
                                             <div className="about-sidebar-component">
                                                 <div className="about-sidebar-component-icon-container">
                                                     <img alt="Palestine Icon" src={Palestine} style={{width: '17px'}} />
                                                 </div>
                                                 <div className="about-sidebar-component-text">
-                                                    Free Palestine
+                                                    Support Palestine
                                                 </div>
                                             </div>
                                         </div>
-                                    </a> */}
+                                    </a>
                                 </div>
                             </div>
                         </div>
