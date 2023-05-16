@@ -27,6 +27,7 @@ import AvatarRound from '../../images/About/avatar_round.png';
 import Waterloo from '../../images/About/waterloo.png';
 // import TurkeySyria from '../../images/About/turkeysyria.png';
 import Palestine from '../../images/About/palestine.png';
+import SigmoidAcademy from '../../images/About/sigmoid_academy.png';
 
 function Projects(props, ref) {
     const [showAvatar, setShowAvatar] = useState(false);
@@ -273,6 +274,18 @@ function Projects(props, ref) {
                                             </div>
                                         </div>
                                     </div>
+                                    <a href="https://sigmoid-academy.netlify.app" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                        <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle}>
+                                            <div className="about-sidebar-component">
+                                                <div className="about-sidebar-component-icon-container">
+                                                    <img alt="Sigmoid Academy Icon" src={SigmoidAcademy} style={{width: '17px'}} />
+                                                </div>
+                                                <div className="about-sidebar-component-text">
+                                                    Sigmoid Academy
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div id="about-modeselect-container">
                                     <Switch

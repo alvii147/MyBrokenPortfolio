@@ -64,8 +64,8 @@ const TimelineConnector = withStyles({
 })(StepConnector);
 
 function Experience(props, ref) {
-    const [activeExp, setActiveExp] = useState(0);
     const expData = data.filter(exp => exp.active);
+    const [activeExp, setActiveExp] = useState(expData.length - 1);
 
     useEffect(() => {
         Aos.init({
@@ -92,7 +92,7 @@ function Experience(props, ref) {
                 <div id="experience-main-block">
                     <div id="experience-thumbnail-list-container">
                         <Stepper data-aos="fade-down" alternativeLabel activeStep={activeExp} id="experience-main-stepper" connector={<TimelineConnector />}>
-                            {expData.map((exp, index) => {
+                            {expData.reverse().map((exp, index) => {
                                 return (
                                     <Step key={index}>
                                         <StepLabel StepIconComponent={TimelineUbuntuIcon} StepIconProps={{
@@ -101,6 +101,10 @@ function Experience(props, ref) {
                                         <div className="experience-thumbnail-container">
                                             <img alt="Company Thumbnail" src={exp.thumbnail} className="experience-thumbnail-img" onClick={() => setActiveExp(index)} />
                                         </div>
+                                        {activeExp === index &&
+                                        <div className="experience-interval-text-container">
+                                            <p dangerouslySetInnerHTML={{__html: exp.interval.replace('-', '-<br />')}} className="experience-interval-text" />
+                                        </div>}
                                     </Step>
                                 );
                             })}

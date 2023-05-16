@@ -74,6 +74,17 @@
     }
 }
 
+.experience-interval-text-container {
+    padding-top: 10px;
+}
+
+.experience-interval-text {
+    color: rgb(225, 225, 225);
+    font-weight: 500;
+    font-size: 10pt;
+    text-align: center;
+}
+
 .experience-thumbnail-img {
     width: 50px;
     border-radius: 15px;
