@@ -22,7 +22,7 @@ const data = [
         role: 'Junior Software Developer',
         logo: OnePasswordLogo,
         thumbnail: OnePasswordLogoThumbnail,
-        interval: 'June 2023 - Present',
+        interval: 'July 2023 - Present',
         description: [],
     },
     {
