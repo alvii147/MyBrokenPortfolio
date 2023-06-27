@@ -315,6 +315,11 @@
     }
 }
 
-#avatar-modal-header {
-    font-family: monospace;
+#about-transcript-modal-body {
+    height: 500px;
+    overflow: scroll;
+}
+
+#about-transcript-modal-term-container {
+    padding: 20px;
 }

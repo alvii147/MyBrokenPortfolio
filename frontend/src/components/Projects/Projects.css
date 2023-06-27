@@ -60,9 +60,13 @@
 
 .projects-card-img {
     display: flex;
+    -webkit-filter: drop-shadow(0px 0px 5px black);
+    filter: drop-shadow(0px 0px 5px black);
 }
 .projects-card-img-mobile {
     display: none;
+    -webkit-filter: drop-shadow(0px 0px 5px black);
+    filter: drop-shadow(0px 0px 5px black);
 }
 
 @media only screen and (max-width: 767px) {

@@ -4,6 +4,8 @@ import './About.css';
 import Modal from 'react-bootstrap/Modal';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import Table from 'react-bootstrap/Table';
+import Badge from 'react-bootstrap/Badge';
 
 import Switch from "react-switch";
 
@@ -33,6 +35,10 @@ function Projects(props, ref) {
     const [showAvatar, setShowAvatar] = useState(false);
     const handleShowAvatar = () => setShowAvatar(true);
     const handleHideAvatar = () => setShowAvatar(false);
+
+    const [showTranscripts, setShowTranscripts] = useState(false);
+    const handleShowTranscripts = () => setShowTranscripts(true);
+    const handleHideTranscripts = () => setShowTranscripts(false);
 
     const darkModeStyles = {
         mainContainerStyle: {
@@ -117,6 +123,52 @@ function Projects(props, ref) {
     const [UIStyles, setUIStyles] = useState(darkModeStyles);
     const [modeChecked, setModeChecked] = useState(false);
 
+    const departmentColors = {
+        BET: '#D93F00',
+        CS: '#DF2498',
+        CHEM: '#0033BE',
+        EARTH: '#0033BE',
+        ECON: '#D93F00',
+        ECE: '#8100B4',
+        GENE: '#8100B4',
+        MATH: '#DF2498',
+        MSCI: '#8100B4',
+        PD: '#8100B4',
+        STAT: '#DF2498'
+    };
+
+    const getGradeColor = (grade) => {
+        const green = {
+            r: 0,
+            g: 204,
+            b: 102
+        };
+        const yellow = {
+            r: 255,
+            g: 204,
+            b: 0
+        };
+        const red = {
+            r: 255,
+            g: 51,
+            b: 0
+        };
+
+        if (grade === 'Credit Granted') {
+            return `rgb(${green.r}, ${green.g}, ${green.b})`;
+        }
+
+        const interpolateNumbers = (num1, num2, fraction) => {
+            return num1 + Math.floor((num2 - num1) * fraction);
+        };
+
+        if (grade < 50) {
+            return `rgb(${interpolateNumbers(red.r, yellow.r, grade / 50)}, ${interpolateNumbers(red.g, yellow.g, grade / 50)}, ${interpolateNumbers(red.b, yellow.b, grade / 50)})`;
+        }
+
+        return `rgb(${interpolateNumbers(yellow.r, green.r, (grade - 50) / 50)}, ${interpolateNumbers(yellow.g, green.g, (grade - 50) / 50)}, ${interpolateNumbers(yellow.b, green.b, (grade - 50) / 50)})`;
+    };
+
     const handleModeChange = (checked) => {
         setModeChecked(checked);
         if (checked) {
@@ -125,7 +177,7 @@ function Projects(props, ref) {
         else {
             setUIStyles(darkModeStyles);
         }
-    }
+    };
 
     useEffect(() => {
         Aos.init({
@@ -168,7 +220,7 @@ function Projects(props, ref) {
                         <div id="about-sidebar" style={UIStyles.sidebarStyle}>
                             <div data-aos="custom-fade-in" data-aos-delay="1000" id="about-sidebar-animation-container">
                                 <div id="about-sidebar-education">
-                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={(e) => {e.preventDefault();}}>
+                                    <div className="about-sidebar-component-container" style={UIStyles.sidebarComponentContainerStyle} onClick={handleShowTranscripts}>
                                         <div className="about-sidebar-component">
                                             <div className="about-sidebar-component-icon-container">
                                                 <img alt="Waterloo Icon" src={Waterloo} style={{width: '17px'}} />
@@ -190,7 +242,7 @@ function Projects(props, ref) {
                                                 <BarChartOutlinedIcon style={{color: UIStyles.AIIconColor}} size={17} />
                                             </div>
                                             <div className="about-sidebar-component-text about-sidebar-component-text-small">
-                                                A.I. Specialization<br />
+                                                A.I. Option<br />
                                             </div>
                                         </div>
                                         <div className="about-sidebar-component">
@@ -359,12 +411,74 @@ function Projects(props, ref) {
                 </div>
             </div>
 
-            <Modal id="avatar-modal" show={showAvatar} onHide={handleHideAvatar} aria-labelledby="contained-modal-title-vcenter" centered>
-                <Modal.Header id="avatar-modal-header" closeButton>
-                    <Modal.Title style={{fontFamily: 'Ubuntu'}}>My cousin Muhammad and I.<br />Can you guess who's who?</Modal.Title>
+            <Modal id="about-avatar-modal" show={showAvatar} onHide={handleHideAvatar} aria-labelledby="contained-modal-title-vcenter" centered>
+                <Modal.Header id="about-avatar-modal-header" closeButton>
                 </Modal.Header>
-                <Modal.Body id="avatar-modal-body">
+                <Modal.Body id="about-avatar-modal-body">
                     <img style={{width: '100%'}} alt="Avatar" src={AvatarRound} />
+                </Modal.Body>
+            </Modal>
+
+            <Modal id="about-transcript-modal" show={showTranscripts} onHide={handleHideTranscripts} aria-labelledby="contained-modal-title-vcenter" centered>
+                <Modal.Header id="about-transcript-modal-header" closeButton>
+                    <Modal.Title>Academic Transcript</Modal.Title>
+                </Modal.Header>
+                <Modal.Body id="about-transcript-modal-body">
+                    <h6 style={{textAlign: 'center'}}>
+                        <img alt="Waterloo Icon" src={Waterloo} style={{width: '25px'}} />
+                        &nbsp;University of Waterloo
+                    </h6>
+                    <h5 style={{textAlign: 'center'}}>B.A.Sc. Electrical Engineering</h5>
+                    <h6 style={{textAlign: 'center'}}>with Artificial Intelligence Option</h6>
+                    <h6 style={{textAlign: 'center'}}>
+                        Overall Grade:&nbsp;
+                        <Badge
+                            style={{
+                                backgroundColor: getGradeColor(data.average)
+                            }}
+                        >
+                            {data.average}
+                        </Badge>
+                    </h6>
+                    {data.transcript.map((t, index) => (
+                        <div key={index} id="about-transcript-modal-term-container">
+                            <h5 style={{textAlign: 'center'}}>{t.term ? `${t.term}, ` : ''}{t.season} {t.year}</h5>
+                            <Table striped hover bordered>
+                                <thead>
+                                    <tr>
+                                        <th>Course Code</th>
+                                        <th>Course Title</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                </thead>
+                                {t.courses.map((course, index) => (
+                                    <tbody key={`${course.department} ${course.number}`}>
+                                        <tr>
+                                            <td>
+                                                <Badge
+                                                    style={{
+                                                        backgroundColor: departmentColors[course.department]
+                                                    }}
+                                                >
+                                                    {`${course.department} ${course.number}`}
+                                                </Badge>
+                                            </td>
+                                            <td>{course.title}</td>
+                                            <td>
+                                                <Badge
+                                                    style={{
+                                                        backgroundColor: getGradeColor(course.grade)
+                                                    }}
+                                                >
+                                                    {course.grade}
+                                                </Badge>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                ))}
+                            </Table>
+                        </div>
+                    ))}
                 </Modal.Body>
             </Modal>
         </div>
