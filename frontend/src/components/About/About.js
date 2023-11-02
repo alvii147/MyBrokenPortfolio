@@ -110,7 +110,7 @@ function Projects(props, ref) {
             border: '1px solid rgb(130, 130, 130)',
         },
         electricalIconColor: '#0044CC',
-        AIIconColor: '#00E600',
+        AIIconColor: '#339966',
         schoolIconColor: '#333333',
         linkedinIconColor: '#0A66C2',
         githubIconColor: '#000000',

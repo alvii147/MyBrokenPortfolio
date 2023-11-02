@@ -196,7 +196,7 @@ function Endorsements(props, ref) {
                                         <div className="endorsements-title-container">
                                             <div className="endorsements-title">
                                                 <div className="endorsements-avatar-container">
-                                                    <img alt="avatar" src={`https://avatars.dicebear.com/api/bottts/${String(endorsement.id).replace(/\s/g, '')}_${String(endorsement.first_name).replace(/\s/g, '')}${String(endorsement.last_name).replace(/\s/g, '')}.svg`} className="endorsements-avatar"/>
+                                                    <img alt="avatar" src={`https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(endorsement.id)}_${encodeURIComponent(endorsement.first_name)}_${encodeURIComponent(endorsement.last_name)}`} className="endorsements-avatar"/>
                                                 </div>
                                                 <div className="endorsements-name-container">
                                                     <h5>{endorsement.first_name} {endorsement.last_name}</h5>
