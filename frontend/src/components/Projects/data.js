@@ -34,7 +34,7 @@ const data = [
         description: [
             'Orchestrated backend <strong>Django</strong> application that handles JWT-based authentication, database management, and remote-code execution',
             'Composed user-friendly frontend using <strong>React.js</strong> and <strong>TypeScript</strong> that accommodates coding challenge submissions and test cases',
-            'Incorporated combination of <strong>SQL</strong> and <strong>NoSQL</strong> databases using <strong>PostgreSQL</strong> and <strong>MongoDB</strong>',
+            'Incorporated combination of <strong>SQL</strong> and <strong>NoSQL</strong> databases using <strong>PostgreSQL</strong> and <strong>Redis</strong>',
         ],
         website: 'https://sigmoid-academy.netlify.app/',
         milestones: [],
@@ -43,7 +43,7 @@ const data = [
             TechIcons.TypescriptIcon,
             TechIcons.DjangoIcon,
             TechIcons.PostgresqlIcon,
-            TechIcons.MongodbIcon,
+            TechIcons.RedisIcon,
             TechIcons.ReactJsIcon,
         ]
     },

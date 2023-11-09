@@ -28,7 +28,7 @@ import {
     Postgresql,
     Mysql,
     Sqlite,
-    Mongodb,
+    Redis,
     Firebase,
 
     // Web service platforms
@@ -293,14 +293,14 @@ export {
     SqliteIcon,
 };
 
-function MongodbIcon() {
+function RedisIcon() {
     return (
-        <Mongodb color="#47A248"></Mongodb>
+        <Redis color="#DC382D"></Redis>
     );
 }
 
 export {
-    MongodbIcon,
+    RedisIcon,
 };
 
 function FirebaseIcon() {
