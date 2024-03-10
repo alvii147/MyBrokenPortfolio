@@ -3,16 +3,14 @@ import GoLogo from '../../images/Skills/go_logo.png';
 import CppLogo from '../../images/Skills/cpp_logo.png';
 import JavascriptLogo from '../../images/Skills/javascript_logo.png';
 import TypescriptLogo from '../../images/Skills/typescript_logo.png';
-import BashLogo from '../../images/Skills/bash_logo.png';
+import RustLogo from '../../images/Skills/rust_logo.png';
 
 import DjangoLogo from '../../images/Skills/django_logo.png';
 import DockerLogo from '../../images/Skills/docker_logo.png';
 import ReactLogo from '../../images/Skills/react_logo.png';
 import FlaskLogo from '../../images/Skills/flask_logo.png';
 import GoogleCloudLogo from '../../images/Skills/googlecloud_logo.png';
-import AWSLogo from '../../images/Skills/aws_logo.png';
 import FastAPILogo from '../../images/Skills/fastapi_logo.png';
-import RailsLogo from '../../images/Skills/rails_logo.png';
 
 import NumPyLogo from '../../images/Skills/numpy_logo.png';
 import PostgreSQLLogo from '../../images/Skills/postgresql_logo.png';
@@ -64,17 +62,17 @@ const data = {
         },
         {
             active: true,
-            name: 'C++',
-            logo: CppLogo,
+            name: 'Rust',
+            logo: RustLogo,
             strength: '82%',
-            color: 'linear-gradient(to right, #3776AB, #659ECD)',
+            color: 'linear-gradient(to right, #CE422B, #DB6513)',
         },
         {
             active: true,
-            name: 'Bash',
-            logo: BashLogo,
+            name: 'C++',
+            logo: CppLogo,
             strength: '77%',
-            color: 'linear-gradient(to right, #4EAA25, #9FE382)',
+            color: 'linear-gradient(to right, #3776AB, #659ECD)',
         },
     ],
     frameworks: [
@@ -115,24 +113,10 @@ const data = {
         },
         {
             active: true,
-            name: 'Amazon Web Services',
-            logo: AWSLogo,
-            strength: '62%',
-            color: 'linear-gradient(to right, #232F3E, #7C96B6)',
-        },
-        {
-            active: true,
             name: 'FastAPI',
             logo: FastAPILogo,
             strength: '61%',
             color: 'linear-gradient(to right, #009688, #1AffE8)',
-        },
-        {
-            active: true,
-            name: 'Ruby on Rails',
-            logo: RailsLogo,
-            strength: '59%',
-            color: 'linear-gradient(to right, #CC0000, #FF8080)',
         },
     ],
     data: [

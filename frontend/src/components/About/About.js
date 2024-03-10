@@ -372,7 +372,7 @@ function Projects(props, ref) {
                                             </div>
                                         </div>
                                     </a> */}
-                                    <a href="https://www.islamicreliefcanada.org/emergencies/palestine/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
+                                    <a href="https://www.pcrf.net/" target="_blank" rel="noopener noreferrer" style={UIStyles.linkWrap}>
                                         <div className="about-sidebar-component-container about-sidebar-component-container-special" style={UIStyles.sidebarComponentContainerStyleSpecial}>
                                             <div className="about-sidebar-component">
                                                 <div className="about-sidebar-component-icon-container">
@@ -413,6 +413,7 @@ function Projects(props, ref) {
 
             <Modal id="about-avatar-modal" show={showAvatar} onHide={handleHideAvatar} aria-labelledby="contained-modal-title-vcenter" centered>
                 <Modal.Header id="about-avatar-modal-header" closeButton>
+                    <Modal.Title style={{fontFamily: 'Ubuntu'}}>My cousin, Muhammad, and me.<br />Can you guess who's who?</Modal.Title>
                 </Modal.Header>
                 <Modal.Body id="about-avatar-modal-body">
                     <img style={{width: '100%'}} alt="Avatar" src={AvatarRound} />

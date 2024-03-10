@@ -1,5 +1,5 @@
-import OnePasswordLogo from '../../images/Experience/1password_logo.png';
-import OnePasswordLogoThumbnail from '../../images/Experience/1password_logo_thumbnail.png';
+import OnePasswordLogo from '../../images/Experience/1Password_logo.png';
+import OnePasswordLogoThumbnail from '../../images/Experience/1Password_logo_thumbnail.png';
 import ProdigyEducationLogo from '../../images/Experience/prodigy_education_logo.png';
 import ProdigyEducationLogoThumbnail from '../../images/Experience/prodigy_education_logo_thumbnail.png';
 import NokiaLogo from '../../images/Experience/nokia_logo.png';

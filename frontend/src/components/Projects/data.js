@@ -22,10 +22,127 @@ import TordleImage from '../../images/Projects/Tordle.png';
 import gitmsgImage from '../../images/Projects/gitmsg.png';
 import FunFakerImage from '../../images/Projects/FunFaker.png';
 import SigmoidAcademyImage from '../../images/Projects/SigmoidAcademy.png';
+import MyBrokenPortfolioImage from '../../images/Projects/MyBrokenPortfolio.png';
+import RemarkImage from '../../images/Projects/Remark.png';
+import OpenChromaImage from '../../images/Projects/OpenChroma.png';
+import SHRIMPImage from '../../images/Projects/SHRIMP.png';
+import DataCheeseImage from '../../images/Projects/DataCheese.png';
+import FlaggerImage from '../../images/Projects/Flagger.png';
 
 import * as TechIcons from '../TechIcons/TechIcons';
 
 const data = [
+    {
+        active: true,
+        title: 'Flagger',
+        caption: 'Platform that unifies feature flag automation',
+        image: FlaggerImage,
+        description: [
+            'Implemented JWT authentication and repository pattern web server in <strong>Go</strong>',
+            'Incorporated <strong>PostgreSQL</strong> database using <strong>pgx</strong> driver in Go',
+            '<strong>Dockerized</strong> application using Docker Compose',
+        ],
+        github: 'https://github.com/alvii147/flagger-api',
+        milestones: [],
+        technologies: [
+            TechIcons.GoIcon,
+            TechIcons.PostgresqlIcon,
+            TechIcons.DockerIcon,
+        ]
+    },
+    {
+        active: true,
+        title: 'DataCheese',
+        caption: 'Popular data science and machine learning algorithms',
+        image: DataCheeseImage,
+        description: [
+            'Implemented data science and machine learning algorithms using <strong>NumPy</strong>',
+            'Supports <strong>Multi-Layer Perceptron</strong>, <strong>Convolution</strong>, <strong>KNN</strong>, <strong>K-Means Clustering</strong>, and <strong>K-Fold Cross-Validation</strong>',
+            'Rigorously tested using <strong>Pytest</strong>',
+        ],
+        github: 'https://github.com/alvii147/DataCheese',
+        website: 'https://alvii147.github.io/DataCheese/build/html/index.html',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.NumpyIcon,
+            TechIcons.PytestIcon,
+        ]
+    },
+    {
+        active: false,
+        title: 'SHRIMP',
+        caption: 'Scalable Heuristic Robust Iterative Matrix Profile',
+        image: SHRIMPImage,
+        description: [
+            'Formulated novel matrix profile approximation algorithm using a variation  of <strong>Hill Climbing</strong> algorithm',
+            'Parallelized array manipulation using <strong>NumPy</strong> and <strong>Numba</strong>',
+            'Improved convergence percentage of current industry-standard approximation algorithm',
+        ],
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.NumpyIcon,
+            TechIcons.NumbaIcon,
+        ]
+    },
+    {
+        active: false,
+        title: 'OpenChroma',
+        caption: 'Python library for image processing & operations',
+        image: OpenChromaImage,
+        description: [
+            'Implemented image operations using array manipulation algorithms in <strong>NumPy</strong>',
+            'Supported color conversion algorithms',
+            'Rigorously tested library using <strong>pytest</strong>',
+        ],
+        github: 'https://github.com/alvii147/OpenChroma',
+        website: 'https://alvii147.github.io/OpenChroma/build/html/index.html',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.NumpyIcon,
+            TechIcons.PytestIcon,
+        ]
+    },
+    {
+        active: true,
+        title: 'Remark',
+        caption: 'Minimalistic Markdown and reStructuredText editor',
+        image: RemarkImage,
+        description: [
+            'Developed minimalistic desktop UI application using <strong>PyQt6</strong>',
+            'Accommodated support for both Markdown and reStructuredText modes',
+            'Implemented configurable settings, including dark mode and font support',
+        ],
+        github: 'https://github.com/alvii147/ReMark',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.QtIcon,
+        ]
+    },
+    {
+        active: true,
+        title: 'My Broken Portfolio',
+        caption: 'My broken, barely functional, not-so-professional portfolio',
+        image: MyBrokenPortfolioImage,
+        description: [
+            'Designed Ubuntu-themed responsive website using <strong>React.js</strong>',
+            'Developed <strong>Django</strong> backend to support endorsement submissions and contact form',
+            'Utilized <strong>textblob</strong> models to perform sentiment analysis on endorsements',
+        ],
+        github: 'https://github.com/alvii147/MyBrokenPortfolio',
+        website: 'https://zahin-zaman.vercel.app/',
+        milestones: [],
+        technologies: [
+            TechIcons.PythonIcon,
+            TechIcons.JavascriptIcon,
+            TechIcons.DjangoIcon,
+            TechIcons.SqliteIcon,
+            TechIcons.ReactJsIcon,
+        ]
+    },
     {
         active: true,
         title: 'Sigmoid Academy',
@@ -100,7 +217,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'chromatic',
         caption: 'Image repository with facial detection features',
         image: chromaticImage,
@@ -119,7 +236,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'Ventry',
         caption: 'Inventory tracking CRUD application',
         image: VentryImage,
@@ -197,7 +314,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'Routh-Hurwitz Table Generator',
         caption: 'Web application that computes the Routh-Hurwitz Stability Table for Control Systems Analysis',
         image: RouthHurwitzImage,
@@ -207,7 +324,6 @@ const data = [
             'Developed <strong>Flask</strong> web application using <strong>Bootstrap</strong> templates and deployed as <strong>Heroku</strong> app',
         ],
         github: 'https://github.com/alvii147/RouthHurwitz',
-        website: 'https://routhhurwitz.herokuapp.com',
         milestones: [],
         technologies: [
             TechIcons.PythonIcon,
@@ -497,7 +613,6 @@ const data = [
             'Developed and deployed canvas-based web application for demo using a <strong>Flask</strong> server on <strong>Heroku</strong>',
         ],
         github: 'https://github.com/alvii147/BanglaNotepad',
-        website: 'https://banglanotepad.herokuapp.com/',
         milestones: [],
         technologies: [
             TechIcons.PythonIcon,
@@ -509,7 +624,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'Smart Wardrobe',
         caption: 'Deep learning application that identifies pieces of clothing',
         image: SmartWardrobeImage,

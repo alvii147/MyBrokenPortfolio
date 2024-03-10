@@ -23,6 +23,7 @@ import {
     Bootstrap,
     Materialui,
     Springboot,
+    Pytest,
 
     // Database Query Languages & Management Systems
     Postgresql,
@@ -257,6 +258,16 @@ function SpringbootIcon() {
 
 export {
     SpringbootIcon,
+};
+
+function PytestIcon() {
+    return (
+        <Pytest color="#0A9EDC"></Pytest>
+    );
+}
+
+export {
+    PytestIcon,
 };
 
 // =============================================
