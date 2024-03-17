@@ -1,6 +1,16 @@
-# My Broken Portfolio
+[![Support Palestine Banner](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-support.svg)](https://www.pcrf.net/)
 
-<p align="center"><img src="frontend/src/images/charizardlogo.png" /></p>
+<p align="center">
+    <img src="frontend/src/images/charizardlogo.png" />
+</p>
+
+<div align="center">
+
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) [![Deployment](https://img.shields.io/badge/Vercel-deployed-000000?logo=Vercel)](https://zahin-zaman.vercel.app/)
+
+</div>
+
+# My Broken Portfolio
 
 This repository contains my portfolio website, it's design inspired by a Ubuntu theme. It showcases my projects, experiences and skills, as well as accepts endorsements from visitors, and more. Check it out [here!](https://zahin-zaman.vercel.app/)
 
