@@ -314,23 +314,23 @@ const data = [
         ]
     },
     {
-        active: false,
+        active: true,
         title: 'Routh-Hurwitz Table Generator',
         caption: 'Web application that computes the Routh-Hurwitz Stability Table for Control Systems Analysis',
         image: RouthHurwitzImage,
         description: [
-            'Utilized <strong>Python</strong> library <strong>SymPy</strong> for symbolic mathematics to compute Routh-Hurwitz Table',
+            'Utilized libraries <strong>NumPy</strong> and <strong>SymPy</strong> for scientific computation and symbolic mathematics in <strong>Python</strong>',
             'Accomodated complex mathematical computations using named variables',
-            'Developed <strong>Flask</strong> web application using <strong>Bootstrap</strong> templates and deployed as <strong>Heroku</strong> app',
+            'Developed and deployed as live <strong>Streamlit</strong> web application',
         ],
         github: 'https://github.com/alvii147/RouthHurwitz',
+        website: 'https://routhhurwitz.streamlit.app',
         milestones: [],
         technologies: [
             TechIcons.PythonIcon,
+            TechIcons.NumpyIcon,
             TechIcons.SympyIcon,
-            TechIcons.FlaskIcon,
-            TechIcons.HerokuIcon,
-            TechIcons.BootstrapIcon,
+            TechIcons.StreamlitIcon,
         ]
     },
     {

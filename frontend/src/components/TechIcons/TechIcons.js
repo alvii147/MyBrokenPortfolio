@@ -37,6 +37,7 @@ import {
     Googlemaps,
     Heroku,
     Microsoftazure,
+    Streamlit,
 
     // Other
     Youtube,
@@ -222,7 +223,7 @@ export {
 
 function SympyIcon() {
     return (
-        <Sympy color="#5C3EE8"></Sympy>
+        <Sympy color="#3B5526"></Sympy>
     );
 }
 
@@ -366,6 +367,16 @@ function MicrosoftazureIcon() {
 
 export {
     MicrosoftazureIcon,
+};
+
+function StreamlitIcon() {
+    return (
+        <Streamlit color="#FF4B4B"></Streamlit>
+    );
+}
+
+export {
+    StreamlitIcon,
 };
 
 // =====
