@@ -1,4 +1,4 @@
-[![Free Palestine](https://github.com/alvii147/hinds-banner/blob/main/github/free-palestine-crimson.svg)](https://www.pcrf.net/)
+[![Free Palestine](https://github.com/alvii147/hinds-banner/blob/main/github/free-palestine-tatreez.svg)](https://www.pcrf.net/)
 
 <p align="center">
     <img src="frontend/src/images/charizardlogo.png" />
