@@ -10,7 +10,6 @@ import Endorsements from './components/Endorsements/Endorsements';
 // writings section disabled for now
 // import Writings from './components/Writings/Writings';
 import Contact from './components/Contact/Contact';
-import PeoplesBannerForBangladesh from './components/PeoplesBannerForBangladesh/PeoplesBannerForBangladesh';
 
 function App() {
   const aboutRef = useRef();
@@ -26,7 +25,6 @@ function App() {
 
   return (
     <div id="main-container">
-      <PeoplesBannerForBangladesh variant={'red'} />
       <Ubuntu
         scrollToAbout={() => scroller(aboutRef)}
         scrollToProjects={() => scroller(projectsRef)}
