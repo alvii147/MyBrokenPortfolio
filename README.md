@@ -1,4 +1,6 @@
-[![Free Palestine](https://github.com/alvii147/hinds-banner/blob/main/github/free-palestine-tatreez.svg)](https://www.pcrf.net/)
+[![Free Palestine](https://hinds-banner.vercel.app/free-palestine?variant=tatreez)](https://www.pcrf.net/)
+
+[![Genocide Watch](https://hinds-banner.vercel.app/genocide-watch?variant=tatreez)](https://www.pcrf.net/)
 
 # My Broken Portfolio
 
