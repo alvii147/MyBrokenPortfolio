@@ -33,7 +33,7 @@ import * as TechIcons from '../TechIcons/TechIcons';
 
 const data = [
     {
-        active: true,
+        active: false,
         title: 'Flagger',
         caption: 'Platform that unifies feature flag automation',
         image: FlaggerImage,
@@ -42,7 +42,6 @@ const data = [
             'Incorporated <strong>PostgreSQL</strong> database using <strong>pgx</strong> driver in Go',
             '<strong>Dockerized</strong> application using Docker Compose',
         ],
-        github: 'https://github.com/alvii147/flagger-api',
         milestones: [],
         technologies: [
             TechIcons.GoIcon,
@@ -106,7 +105,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'Remark',
         caption: 'Minimalistic Markdown and reStructuredText editor',
         image: RemarkImage,
@@ -123,7 +122,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'My Broken Portfolio',
         caption: 'My broken, barely functional, not-so-professional portfolio',
         image: MyBrokenPortfolioImage,
@@ -183,7 +182,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'gitmsg',
         caption: 'App for writing git commit messages using 50/72 rule',
         image: gitmsgImage,
@@ -201,7 +200,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'Tordle',
         caption: 'Terminal-based clone of Wordle',
         image: TordleImage,
@@ -274,7 +273,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'Crime Stats Analysis',
         caption: 'Crime statistics database design & analysis',
         image: CrimeStatsAnalysisImage,
@@ -314,7 +313,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'Routh-Hurwitz Table Generator',
         caption: 'Web application that computes the Routh-Hurwitz Stability Table for Control Systems Analysis',
         image: RouthHurwitzImage,
@@ -334,7 +333,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'Altruist',
         caption: 'Mobile and web platform to promote altruism and the assistance of senior citizens during a difficult time',
         image: AltruistImage,
@@ -356,7 +355,7 @@ const data = [
         ],
     },
     {
-        active: true,
+        active: false,
         title: 'quickVax',
         caption: 'A web application that efficiently matches vaccine receivers with medical institutions using patient priority queue system',
         image: quickVaxImage,
@@ -429,7 +428,7 @@ const data = [
         ],
     },
     {
-        active: true,
+        active: false,
         title: 'Mango.UI',
         caption: 'Python PyQt6 library that provides custom-styled widgets for sharper desktop app development',
         image: MangoUIImage,
@@ -511,7 +510,7 @@ const data = [
         ],
     },
     {
-        active: true,
+        active: false,
         title: 'DSLX Academy',
         caption: 'Platform dedicated to helping children overcome dyslexia',
         image: DSLXAcademyImage,

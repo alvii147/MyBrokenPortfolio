@@ -99,7 +99,7 @@ function Experience(props, ref) {
                                             setter: () => {setActiveExp(index)}}}>
                                         </StepLabel>
                                         <div className="experience-thumbnail-container">
-                                            <img alt="Company Thumbnail" src={exp.thumbnail} className="experience-thumbnail-img" onClick={() => setActiveExp(index)} />
+                                            <img alt="Company Thumbnail" src={exp.thumbnail} className={"experience-thumbnail-img" + (activeExp === index ? "" : " experience-thumbnail-img-inactive")} onClick={() => setActiveExp(index)} />
                                         </div>
                                         {activeExp === index &&
                                         <div className="experience-interval-text-container">

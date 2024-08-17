@@ -23,7 +23,13 @@ const data = [
         logo: OnePasswordLogo,
         thumbnail: OnePasswordLogoThumbnail,
         interval: 'July 2023 - Present',
-        description: [],
+        description: [
+            'Enhanced billing capabilities using Go and Stripe by refining invoicing system and subscription workflow',
+            'Spearheaded server-side invoice PDF generation project, addressing <span class="experience-strong">300+</span> customer feature requests',
+            'Attentively upgraded <span class="experience-strong">Stripe</span> SDK and API on large scale web server by 4 major versions',
+            'Automated taxation and notification processes for various countries and states',
+            'Investigated and addressed <span class="experience-strong">90+</span> billing related customer inquiries and support requests',
+        ],
     },
     {
         active: true,
@@ -38,6 +44,7 @@ const data = [
             '<span class="experience-strong">Dockerized</span> Apple Pay and subscriptions microservice <span class="experience-strong">MySQL</span> database and <span class="experience-strong">RabbitMQ</span> message broker',
         ],
         evaluation: 'Outstanding',
+        noShadow: true,
     },
     {
         active: true,

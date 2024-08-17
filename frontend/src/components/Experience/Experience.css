@@ -53,10 +53,10 @@
     border-radius: 15px;
     transition: 0.3s;
     cursor: pointer;
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px rgb(221, 180, 45);
 }
 .experience-timeline-ubuntu-img:hover {
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 15px rgb(221, 180, 45);
 }
 
 .experience-thumbnail-container {
@@ -91,13 +91,17 @@
     border-radius: 15px;
     transition: 0.3s;
     cursor: pointer;
-    -webkit-filter: drop-shadow(0px 0px 1px white);
-    filter: drop-shadow(0px 0px 1px white);
+    -webkit-filter: drop-shadow(0px 0px 1px rgb(221, 180, 45));
+    filter: drop-shadow(0px 0px 1px rgb(221, 180, 45));
 }
 
 .experience-thumbnail-img:hover {
-    -webkit-filter: drop-shadow(0px 0px 8px white);
-    filter: drop-shadow(0px 0px 8px white);
+    -webkit-filter: drop-shadow(0px 0px 8px rgb(221, 180, 45));
+    filter: drop-shadow(0px 0px 8px rgb(221, 180, 45));
+}
+
+.experience-thumbnail-img-inactive {
+    filter: grayscale(100%);
 }
 
 #experience-list-container {
@@ -225,6 +229,9 @@
 
 .experience-card-img {
     height: 50px;
+    border: 1px solid rgb(136, 122, 45);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(221, 180, 45);
 }
 
 .experience-card-text {
