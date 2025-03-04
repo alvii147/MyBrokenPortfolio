@@ -19,10 +19,19 @@ const data = [
     {
         active: true,
         company: '1Password',
+        role: 'Software Developer',
+        logo: OnePasswordLogo,
+        thumbnail: OnePasswordLogoThumbnail,
+        interval: 'March 2025 - Present',
+        description: [],
+    },
+    {
+        active: true,
+        company: '1Password',
         role: 'Junior Software Developer',
         logo: OnePasswordLogo,
         thumbnail: OnePasswordLogoThumbnail,
-        interval: 'July 2023 - Present',
+        interval: 'July 2023 - Feb 2025',
         description: [
             'Enhanced billing capabilities using Go and Stripe by refining invoicing system and subscription workflow',
             'Spearheaded server-side invoice PDF generation project, addressing <span class="experience-strong">300+</span> customer feature requests',
