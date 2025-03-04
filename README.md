@@ -14,7 +14,7 @@
 
 </div>
 
-This repository contains my portfolio website, it's design inspired by a Ubuntu theme. It showcases my projects, experiences and skills, as well as accepts endorsements from visitors, and more. Check it out [here!](https://zahin-zaman.vercel.app/)
+This repository contains my portfolio website, its design inspired by a Ubuntu theme. It showcases my projects, experiences and skills, as well as accepts endorsements from visitors, and more. Check it out [here!](https://zahin-zaman.vercel.app/)
 
 ![screenshot](frontend/src/images/screenshot.png)
 
