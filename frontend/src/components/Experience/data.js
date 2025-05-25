@@ -23,7 +23,10 @@ const data = [
         logo: OnePasswordLogo,
         thumbnail: OnePasswordLogoThumbnail,
         interval: 'March 2025 - Present',
-        description: [],
+        description: [
+            'Diagnosed and resolved complex invoicing defect in <span class="experience-strong">Stripe</span> integration, recovering <span class="experience-strong">$300k+</span> in annual revenue',
+            'Automated tax notification process over 13 countries and respective regions, significantly reducing manual effort',
+        ],
     },
     {
         active: true,
@@ -33,11 +36,9 @@ const data = [
         thumbnail: OnePasswordLogoThumbnail,
         interval: 'July 2023 - Feb 2025',
         description: [
-            'Enhanced billing capabilities using Go and Stripe by refining invoicing system and subscription workflow',
-            'Spearheaded server-side invoice PDF generation project, addressing <span class="experience-strong">300+</span> customer feature requests',
-            'Attentively upgraded <span class="experience-strong">Stripe</span> SDK and API on large scale web server by 4 major versions',
-            'Automated taxation and notification processes for various countries and states',
-            'Investigated and addressed <span class="experience-strong">90+</span> billing related customer inquiries and support requests',
+            'Engineered automated customer reimbursement worker, refunding <span class="experience-strong">2k+</span> invoices and saving <span class="experience-strong">$45k+</span> in revenue',
+            'Optimized subscription management processor, condensing average daily runtime from <span class="experience-strong">6 hours</span> to 45 <span class="experience-strong">minutes</span>',
+            'Spearheaded internal invoice PDF generation service, addressing <span class="experience-strong">300+</span> customer feature requests',
         ],
     },
     {
@@ -48,9 +49,9 @@ const data = [
         thumbnail: OnePasswordLogoThumbnail,
         interval: 'Sept 2022 - Dec 2022',
         description: [
-            'Expanded backend functionalities using <span class="experience-strong">Go</span> and <span class="experience-strong">Stripe API</span>, including payments module, subscriptions, trial and paid tiers, and promotions',
-            'Enhanced frontend credit card forms and payment flows using <span class="experience-strong">React.js</span> and <span class="experience-strong">Typescript</span>',
-            '<span class="experience-strong">Dockerized</span> Apple Pay and subscriptions microservice <span class="experience-strong">MySQL</span> database and <span class="experience-strong">RabbitMQ</span> message broker',
+            'Managed subscription tier upgrade/downgrade logic through <span class="experience-strong">Stripe</span> integration in <span class="experience-strong">Go</span> and feature flags',
+            'Significantly improved credit card form and payment flow user experience using <span class="experience-strong">React</span> and <span class="experience-strong">Typescript</span>',
+            '<span class="experience-strong">Dockerized</span> billing microservice for Apply Pay and Play Store subscriptions using multi-staged Docker builds',
         ],
         evaluation: 'Outstanding',
         noShadow: true,

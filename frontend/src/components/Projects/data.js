@@ -28,10 +28,28 @@ import OpenChromaImage from '../../images/Projects/OpenChroma.png';
 import SHRIMPImage from '../../images/Projects/SHRIMP.png';
 import DataCheeseImage from '../../images/Projects/DataCheese.png';
 import FlaggerImage from '../../images/Projects/Flagger.png';
+import GloopImage from '../../images/Projects/gloop.png';
 
 import * as TechIcons from '../TechIcons/TechIcons';
 
 const data = [
+    {
+        active: true,
+        title: 'gloop',
+        caption: 'Go utility library for convenient looping using Go\'s range-over-func feature',
+        image: GloopImage,
+        description: [
+            'Published stable production-ready <strong>Go</strong> library with 50+ range-over-func helpers',
+            'Thoroughly documented features and functions, including clear usage examples',
+            'Achieved <strong>100%</strong> coverage using <strong>testify</strong> testing library, ensuring extensive unit testing',
+        ],
+        github: 'https://github.com/alvii147/gloop',
+        website: 'https://pkg.go.dev/github.com/alvii147/gloop',
+        milestones: [],
+        technologies: [
+            TechIcons.GoIcon,
+        ]
+    },
     {
         active: false,
         title: 'Flagger',
@@ -148,7 +166,7 @@ const data = [
         caption: 'Data science learning platform with coding challenges for developers',
         image: SigmoidAcademyImage,
         description: [
-            'Orchestrated backend <strong>Django</strong> application that handles JWT-based authentication, database management, and remote-code execution',
+            'Orchestrated <strong>Django</strong> backend with JWT authentication, GitHub OAuth, and remote code execution',
             'Composed user-friendly frontend using <strong>React.js</strong> and <strong>TypeScript</strong> that accommodates coding challenge submissions and test cases',
             'Incorporated combination of <strong>SQL</strong> and <strong>NoSQL</strong> databases using <strong>PostgreSQL</strong> and <strong>Redis</strong>',
         ],
