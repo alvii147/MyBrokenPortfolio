@@ -68,7 +68,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'DataCheese',
         caption: 'Popular data science and machine learning algorithms',
         image: DataCheeseImage,
@@ -182,7 +182,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'FunFaker',
         caption: 'Web API for generating fake data with pop culture references',
         image: FunFakerImage,
@@ -200,7 +200,7 @@ const data = [
         ]
     },
     {
-        active: false,
+        active: true,
         title: 'gitmsg',
         caption: 'App for writing git commit messages using 50/72 rule',
         image: gitmsgImage,
@@ -311,7 +311,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'DiscreteTimeLib',
         caption: 'Python package for analysis of discrete time signals and systems',
         image: DiscreteTimeLibImage,
@@ -331,7 +331,7 @@ const data = [
         ]
     },
     {
-        active: false,
+        active: true,
         title: 'Routh-Hurwitz Table Generator',
         caption: 'Web application that computes the Routh-Hurwitz Stability Table for Control Systems Analysis',
         image: RouthHurwitzImage,
@@ -620,7 +620,7 @@ const data = [
         ]
     },
     {
-        active: true,
+        active: false,
         title: 'Bangla Notepad',
         caption: 'Deep learning application to recognize Bengali alphabets and numerals',
         image: BanglaNotepadImage,
